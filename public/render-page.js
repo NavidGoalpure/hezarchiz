@@ -112,8 +112,8 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "name": "Fresh Theme",
-    "short_name": "fresh",
+    "name": "هزارچیز",
+    "short_name": "هزارچیز",
     "start_url": "/",
     "background_color": "#2d2a2a",
     "theme_color": "#2d2a2a",
@@ -492,7 +492,7 @@ const testRequireError = (moduleName, err) => {
 let Html;
 
 try {
-  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+  Html = __webpack_require__(/*! ../src/html */ "./src/html.js");
 } catch (err) {
   if (testRequireError(`../src/html`, err)) {
     Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
@@ -32427,6 +32427,54 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./src/html.js":
+/*!*********************!*\
+  !*** ./src/html.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HTML; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function HTML(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("html", props.htmlAttributes, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("head", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    charSet: "utf-8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    httpEquiv: "x-ua-compatible",
+    content: "ie=edge"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    href: "https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.2.1/dist/font-face.css",
+    rel: "stylesheet",
+    type: "text/css"
+  }), props.headComponents), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", props.bodyAttributes, props.preBodyComponents, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    key: `body`,
+    id: "___gatsby",
+    dangerouslySetInnerHTML: {
+      __html: props.body
+    }
+  }), props.postBodyComponents));
+}
+HTML.propTypes = {
+  htmlAttributes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
+  headComponents: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array,
+  bodyAttributes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
+  preBodyComponents: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array,
+  body: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  postBodyComponents: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array
+};
 
 /***/ }),
 

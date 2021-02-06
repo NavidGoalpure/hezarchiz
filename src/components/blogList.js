@@ -30,7 +30,7 @@ const BlogList = () => {
 
   return (
     <>
-      <main role="main">
+      <main role="main" style={{ overflow: "auto" }}>
         <div className="content">
           {allMarkdownRemark.edges.map(({ node }) => (
             <PostCard

@@ -6232,7 +6232,7 @@ gatsby-plugin-sass@^3.2.0:
     "@babel/runtime" "^7.12.5"
     sass-loader "^10.1.0"
 
-gatsby-plugin-sharp@^2.5.7:
+gatsby-plugin-sharp@^2.14.1:
   version "2.14.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.14.1.tgz#163b4b2456b7f5125bccb8e6a6bef73d9cab9941"
   integrity sha512-JhYaVtXJeocJ6VWaZqDMLbKVbvfUh5zZcvRTDtCGjZsBqFaVxffnkBI46b/nxpDzfJQwmixDU7Chyxu0Dbzh+A==
@@ -6453,7 +6453,7 @@ gatsby-transformer-remark@^2.8.0:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby-transformer-sharp@^2.4.3:
+gatsby-transformer-sharp@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.12.0.tgz#c33a92788e8b432f01960f4de2745c105cea4784"
   integrity sha512-3rtukdy9+QZL5ioMs+q2IjevJFOz0ORJzoGbnM/ups5C5ZtRQKRZNQ0920BP/eqpLQLI4lkQuyp+GCxfSQLkCQ==

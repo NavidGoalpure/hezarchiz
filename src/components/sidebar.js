@@ -50,12 +50,12 @@ const SideBar = () => {
         <menu className="sidebar-menu">
           <li className="menu-items">
             <Link to="/" className="menu-links" activeClassName="active">
-              Home
+              صرافی
             </Link>
           </li>
           <li className="menu-items">
             <Link to="/about" className="menu-links" activeClassName="active">
-              About
+              آموزشی
             </Link>
           </li>
           <li className="menu-items">
@@ -64,12 +64,12 @@ const SideBar = () => {
               className="menu-links"
               activeClassName="active"
             >
-              Projects
+              خبری
             </Link>
           </li>
           <li className="menu-items">
             <Link to="/contact" className="menu-links" activeClassName="active">
-              Contact
+              ابزار
             </Link>
           </li>
         </menu>
@@ -126,26 +126,6 @@ const SideBar = () => {
               rel="noopener noreferrer"
             >
               <FaLinkedin className="social-icons" />
-            </a>
-          </li>
-          <li className="social-items">
-            <a
-              href={facebook}
-              className="social-links"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF className="social-icons" />
-            </a>
-          </li>
-          <li className="social-items">
-            <a
-              href={twitter}
-              className="social-links"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="social-icons" />
             </a>
           </li>
           <li className="social-items">

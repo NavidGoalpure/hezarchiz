@@ -5,8 +5,8 @@ import BlogList from "../components/blogList"
 
 const IndexPage = () => {
   return (
-    <div>
-      <SEO title="fresh" />
+    <div style={{ width: "100vw", height: "100vh", display: "flex" }}>
+      <SEO title="هزارچیز" />
       <Default></Default>
       <BlogList></BlogList>
     </div>

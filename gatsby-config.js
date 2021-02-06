@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Fresh`,
+    title: `هزارچیز`,
     description: `GatsbyJS starter blog with the Fresh theme.`,
     author: `@mishal23`,
     siteUrl: `https://gatsby-starter-fresh.netlify.app`,
@@ -8,7 +8,7 @@ module.exports = {
       "mishal23",
       "Mishal Shah",
       "Gatsby",
-      "Fresh",
+      "هزارچیز",
       "themes",
       "blog",
       "PWA",
@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fresh Theme`,
-        short_name: `fresh`,
+        name: `هزارچیز`,
+        short_name: `هزارچیز`,
         start_url: `/`,
         background_color: `#2d2a2a`,
         theme_color: `#2d2a2a`,
@@ -92,7 +92,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `fresh`,
+        shortname: `هزارچیز`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
