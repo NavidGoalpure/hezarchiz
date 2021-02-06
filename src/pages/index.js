@@ -5,7 +5,7 @@ import BlogList from "../components/blogList"
 
 const IndexPage = () => {
   return (
-    <div className="background">
+    <div>
       <SEO title="fresh" />
       <Default></Default>
       <BlogList></BlogList>

@@ -1,0 +1,149 @@
+.hezarxhiz-card {
+  width: 240px;
+  height: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(10);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.6s ease-in-out;
+  transform: scale(0.8);
+  .out-div {
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    transition: 0.6s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 140px;
+    backdrop-filter: blur(12px);
+    top: 15%;
+    right: -25%;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0.6rem;
+    justify-content: space-evenly;
+    .profile {
+      display: flex;
+      align-items: center;
+      .img-box {
+        width: 48px;
+        height: 48px;
+        overflow: hidden;
+        border-radius: 24px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .details {
+        margin-left: 0.4rem;
+        h3 {
+          font-family: "EB Garamond", serif;
+          color: white;
+        }
+      }
+    }
+    p {
+      font-size: 10px;
+      line-height: 16px;
+      color: #dcdcdc;
+    }
+  }
+  .top,
+  .bottom {
+    width: 100%;
+  }
+  .top {
+    background-color: #d8e7ff;
+    height: 40%;
+    border-radius: 12px 12px 0 0;
+    .fa {
+      padding: 12px 12px;
+      color: #474747;
+    }
+    .img-box {
+      width: 100%;
+      height: 90%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: 0.6s ease-in-out;
+      }
+    }
+  }
+  .bottom {
+    height: 60%;
+    justify-content: flex-start;
+    padding: 2rem 0;
+
+    background-color: var(--theme-bg-color);
+    backdrop-filter: blur(20px);
+    color: white;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      font-family: "EB Garamond", serif;
+      font-size: 14px;
+      font-weight: 800;
+      // letter-spacing: -0.5px;
+      padding: 0;
+      color: #383838;
+    }
+    p {
+      font-size: 12px;
+      padding: 0 0.3rem;
+      line-height: 22px;
+    }
+    .levels {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.4rem;
+      .fa {
+        color: #4e62b1;
+        cursor: pointer;
+      }
+      .img-box {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        position: relative;
+        display: flex;
+        img {
+          width: 100%;
+          position: absolute;
+        }
+      }
+    }
+    button {
+      background-color: transparent;
+      border: 2px solid #4e62b1;
+      outline: none;
+      height: 30px;
+      border-radius: 15px;
+      width: 108px;
+      color: #4e62b1;
+      font-weight: bold;
+    }
+    .desc {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .text {
+        position: absolute;
+      }
+    }
+  }
+}
