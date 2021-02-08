@@ -7,7 +7,7 @@ const BlogList = () => {
     graphql`
       query BlogList {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___title], order: DESC }
           filter: { frontmatter: { blog: { eq: true } } }
         ) {
           edges {
@@ -17,8 +17,9 @@ const BlogList = () => {
               }
               frontmatter {
                 title
-                date(formatString: "MMMM DD, YYYY")
                 description
+                domain
+                keywords
               }
             }
           }
@@ -36,8 +37,9 @@ const BlogList = () => {
             <PostCard
               slug={node.fields.slug}
               title={node.frontmatter.title}
-              date={node.frontmatter.date}
               description={node.frontmatter.description}
+              domain={node.frontmatter.domain || ""}
+              keywords={node.frontmatter.keywords}
             />
           ))}
         </div>

@@ -4,10 +4,11 @@ import "./PostCard.scss"
 interface Props {
   slug: string
   title: string
-  date: string
   description: string
+  domain: string
 }
-const PostCard: React.FC<Props> = ({ slug, title, date, description }) => {
+const PostCard: React.FC<Props> = ({ slug, title, description, domain }) => {
+  console.log("navid slug=", slug)
   return (
     <div className="h-card">
       <div className="container">
@@ -17,8 +18,9 @@ const PostCard: React.FC<Props> = ({ slug, title, date, description }) => {
               <img src="https://drive.google.com/uc?export=view&id=1OpHCed5lRYE33pH55PsALZTpottPWIKN" />
             </div>
             <div className="details">
-              <h3>{title}</h3>
+              <h2>{title}</h2>
             </div>
+            <h3>{domain}</h3>
           </div>
         </div>
         <div className="top">
@@ -28,8 +30,9 @@ const PostCard: React.FC<Props> = ({ slug, title, date, description }) => {
         </div>
         <div className="bottom">
           <p>{description}</p>
-
-          <button>مشاهده بیشتر</button>
+          <Link to={slug} className="button">
+            مشاهده بیشتر
+          </Link>
         </div>
       </div>
     </div>

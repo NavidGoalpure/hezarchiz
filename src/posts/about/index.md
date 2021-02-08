@@ -1,11 +1,10 @@
 ---
-title:  "About 🙋‍♂️"
-img: 
-description: "About Gatsby Starter Fresh Theme"
-keywords: about, gatsby
-date: 2020-07-12 16:00:00 +0530
+title: "رونی سواپ"
+domain: "hezarchiz.com"
+img:
+description: "یک صرافی غیرمتمرکز برای مبادله توکن های اتریوم"
+keywords:
 blog: false
-
 ---
 
 Hi 👋, Welcome to the `gatsby-starter-fresh` theme. Hope you like this theme and use it for your personal blog! The blog has the following features:
