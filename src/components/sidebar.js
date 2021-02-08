@@ -47,7 +47,11 @@ const SideBar = () => {
 
         <menu className="sidebar-menu">
           <li className="menu-items">
-            <Link to="/" className="menu-links" activeClassName="active">
+            <Link
+              to="/exchanges"
+              className="menu-links"
+              activeClassName="active"
+            >
               صرافی
             </Link>
           </li>

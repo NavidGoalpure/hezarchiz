@@ -3,8 +3,8 @@ title: "رونی سواپ"
 domain: "hezarchiz.com"
 img:
 description: "یک صرافی غیرمتمرکز برای مبادله توکن های اتریوم"
-keywords:
-blog: false
+keywords: exchange
+blog: true
 ---
 
 Hi 👋, Welcome to the `gatsby-starter-fresh` theme. Hope you like this theme and use it for your personal blog! The blog has the following features:

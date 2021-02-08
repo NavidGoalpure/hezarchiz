@@ -8,7 +8,6 @@ interface Props {
   domain: string
 }
 const PostCard: React.FC<Props> = ({ slug, title, description, domain }) => {
-  console.log("navid slug=", slug)
   return (
     <div className="h-card">
       <div className="container">
