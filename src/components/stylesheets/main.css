@@ -863,7 +863,9 @@ pre code {
   justify-content: space-between;
   padding: 1rem;
 }
-
+.sidebar-logo {
+  width: fit-content;
+}
 .sidebar-logo .logo {
   color: #15f3a8;
   text-transform: uppercase;
@@ -908,7 +910,11 @@ pre code {
 .sidebar-social .social-links:hover {
   transform: translateY(-10px);
 }
-.sidebar-social .social-links::before {
+.glass-reflex {
+  overflow: hidden;
+  position: relative;
+}
+.glass-reflex::before {
   content: "";
   position: absolute;
   top: 0;
@@ -918,8 +924,10 @@ pre code {
   background: rgba(255, 255, 255, 0.5);
   transform: skewX(45deg) translateX(150px);
   transition: 0.5s;
+  visibility: hidden;
 }
-.sidebar-social .social-links:hover::before {
+.glass-reflex:hover::before {
+  visibility: visible;
   transform: skewX(45deg) translateX(-150px);
 }
 .sidebar-social .social-icons {

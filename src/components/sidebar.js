@@ -2,9 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import {
   FaLinkedin,
-  FaTwitter,
   FaGithub,
-  FaFacebookF,
   FaEnvelope,
   FaTelegramPlane,
 } from "react-icons/fa"
@@ -41,8 +39,8 @@ const SideBar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-container">
-        <div className="sidebar-logo">
-          <Link to="/" className="logo">
+        <div className="sidebar-logo glass-reflex">
+          <Link to="/" className="logo ">
             {site.siteMetadata.title}
           </Link>
         </div>
@@ -101,7 +99,7 @@ const SideBar = () => {
           <li className="social-items">
             <a
               href={email}
-              className="social-links"
+              className="social-links glass-reflex"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -111,7 +109,7 @@ const SideBar = () => {
           <li className="social-items">
             <a
               href={github}
-              className="social-links"
+              className="social-links glass-reflex"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -121,7 +119,7 @@ const SideBar = () => {
           <li className="social-items">
             <a
               href={linkedin}
-              className="social-links"
+              className="social-links glass-reflex"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -131,7 +129,7 @@ const SideBar = () => {
           <li className="social-items">
             <a
               href={telegram}
-              className="social-links"
+              className="social-links glass-reflex"
               target="_blank"
               rel="noopener noreferrer"
             >
