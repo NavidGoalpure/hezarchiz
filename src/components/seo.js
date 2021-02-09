@@ -18,11 +18,7 @@ function SEO({ description, lang, meta, title, keywords }) {
           siteMetadata {
             title
             description
-            author
             keywords
-            social {
-              twitter
-            }
             image
           }
         }
@@ -66,26 +62,6 @@ function SEO({ description, lang, meta, title, keywords }) {
           property: `og:type`,
           content: `website`,
         },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.social.twitter,
-        },
-        {
-          name: `twitter:image`,
-          content: image,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
       ].concat(meta)}
     />
   )
@@ -102,6 +78,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  keywords: PropTypes.arrayOf(PropTypes.string),
 }
 
 export default SEO

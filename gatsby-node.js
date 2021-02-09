@@ -97,19 +97,19 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: listingPage,
-        component: path.resolve(`./src/components/PageTemplate.tsx`),
+        component: path.resolve(
+          `./src/components/templates/ProjectsListPage.tsx`
+        ),
         context: {
           slug: listingPage,
         },
       })
     })
-    console.log("navid html=", markdownPages[0].node.html)
-    markdownPages.map(page => {
-      // 3.1 Finally create posts
 
+    markdownPages.map(page => {
       createPage({
         path: page.node.fields.slug,
-        component: path.resolve(`./src/components/blogPost.tsx`),
+        component: path.resolve(`./src/components/templates/ProjectPage.tsx`),
         context: {
           title: page.node.frontmatter.title,
           description: page.node.frontmatter.description,

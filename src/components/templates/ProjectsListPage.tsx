@@ -1,7 +1,7 @@
 import React from "react"
-import SEO from "../components/seo"
-import Default from "../components/default"
-import BlogList from "../components/blogList"
+import SEO from "../seo"
+import Default from "../default"
+import BlogList from "../blogList"
 
 interface Props {
   pageContext: { slug: string }
