@@ -9,7 +9,7 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ pageContext: { slug } }) => {
   const smartSlug = slug?.replace("/", "") || "all"
   return (
-    <section className="main-section">
+    <section className="page-container">
       <SEO title="هزارچیز" />
       <Default></Default>
       <BlogList includePhrase={smartSlug}></BlogList>

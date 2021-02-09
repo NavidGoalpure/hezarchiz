@@ -25,15 +25,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 const path = require(`path`)
 
-// 1. This is called once the data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ graphql, actions }) => {
-  // 1.1 Getting the method to create pages
   const { createPage } = actions
-  // 1.2 Tell which layout Gatsby should use to thse pages
-  const blogLayout = path.resolve(`./src/components/blogPost.js`)
-  const blogListLayout = path.resolve(`./src/pages/index.js`)
 
-  // 2 Return the method with the query
   return graphql(`
     query allPages {
       allDirectory {
@@ -42,6 +36,22 @@ exports.createPages = ({ graphql, actions }) => {
             base
             relativePath
             dir
+          }
+        }
+      }
+      allMarkdownRemark(sort: { fields: [frontmatter___title], order: DESC }) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              description
+              keywords
+              domain
+            }
+            html
           }
         }
       }
@@ -54,20 +64,15 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // 2.2 listing pages are here
+    const markdownPages = result.data.allMarkdownRemark.edges
+
     const allOfPages = result.data.allDirectory.edges
     const categoriesPage = []
-    console.log(" allOfPages=", allOfPages)
     Object.entries(allOfPages).map(page => {
       if (page[1].node.relativePath !== "")
         categoriesPage.push(`/${page[1].node.relativePath}`)
     })
     console.log(" categoriesPage=", categoriesPage)
-    // if (typeof page !== undefined && page?.node?.relativePath !== "")
-    // categoriesPage.push(`/${page?.node?.relativePath}`)
-
-    // allOfPages.map(page => {
-    //   console.log("page=", page)
-    // })
 
     // const postsPerPage = 5
     // const numPages = Math.ceil(posts.length / postsPerPage)
@@ -95,6 +100,22 @@ exports.createPages = ({ graphql, actions }) => {
         component: path.resolve(`./src/components/PageTemplate.tsx`),
         context: {
           slug: listingPage,
+        },
+      })
+    })
+    console.log("navid html=", markdownPages[0].node.html)
+    markdownPages.map(page => {
+      // 3.1 Finally create posts
+
+      createPage({
+        path: page.node.fields.slug,
+        component: path.resolve(`./src/components/blogPost.tsx`),
+        context: {
+          title: page.node.frontmatter.title,
+          description: page.node.frontmatter.description,
+          keywords: page.node.frontmatter.keywords,
+          domain: page.node.frontmatter.title,
+          html: page.node.html,
         },
       })
     })

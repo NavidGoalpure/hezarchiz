@@ -4,7 +4,7 @@ import Default from "../../components/default"
 import "../../styles/pages/404.scss"
 
 const NotFoundPage = () => (
-  <section className="main-section">
+  <section className="page-container">
     <SEO title="404: Page Not Found" />
     <Default />
     <section className="page404-article">

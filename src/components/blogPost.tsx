@@ -1,38 +1,41 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Default from "../components/default"
-import Post from "../components/post"
-import SEO from "../components/seo"
+import Default from "./default"
+import Post from "./post"
+import SEO from "./seo"
 import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import useSiteMetadata from "../utils/site-metadata"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 deckDeckGoHighlightElement()
 
-const BlogPost = ({ path, data }) => {
-  const { markdownRemark } = data
+interface Props {
+  title: string
+  description: string
+  keywords: string
+  domain: string
+  html: string
+}
+const BlogPost = ({
+  pageContext: { path, title, description, keywords, domain, html },
+}) => {
   const { siteUrl } = useSiteMetadata()
 
   let disqusConfig = {
     url: `${siteUrl}${path}`,
     identifier: `${siteUrl}${path}`,
-    title: markdownRemark.frontmatter.title,
+    title: title,
   }
 
   return (
-    <>
-      <SEO
-        title={markdownRemark.frontmatter.title}
-        description={markdownRemark.frontmatter.description}
-        keywords={markdownRemark.frontmatter.keywords}
-      />
+    <section className="page-container">
+      <SEO title={title} description={description} keywords={keywords} />
       <Default></Default>
-      <Post title={markdownRemark.frontmatter.title}>
-        <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-
+      <Post title={title}>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
         <CommentCount config={disqusConfig} placeholder={"..."} />
         <Disqus config={disqusConfig} />
       </Post>
-    </>
+    </section>
   )
 }
 

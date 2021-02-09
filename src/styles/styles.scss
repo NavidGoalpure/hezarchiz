@@ -743,7 +743,7 @@ img {
 }
 /////////////////////////
 .main-article,
-.page-article,
+.listing-page-article,
 .post {
   background-color: var(--theme-bg-color);
   margin-bottom: 6rem;
@@ -753,7 +753,7 @@ img {
   font-size: 15px;
   font-weight: 500;
 }
-.main-section {
+.page-container {
   width: 100vw;
   height: 100vh;
   display: flex;
