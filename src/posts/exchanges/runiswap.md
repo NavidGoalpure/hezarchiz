@@ -3,7 +3,7 @@ title: "رونی سواپ"
 domain: "hezarchiz.com"
 img:
 description: "یک صرافی غیرمتمرکز برای مبادله توکن های اتریوم"
-keywords:
+keywords: exchanges
 blog: true
 ---
 
