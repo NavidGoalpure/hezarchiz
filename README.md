@@ -32,10 +32,7 @@ A starter blog skeleton using the Fresh Theme for [Gatsby](https://github.com/ga
 - [Disqus](https://disqus.com/) support for comments
 - Supports PWA
 - Social Media icons
-- SEO friendly
-	- option to add meta description
-	- Sitemap Generation
-	- Twitter tags (Twitter cards)
+- SEO friendly - option to add meta description - Sitemap Generation - Twitter tags (Twitter cards)
 - Google Analytics
 
 ## 🚀 Quick start
@@ -53,7 +50,7 @@ cd gatsby-starter-fresh/
 gatsby develop
 ```
 
-The site would be running live on ```http://localhost:8000```. Open the `gatsby-starter-fresh` directory in a code editor of your choice and edit `gatsby-config.js` with your details:
+The site would be running live on `http://localhost:8000`. Open the `gatsby-starter-fresh` directory in a code editor of your choice and edit `gatsby-config.js` with your details:
 
 - Name
 - Description
@@ -62,7 +59,7 @@ The site would be running live on ```http://localhost:8000```. Open the `gatsby-
 - Disqus `shortname` at `gatsby-plugin-disqus` plugin
 - `trackingID` at `gatsby-plugin-google-analytics` plugin
 
-Feel free to create new posts in the `src/posts` directory. The changes will be reflected in real-time on your browser.
+Feel free to create new posts in the `src/projects/categories` directory. The changes will be reflected in real-time on your browser.
 
 ## Lighthouse Audit Score
 
@@ -78,6 +75,7 @@ cd gatsby-starter-fresh
 npm install
 gatsby develop
 ```
+
 - You can also write by opening an [issue](https://github.com/mishal23/gatsby-starter-fresh/issues) on the repository, incase of any issues.
 
 ## Author

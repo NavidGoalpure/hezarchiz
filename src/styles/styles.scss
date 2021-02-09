@@ -753,3 +753,16 @@ img {
   font-size: 15px;
   font-weight: 500;
 }
+.main-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.glass-container {
+  padding: 1rem;
+  background-color: var(--theme-bg-color);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: white;
+  border-radius: 12px;
+}

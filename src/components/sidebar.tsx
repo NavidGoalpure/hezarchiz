@@ -16,8 +16,6 @@ const SideBar = () => {
           siteMetadata {
             title
             social {
-              twitter
-              facebook
               github
               email
               linkedin
@@ -28,13 +26,11 @@ const SideBar = () => {
     `
   )
 
-  const facebook = "https://facebook.com/" + site.siteMetadata.social.facebook
   const github = "https://github.com/" + site.siteMetadata.social.github
   const email = "mailto:" + site.siteMetadata.social.email
   const linkedin =
     "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
   const telegram = "https://t.me/" + site.siteMetadata.social.telegram
-  const twitter = "https://twitter.com/" + site.siteMetadata.social.twitter
 
   return (
     <aside className="sidebar">
@@ -47,6 +43,21 @@ const SideBar = () => {
 
         <menu className="sidebar-menu">
           <li className="menu-items">
+            <Link to="/" className="menu-links" activeClassName="active">
+              همه
+            </Link>
+          </li>
+
+          <li className="menu-items">
+            <Link
+              to="/learning"
+              className="menu-links"
+              activeClassName="active"
+            >
+              آموزشی
+            </Link>
+          </li>
+          <li className="menu-items">
             <Link
               to="/exchanges"
               className="menu-links"
@@ -56,21 +67,12 @@ const SideBar = () => {
             </Link>
           </li>
           <li className="menu-items">
-            <Link to="/about" className="menu-links" activeClassName="active">
-              آموزشی
-            </Link>
-          </li>
-          <li className="menu-items">
-            <Link
-              to="/projects"
-              className="menu-links"
-              activeClassName="active"
-            >
+            <Link to="/news" className="menu-links" activeClassName="active">
               خبری
             </Link>
           </li>
           <li className="menu-items">
-            <Link to="/contact" className="menu-links" activeClassName="active">
+            <Link to="/tools" className="menu-links" activeClassName="active">
               ابزار
             </Link>
           </li>

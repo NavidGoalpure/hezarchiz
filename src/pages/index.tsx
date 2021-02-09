@@ -4,12 +4,13 @@ import Default from "../components/default"
 import BlogList from "../components/blogList"
 
 const IndexPage: React.FC = props => {
+  console.log("navid inja")
   return (
-    <div style={{ width: "100vw", height: "100vh", display: "flex" }}>
+    <section className="main-section">
       <SEO title="هزارچیز" />
       <Default></Default>
       <BlogList includePhrase="all"></BlogList>
-    </div>
+    </section>
   )
 }
 

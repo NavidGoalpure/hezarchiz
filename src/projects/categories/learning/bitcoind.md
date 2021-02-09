@@ -1,9 +1,9 @@
 ---
-title: "Hoder Ipsum"
-domain: "hezarchiz.com"
+title: "بیتکوین‌دی"
+domain: "bitcoind.me"
 img:
-description: "This is hoder ipsum post. The content you write here goes as meta description and as a description for the post"
-keywords: fresh, gatsby
+description: "سایتی برای به اشتراک گذاری محتواهای آموزشی مربوط به بیتکوین در قالب فایل های pdf"
+keywords: learning
 blog: true
 ---
 

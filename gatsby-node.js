@@ -35,20 +35,13 @@ exports.createPages = ({ graphql, actions }) => {
 
   // 2 Return the method with the query
   return graphql(`
-    query blogPosts {
-      allMarkdownRemark(sort: { fields: [frontmatter___title], order: DESC }) {
+    query allPages {
+      allDirectory {
         edges {
           node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              description
-              keywords
-              domain
-            }
-            html
+            base
+            relativePath
+            dir
           }
         }
       }
@@ -60,33 +53,48 @@ exports.createPages = ({ graphql, actions }) => {
       // reject(result.errors)
     }
 
-    // 2.2 Our posts are here
-    const posts = result.data.allMarkdownRemark.edges
-    const postsPerPage = 5
-    const numPages = Math.ceil(posts.length / postsPerPage)
+    // 2.2 listing pages are here
+    const allOfPages = result.data.allDirectory.edges
+    const categoriesPage = []
+    console.log(" allOfPages=", allOfPages)
+    Object.entries(allOfPages).map(page => {
+      if (page[1].node.relativePath !== "")
+        categoriesPage.push(`/${page[1].node.relativePath}`)
+    })
+    console.log(" categoriesPage=", categoriesPage)
+    // if (typeof page !== undefined && page?.node?.relativePath !== "")
+    // categoriesPage.push(`/${page?.node?.relativePath}`)
+
+    // allOfPages.map(page => {
+    //   console.log("page=", page)
+    // })
+
+    // const postsPerPage = 5
+    // const numPages = Math.ceil(posts.length / postsPerPage)
 
     // Creating blog list with pagination
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? `/` : `/page/${i + 1}`,
-        component: path.resolve(`./src/components/PageTemplate.tsx`),
-        context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          currentPage: i + 1,
-          numPages,
-        },
-      })
-    })
+    // Array.from({ length: numPages }).forEach((_, i) => {
+    //   createPage({
+    //     path: i === 0 ? `/` : `/page/${i + 1}`,
+    //     component: path.resolve(`./src/components/PageTemplate.tsx`),
+    //     context: {
+    //       limit: postsPerPage,
+    //       skip: i * postsPerPage,
+    //       currentPage: i + 1,
+    //       numPages,
+    //     },
+    //   })
+    // })
 
     // 3 Loop throught all posts
-    posts.forEach((post, index) => {
+    categoriesPage.forEach((listingPage, index) => {
       // 3.1 Finally create posts
+
       createPage({
-        path: post.node.fields.slug,
+        path: listingPage,
         component: path.resolve(`./src/components/PageTemplate.tsx`),
         context: {
-          slug: post.node.fields.slug,
+          slug: listingPage,
         },
       })
     })
