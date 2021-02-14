@@ -2,7 +2,7 @@
   "name": "gatsby-starter-fresh",
   "description": "GatsbyJS starter blog with the Fresh theme.",
   "version": "0.1.0",
-  "author": "Mishal Shah <shahmishal1998@gmail.com>",
+
   "dependencies": {
     "@deckdeckgo/highlight-code": "^1.0.4",
     "gatsby": "^2.20.12",

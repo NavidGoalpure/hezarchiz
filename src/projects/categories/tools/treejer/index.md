@@ -1,7 +1,7 @@
 ---
 title: "Projects 👨‍💻"
 domain: "hezarchiz.com"
-img:
+img: "cover.jpg"
 description: "About Gatsby Starter Fresh Theme"
 keywords: projects, gatsby
 blog: true

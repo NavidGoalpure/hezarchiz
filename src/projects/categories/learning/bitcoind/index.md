@@ -1,7 +1,7 @@
 ---
 title: "بیتکوین‌دی"
 domain: "bitcoind.me"
-img:
+img: "cover.jpg"
 description: "سایتی برای به اشتراک گذاری محتواهای آموزشی مربوط به بیتکوین در قالب فایل های pdf"
 keywords: learning
 blog: true

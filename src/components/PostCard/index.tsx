@@ -1,13 +1,22 @@
 import { Link } from "gatsby"
 import React from "react"
 import "./PostCard.scss"
+import Img, { FluidObject } from "gatsby-image"
+
 interface Props {
   slug: string
   title: string
   description: string
   domain: string
+  imageFluid: FluidObject[]
 }
-const PostCard: React.FC<Props> = ({ slug, title, description, domain }) => {
+const PostCard: React.FC<Props> = ({
+  slug,
+  title,
+  description,
+  domain,
+  imageFluid,
+}) => {
   return (
     <div className="h-card">
       <div className="container">
@@ -24,7 +33,7 @@ const PostCard: React.FC<Props> = ({ slug, title, description, domain }) => {
         </div>
         <div className="top">
           <div className="img-box">
-            <img src="https://drive.google.com/uc?export=view&id=1Vq3yJ0-pQaOJwryTfA0fseHEWXbCnHT0" />
+            <Img fluid={imageFluid} />
           </div>
         </div>
         <div className="bottom">

@@ -25,6 +25,21 @@ const BlogList: React.FC<Props> = ({ includePhrase }) => {
                 description
                 domain
                 keywords
+                img {
+                  children {
+                    ... on ImageSharp {
+                      fluid(maxWidth: 1920) {
+                        base64
+                        aspectRatio
+                        src
+                        srcSet
+                        srcWebp
+                        srcSetWebp
+                        sizes
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -48,7 +63,8 @@ const BlogList: React.FC<Props> = ({ includePhrase }) => {
                   slug={node.fields.slug}
                   title={node.frontmatter.title}
                   description={node.frontmatter.description}
-                  domain={node.frontmatter.domain || ""}
+                  domain={node?.frontmatter?.domain || ""}
+                  imageFluid={node?.frontmatter?.img?.children[0].fluid}
                 />
               )
           })}

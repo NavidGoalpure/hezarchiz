@@ -1,7 +1,7 @@
 ---
 title: "بیت سین"
 domain: "bitseen.ir"
-img:
+img: "cover.jpg"
 description: "یک صرافی ارز دیجیتال معتبر برای خرید و فروش بیتکوین، اتریوم، تتر و سایر ارزها"
 keywords: exchanges
 blog: true

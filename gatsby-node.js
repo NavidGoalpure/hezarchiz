@@ -50,6 +50,21 @@ exports.createPages = ({ graphql, actions }) => {
               description
               keywords
               domain
+              img {
+                children {
+                  ... on ImageSharp {
+                    fluid(maxWidth: 1920) {
+                      base64
+                      aspectRatio
+                      src
+                      srcSet
+                      srcWebp
+                      srcSetWebp
+                      sizes
+                    }
+                  }
+                }
+              }
             }
             html
           }
@@ -115,6 +130,7 @@ exports.createPages = ({ graphql, actions }) => {
           description: page.node.frontmatter.description,
           keywords: page.node.frontmatter.keywords,
           domain: page.node.frontmatter.title,
+          imgFluid: page.node.frontmatter.img.children[0].fluid,
           html: page.node.html,
         },
       })
