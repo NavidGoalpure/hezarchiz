@@ -102,7 +102,9 @@ exports.createPages = ({ graphql, actions }) => {
     markdownPages.map(page => {
       createPage({
         path: page.node.fields.slug,
-        component: path.resolve(`./src/components/templates/ProjectPage.tsx`),
+        component: path.resolve(
+          `./src/components/templates/ProjectPage/index.tsx`
+        ),
         context: {
           title: page.node.frontmatter.title,
           description: page.node.frontmatter.description,
