@@ -1,9 +1,10 @@
 ---
-title: "Projects 👨‍💻"
-domain: "hezarchiz.com"
+title: "آیرکس لیست"
+domain: "irexlist.com"
 img: "cover.jpg"
-description: "About Gatsby Starter Fresh Theme"
-keywords: projects, gatsby
+logo: "logo.png"
+description: "ارائه دهنده نرخ خرید و فروش کریپتو کارنسی در صرافی های ایرانی"
+keywords: exchage, aggregator
 blog: true
 ---
 

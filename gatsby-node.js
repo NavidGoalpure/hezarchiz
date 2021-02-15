@@ -87,29 +87,7 @@ exports.createPages = ({ graphql, actions }) => {
       if (page[1].node.relativePath !== "")
         categoriesPage.push(`/${page[1].node.relativePath}`)
     })
-    console.log(" categoriesPage=", categoriesPage)
-
-    // const postsPerPage = 5
-    // const numPages = Math.ceil(posts.length / postsPerPage)
-
-    // Creating blog list with pagination
-    // Array.from({ length: numPages }).forEach((_, i) => {
-    //   createPage({
-    //     path: i === 0 ? `/` : `/page/${i + 1}`,
-    //     component: path.resolve(`./src/components/PageTemplate.tsx`),
-    //     context: {
-    //       limit: postsPerPage,
-    //       skip: i * postsPerPage,
-    //       currentPage: i + 1,
-    //       numPages,
-    //     },
-    //   })
-    // })
-
-    // 3 Loop throught all posts
     categoriesPage.forEach((listingPage, index) => {
-      // 3.1 Finally create posts
-
       createPage({
         path: listingPage,
         component: path.resolve(

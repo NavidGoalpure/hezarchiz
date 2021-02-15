@@ -5,7 +5,7 @@ import PostCard from "./PostCard"
 interface Props {
   includePhrase: string
 }
-const BlogList: React.FC<Props> = ({ includePhrase }) => {
+const BlogList: React.FC<Props> = props => {
   const data = useStaticQuery(
     graphql`
       query BlogList {
@@ -40,6 +40,21 @@ const BlogList: React.FC<Props> = ({ includePhrase }) => {
                     }
                   }
                 }
+                logo {
+                  children {
+                    ... on ImageSharp {
+                      fluid(maxWidth: 48) {
+                        base64
+                        aspectRatio
+                        src
+                        srcSet
+                        srcWebp
+                        srcSetWebp
+                        sizes
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -48,6 +63,7 @@ const BlogList: React.FC<Props> = ({ includePhrase }) => {
     `
   )
   const { allMarkdownRemark } = data
+  // const { siteUrl } = useSiteMetadata()
 
   return (
     <>
@@ -55,8 +71,8 @@ const BlogList: React.FC<Props> = ({ includePhrase }) => {
         <div className="content">
           {allMarkdownRemark.edges.map(({ node }) => {
             if (
-              includePhrase === "all" ||
-              node.frontmatter.keywords.includes(includePhrase)
+              props.includePhrase === "all" ||
+              node.frontmatter.keywords.includes(props.includePhrase)
             )
               return (
                 <PostCard
@@ -65,6 +81,7 @@ const BlogList: React.FC<Props> = ({ includePhrase }) => {
                   description={node.frontmatter.description}
                   domain={node?.frontmatter?.domain || ""}
                   imageFluid={node?.frontmatter?.img?.children[0].fluid}
+                  logoFluid={node?.frontmatter?.logo?.children[0].fluid}
                 />
               )
           })}

@@ -9,6 +9,7 @@ interface Props {
   description: string
   domain: string
   imageFluid: FluidObject[]
+  logoFluid: FluidObject[]
 }
 const PostCard: React.FC<Props> = ({
   slug,
@@ -16,14 +17,17 @@ const PostCard: React.FC<Props> = ({
   description,
   domain,
   imageFluid,
+  logoFluid,
 }) => {
+  console.log("navid slug=", slug)
   return (
     <div className="h-card">
       <div className="container">
         <div className="out-div">
           <div className="profile">
             <div className="img-box">
-              <img src="https://drive.google.com/uc?export=view&id=1OpHCed5lRYE33pH55PsALZTpottPWIKN" />
+              {/* <img src="projects/categories/learning/bitcoind/logo.png" /> */}
+              <Img fluid={logoFluid} />
             </div>
             <div className="details">
               <h2>{title}</h2>
@@ -33,7 +37,7 @@ const PostCard: React.FC<Props> = ({
         </div>
         <div className="top">
           <div className="img-box">
-            <Img fluid={imageFluid} />
+            <Img fluid={imageFluid} imgStyle={{ transition: "all 0.7s" }} />
           </div>
         </div>
         <div className="bottom">

@@ -9,7 +9,6 @@ interface Props {
 }
 // const IndexPage: React.FC<Props> = ({ pageContext: { slug } }) => {
 const IndexPage: React.FC<Props> = ({ pageContext }) => {
-  console.log("navid pageContext=", pageContext)
   const smartSlug = pageContext.slug?.replace("/", "") || "all"
   return (
     <section className="page-container">
