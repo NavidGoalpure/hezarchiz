@@ -73,7 +73,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `هزارچیز`,
+        shortname: `hezarchiz`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

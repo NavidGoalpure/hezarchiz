@@ -19,7 +19,6 @@ const PostCard: React.FC<Props> = ({
   imageFluid,
   logoFluid,
 }) => {
-  console.log("navid slug=", slug)
   return (
     <div className="h-card">
       <div className="container">

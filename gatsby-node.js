@@ -98,7 +98,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-
+    // create project pages
     markdownPages.map(page => {
       createPage({
         path: page.node.fields.slug,

@@ -15,9 +15,9 @@ interface Props {
   domain: string
   html: string
 }
-const BlogPost = ({
-  pageContext: { path, title, description, keywords, domain, html },
-}) => {
+const BlogPost = props => {
+  const { title, description, keywords, domain, html } = props.pageContext
+  const { path } = props
   const { siteUrl } = useSiteMetadata()
 
   let disqusConfig = {
