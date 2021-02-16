@@ -742,21 +742,22 @@ img {
 }
 /////////////////////////
 .main-article,
-.listing-page-article,
+.post-page-article,
 .post {
   background-color: var(--theme-bg-color);
-  margin-bottom: 6rem;
-  border-radius: 14px;
+  border-radius: 12px 12px 0 0;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   font-size: 15px;
   font-weight: 500;
+  position: relative;
 }
 .page-container {
   width: 100vw;
   height: 100vh;
   display: flex;
 }
+
 .glass-container {
   padding: 1rem;
   background-color: var(--theme-bg-color);
@@ -764,4 +765,14 @@ img {
   backdrop-filter: blur(20px);
   color: white;
   border-radius: 12px;
+}
+.disqus-comment-count {
+  color: white;
+  background-color: dimgray;
+  width: 100%;
+  padding-left: 1rem;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

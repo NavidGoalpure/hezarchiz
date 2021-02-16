@@ -1,10 +1,17 @@
 .project-content {
   color: white;
   font-size: 1.1rem;
+  padding-bottom: 3rem;
 }
 
 div#disqus_thread {
   background: white;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
+  width: 100%;
+  iframe {
+    z-index: 10;
+    position: relative;
+    background: white;
+  }
 }
