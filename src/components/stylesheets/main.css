@@ -910,6 +910,35 @@ pre code {
 .sidebar-social .social-links:hover {
   transform: translateY(-10px);
 }
+.green-glass {
+  background-color: rgba(18, 49, 49, 0.8);
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports (
+  (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))
+) {
+  .green-glass {
+    background-color: var(--theme-bg-color);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
+}
+/* ///////////////////////// */
+.dark-glass {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports (
+  (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))
+) {
+  .dark-glass {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+}
 .glass-reflex {
   overflow: hidden;
   position: relative;
@@ -950,32 +979,31 @@ pre code {
   padding-bottom: 2rem;
 }
 
-.main-article .header-article,
-.main-article .page-header,
+.header-article,
+.page-header,
 .post-page-article .header-article,
 .post-page-article .page-header,
-.post .header-article,
-.post .page-header {
+header-article,
+page-header {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.main-article .wrap-content,
-.post-page-article .wrap-content,
-.post .wrap-content {
+.wrap-content,
+.post-page-article .wrap-content {
   /* background-color: #fff; */
   padding: 1rem;
 }
 
-.main-article .title-article,
-.main-article .page-title,
-.main-article .post-title,
+.title-article,
+.page-title,
+.post-title,
 .post-page-article .title-article,
 .post-page-article .page-title,
 .post-page-article .post-title,
-.post .title-article,
-.post .page-title,
-.post .post-title {
+title-article,
+page-title,
+post-title {
   margin-bottom: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -984,34 +1012,34 @@ pre code {
   margin-top: 0.67rem;
 }
 
-.main-article .title-article a,
-.main-article .page-title a,
-.main-article .post-title a,
+.title-article a,
+.page-title a,
+.post-title a,
 .post-page-article .title-article a,
 .post-page-article .page-title a,
 .post-page-article .post-title a,
-.post .title-article a,
-.post .page-title a,
-.post .post-title a {
+title-article a,
+page-title a,
+post-title a {
   color: #15f3a8;
   text-decoration: none;
 }
 
-.main-article .post-date span,
-.main-article .page-date span,
+.post-date span,
+.page-date span,
 .post-page-article .post-date span,
 .post-page-article .page-date span,
-.post .post-date span,
-.post .page-date span {
+post-date span,
+page-date span {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-family: monospace;
   color: lightgreen;
 }
 
-.main-article .more,
+.more,
 .post-page-article .more,
-.post .more {
+more {
   text-decoration: none;
   color: lightgreen;
 }

@@ -22,7 +22,7 @@ const PostCard: React.FC<Props> = ({
   return (
     <div className="h-card">
       <div className="container">
-        <div className="out-div">
+        <div className="out-div dark-glass">
           <div className="profile">
             <div className="img-box">
               {/* <img src="projects/categories/learning/bitcoind/logo.png" /> */}
@@ -39,7 +39,7 @@ const PostCard: React.FC<Props> = ({
             <Img fluid={imageFluid} imgStyle={{ transition: "all 0.7s" }} />
           </div>
         </div>
-        <div className="bottom">
+        <div className="bottom green-glass">
           <p>{description}</p>
           <Link to={slug} className="button">
             مشاهده بیشتر

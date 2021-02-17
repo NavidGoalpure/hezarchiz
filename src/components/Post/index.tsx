@@ -12,7 +12,7 @@ const Post = ({ title, children, identifier, url }) => {
 
   return (
     <main className="content">
-      <article className="post-page-article">
+      <article className="post-page-article green-glass">
         <div className="wrap-content">
           <header className="page-header">
             <h1 className="page-title"> {title} </h1>
