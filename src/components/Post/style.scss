@@ -6,3 +6,13 @@
   padding: 1rem;
   line-height: 190%;
 }
+.post-content {
+  position: relative;
+  padding: 4rem 1rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 2rem;
+}

@@ -11,7 +11,7 @@ const Post = ({ title, children, identifier, url }) => {
   }
 
   return (
-    <main className="content">
+    <main className="post-content">
       <article className="post-page-article green-glass">
         <div className="wrap-content">
           <header className="page-header">
