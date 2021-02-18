@@ -67,7 +67,7 @@ const BlogList: React.FC<Props> = props => {
 
   return (
     <>
-      <main role="main" style={{ overflow: "auto", width: "100%" }}>
+      <main role="main" style={{ width: "100%" }}>
         <div className="content">
           {allMarkdownRemark.edges.map(({ node }) => {
             if (

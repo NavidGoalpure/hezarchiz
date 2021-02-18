@@ -122,29 +122,32 @@
     font-size: 2.3rem;
   }
 }
-@media screen and (max-width: 960px) {
-  .sidebar {
-    width: 16rem;
-  }
-}
+
 @media screen and (max-width: 800px) {
   .sidebar {
-    position: inherit;
     width: 100%;
     text-align: center;
   }
   .sidebar-social {
-    position: absolute;
+    position: fixed;
     width: 3rem;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    bottom: 2%;
+    right: 1rem;
   }
   .sidebar-social .social-items {
     width: 36px;
+    background-color: #ece9cf;
+    border-radius: 6px;
   }
 
   .sidebar-logo,
   .sidebar-menu {
     margin: 0 auto 1rem auto;
+  }
+  .sidebar-social .social-icons {
+    color: black;
   }
 }

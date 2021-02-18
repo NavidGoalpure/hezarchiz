@@ -72,20 +72,27 @@ const SideBar = () => {
 
       <div className="btn-group">
         <Link to="/" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">Home</button>
-        </Link>
-        <Link to="/about" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">About</button>
+          <button className="navbtn">همه</button>
         </Link>
         <Link
-          to="/projects"
+          to="/learning"
           className="mob-menu-items"
           activeClassName="active"
         >
-          <button className="navbtn">Projects</button>
+          <button className="navbtn">آموزشی</button>
         </Link>
-        <Link to="/contact" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">Contact</button>
+        <Link
+          to="/exchanges"
+          className="mob-menu-items"
+          activeClassName="active"
+        >
+          <button className="navbtn">صرافی</button>
+        </Link>
+        <Link to="/news" className="mob-menu-items" activeClassName="active">
+          <button className="navbtn">خبری</button>
+        </Link>
+        <Link to="/tools" className="mob-menu-items" activeClassName="active">
+          <button className="navbtn">ابزار</button>
         </Link>
       </div>
 

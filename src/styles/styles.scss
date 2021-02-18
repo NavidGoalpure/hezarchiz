@@ -462,7 +462,7 @@ img {
   width: 140px;
   font-size: 15px;
   position: relative;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
   &-circle {
@@ -752,8 +752,10 @@ img {
   width: 100vw;
   height: 100vh;
   display: flex;
+  // @media (max-width: 800px) {
   @media (max-width: 800px) {
     flex-direction: column;
+    position: relative;
   }
 }
 
