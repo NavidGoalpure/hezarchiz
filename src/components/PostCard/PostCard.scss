@@ -217,6 +217,10 @@
       }
     }
   }
+
+  @media screen and (max-width: 425px) {
+    width: 90%;
+  }
 }
 .container:hover .top .img-box img {
   transform: scale(1.2);
