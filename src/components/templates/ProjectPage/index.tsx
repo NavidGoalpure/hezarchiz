@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Default from "../../default"
-import Post from "../../Post/index.tsx"
+import Post from "../../Post"
 import SEO from "../../seo"
 import "./style.scss"
 import useSiteMetadata from "../../../utils/site-metadata"
@@ -16,7 +16,14 @@ interface Props {
   html: string
 }
 const BlogPost = props => {
-  const { title, description, keywords, domain, html } = props.pageContext
+  const {
+    title,
+    description,
+    keywords,
+    domain,
+    html,
+    imgFluid,
+  } = props.pageContext
   const { path } = props
   const { siteUrl } = useSiteMetadata()
 
@@ -24,33 +31,33 @@ const BlogPost = props => {
     <section className="page-container">
       <SEO title={title} description={description} keywords={keywords} />
       <Default></Default>
-      <div>
-        <Post
-          title={title}
-          url={`${siteUrl}${path}`}
-          identifier={`${siteUrl}${path}`}
-        >
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-            className="project-content"
-          />
-        </Post>
-      </div>
+
+      <Post
+        title={title}
+        url={`${siteUrl}${path}`}
+        identifier={`${siteUrl}${path}`}
+        imageFluid={imgFluid}
+      >
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+          className="project-content"
+        />
+      </Post>
     </section>
   )
 }
 
 export default BlogPost
 
-export const query = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        description
-        keywords
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query BlogPostBySlug($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       html
+//       frontmatter {
+//         title
+//         description
+//         keywords
+//       }
+//     }
+//   }
+// `

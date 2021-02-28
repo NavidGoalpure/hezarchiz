@@ -18,10 +18,8 @@
       z-index: 3;
       width: 200px;
       transition: 0.6s ease-in-out;
-
       height: 140px;
-
-      top: 15%;
+      top: 30%;
       right: -15%;
       box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
       border-radius: 12px;
@@ -117,6 +115,7 @@
     }
     .bottom {
       height: 50%;
+      min-height: 15rem;
       padding: 1rem;
       color: white;
       border-radius: 0 0 12px 12px;
@@ -125,6 +124,12 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      @media screen and (max-width: 1920px) {
+        min-height: 12rem;
+      }
+      @media screen and (max-width: 1920px) {
+        min-height: 10rem;
+      }
       h4 {
         font-family: "EB Garamond", serif;
         font-size: 14px;
@@ -134,14 +139,18 @@
         color: #383838;
       }
       p {
-        font-size: 18px;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
         padding: 0 0.3rem;
-        line-height: 1.7rem;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3; /* number of lines to show */
         -webkit-box-orient: vertical;
+        @media screen and (max-width: 1920px) {
+          font-size: 1.2rem;
+          line-height: 1.9rem;
+        }
         @media screen and (max-width: 1440px) {
           font-size: 16px;
           line-height: 1.5rem;

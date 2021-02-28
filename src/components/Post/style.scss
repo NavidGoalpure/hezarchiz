@@ -2,17 +2,36 @@
   color: var(--dark-text);
   position: absolute;
   z-index: 3;
-  bottom: -110px;
+  // bottom: -11rem;
+  background-color: white;
   padding: 1rem;
   line-height: 190%;
 }
-.post-content {
+.post-page-content {
   position: relative;
   padding: 4rem 1rem 0 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 100vh;
+  width: fit-content;
   overflow: auto;
   padding-bottom: 2rem;
+}
+.post-content {
+  padding: 0 1rem 2rem;
+  margin-bottom: 1rem;
+  font-size: 3.3rem;
+  line-height: 90%;
+  img {
+    width: 80%;
+    margin: 2rem auto;
+    display: block;
+  }
+}
+.site-image {
+  width: 50%;
+  margin: 3rem auto;
+  @media screen and (max-width: 425px) {
+    width: 90%;
+  }
 }

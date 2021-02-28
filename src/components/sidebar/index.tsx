@@ -130,7 +130,7 @@ const SideBar = () => {
         <li className="social-items">
           <a
             href={telegram}
-            className="social-links glass-reflex green-glass"
+            className="social-links glass-reflex "
             target="_blank"
             rel="noopener noreferrer"
           >

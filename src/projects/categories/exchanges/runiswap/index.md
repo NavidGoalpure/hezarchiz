@@ -8,4 +8,16 @@ keywords: exchanges
 blog: true
 ---
 
-Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
+رونی ‌سواپ (Runiswap) یک پوسته فارسی برای صرافی معروف «یونی‌سواپ» است که امکان استفاده کاربران فارسی زبان، از پروتوکل «یونی‌ سواپ» را فراهم نموده است.
+![تصویری از صرافی فارسی رونی سواپ](https://i.ibb.co/fGtt011/runiswap.png)
+این امکان با ترجمه پوسته انگلیسی «یونی ‌سواپ» که به صورت اپن سورس منتشر شده، ایجاد شده است و خروجی نهایی «رونی سواپ» هم به صورت اپن سورس و از [آدرس گیتهاب](https://github.com/NavidGoalpure/persian-uniswap-interface) این پروژه در دسترس عموم قرار گرفته است.
+رونی سواپ (Runiswap) مخفف کلمات «Rtl-Uniswap» یا -یونی سواپِ راست به چپ- می باشد که این نامگذاری به خاطر رسم الخط زبان فارسی است که از راست به چپ نوشته می‌شود.
+
+برای آشنایی بیشتر با صرافی «یونی سواپ» و امکانات فوق العاده آن می‌توانید از لینک های زیر استفاده کنید:
+
+[ یونی سواپ چیست؟ آموزش کامل کار با محبوب ترین صرافی غیرمتمرکز!](https://mihanblockchain.com/complete-guide-to-use-uniswap/)
+
+[آموزش کار با صرافی یونی سواپ- آپارات](https://www.aparat.com/v/4PqQ7/
+%D8%A2%D9%85%D9%88%D8%B2%D8%B4*%DA%A9%D8%A7%D8%B1*%D8%A8%D8%A7*%D8%B5%D8%B1%D8%A7%D9%81%DB%8C*%DB%8C%D9%88%D9%86%DB%8C\_%D8%B3%D9%88%D8%A2%D9%BE)
+
+[آموزش کار با صرافی یونی سواپ- یوتیوب](https://www.youtube.com/watch?v=Vj8Ii2ESeNk)
