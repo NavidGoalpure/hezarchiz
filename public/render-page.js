@@ -138,6 +138,24 @@ var plugins = [{
     "pageTransitionDelay": 0
   }
 }, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "name": "gatsby-starter-default",
+    "short_name": "starter",
+    "start_url": "/",
+    "background_color": "#663399",
+    "theme_color": "#663399",
+    "display": "minimal-ui",
+    "icon": "src/images/favicon.png",
+    "legacy": true,
+    "theme_color_in_head": true,
+    "cache_busting_mode": "query",
+    "crossOrigin": "anonymous",
+    "include_favicon": true,
+    "cacheDigest": "b67140917904a976f5f5b04cec3e423d"
+  }
+}, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-offline/gatsby-ssr */ "./node_modules/gatsby-plugin-offline/gatsby-ssr.js"),
   options: {
     "plugins": []

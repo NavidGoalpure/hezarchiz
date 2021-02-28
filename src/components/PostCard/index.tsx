@@ -35,7 +35,7 @@ const PostCard: React.FC<Props> = ({
           </div>
         </div>
         <div className="top">
-          <div className="img-box">
+          <div className="img-box green-glass">
             <Img fluid={imageFluid} imgStyle={{ transition: "all 0.7s" }} />
           </div>
         </div>

@@ -3,13 +3,12 @@
   width: 33%;
   min-width: 18rem;
   .container {
-    height: auto;
+    height: 30rem;
     margin: 1.5rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-
     position: relative;
     transition: 0.6s ease-in-out;
 
@@ -20,7 +19,7 @@
       transition: 0.6s ease-in-out;
       height: 140px;
       top: 30%;
-      right: -15%;
+      right: -10%;
       box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
       border-radius: 12px;
       display: flex;
@@ -124,11 +123,9 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+
       @media screen and (max-width: 1920px) {
-        min-height: 12rem;
-      }
-      @media screen and (max-width: 1920px) {
-        min-height: 10rem;
+        min-height: 14rem;
       }
       h4 {
         font-family: "EB Garamond", serif;
@@ -139,8 +136,8 @@
         color: #383838;
       }
       p {
-        font-size: 1.5rem;
-        line-height: 2.6rem;
+        font-size: 1.3rem;
+        line-height: 2.2rem;
         padding: 0 0.3rem;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -180,21 +177,23 @@
       }
       .button {
         outline: none;
-        height: 2.2rem;
+        height: 2.7rem;
         border-radius: 11px;
         color: white;
+        font-size: 100%;
         font-weight: bold;
         border: 1px solid rgba(255, 255, 255, 0.4);
         -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         transition: 0.5s;
         overflow: hidden;
-        font-size: 14px;
+
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0 1rem;
         position: relative;
+        margin-bottom: 1rem;
       }
       .button:hover {
         text-decoration: none;
@@ -204,8 +203,7 @@
       .button::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
+        left: 26px;
         width: 50px;
         height: 100%;
         background: rgba(255, 255, 255, 0.5);

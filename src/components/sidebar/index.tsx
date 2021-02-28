@@ -8,6 +8,7 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
+import LogoIcon from "../LogoIcon"
 
 const SideBar = () => {
   const { site } = useStaticQuery(
@@ -35,9 +36,9 @@ const SideBar = () => {
 
   return (
     <aside className="sidebar">
-      <div className="sidebar-logo glass-reflex">
+      <div className="sidebar-logo">
         <Link to="/" className="logo ">
-          {site.siteMetadata.title}
+          <LogoIcon width="200" height="150" />
         </Link>
       </div>
 
