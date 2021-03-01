@@ -43,7 +43,7 @@ const SideBar = () => {
           <p
             style={{
               margin: "0",
-              fontSize: "140%",
+              fontSize: "130%",
               fontWeight: "bold",
               textAlign: "center",
               marginTop: "-2rem",

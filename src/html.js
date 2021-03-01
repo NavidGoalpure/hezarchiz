@@ -16,6 +16,7 @@ export default function HTML(props) {
           rel="stylesheet"
           type="text/css"
         />
+
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

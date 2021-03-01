@@ -18,7 +18,7 @@
 }
 
 .sidebar-menu .menu-links {
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   display: block;
   text-decoration: none;
   padding: 1rem 0;
@@ -39,11 +39,16 @@
 .sidebar-logo {
   width: fit-content;
   margin: 0 auto;
+  width: 50%;
 }
 .sidebar-logo .logo {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  height: 100%;
+  svg {
+    width: 100%;
+  }
 }
 
 .sidebar-social {
