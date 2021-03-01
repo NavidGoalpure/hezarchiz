@@ -19,19 +19,25 @@ const PostCard: React.FC<Props> = ({
   imageFluid,
   logoFluid,
 }) => {
+  function getdomainTitle(domain: string): string {
+    return domain
+      .replace("https://wwww.", "")
+      .replace("https://", "")
+      .replace("http://wwww.", "")
+      .replace("http://", "")
+  }
   return (
     <div className="h-card">
       <div className="container">
         <div className="out-div dark-glass">
           <div className="profile">
             <div className="img-box">
-              {/* <img src="projects/categories/learning/bitcoind/logo.png" /> */}
               <Img fluid={logoFluid} />
             </div>
             <div className="details">
               <h2>{title}</h2>
             </div>
-            <h3>{domain}</h3>
+            <h3>{getdomainTitle(domain)}</h3>
           </div>
         </div>
         <div className="top">

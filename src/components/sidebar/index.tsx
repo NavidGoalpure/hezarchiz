@@ -37,8 +37,20 @@ const SideBar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
+        {/* <Link to="/" className="logo "> */}
         <Link to="/" className="logo ">
           <LogoIcon width="200" height="150" />
+          <p
+            style={{
+              margin: "0",
+              fontSize: "140%",
+              fontWeight: "bold",
+              textAlign: "center",
+              marginTop: "-2rem",
+            }}
+          >
+            نسخه آزمایشی
+          </p>
         </Link>
       </div>
 

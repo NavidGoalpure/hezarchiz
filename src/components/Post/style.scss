@@ -35,3 +35,13 @@
     width: 90%;
   }
 }
+#post-page-refrence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+  a {
+    margin: 0 0.5rem;
+  }
+}

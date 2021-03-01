@@ -109,7 +109,7 @@ exports.createPages = ({ graphql, actions }) => {
           title: page.node.frontmatter.title,
           description: page.node.frontmatter.description,
           keywords: page.node.frontmatter.keywords,
-          domain: page.node.frontmatter.title,
+          domain: page.node.frontmatter.domain,
           imgFluid: page.node.frontmatter.img.children[0].fluid,
           html: page.node.html,
         },

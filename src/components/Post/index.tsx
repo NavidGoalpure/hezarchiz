@@ -4,19 +4,21 @@ import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import Img from "gatsby-image"
 import "./style.scss"
 
-const Post = ({ title, children, identifier, url, imageFluid }) => {
+const Post = ({ title, children, identifier, url, imageFluid, domain }) => {
   let disqusConfig = {
     url: url,
     identifier: identifier,
     title: title,
   }
-
+  console.log("navid domain=", domain)
   return (
     <main className="post-page-content ">
       <article className="post-page-article green-glass">
         <div className="wrap-content">
           <header className="page-header">
-            <h1 className="page-title"> {title} </h1>
+            <a target="_blank" className="page-title" href={domain}>
+              {title}
+            </a>
           </header>
           <Img
             fluid={imageFluid}
@@ -24,6 +26,13 @@ const Post = ({ title, children, identifier, url, imageFluid }) => {
             className="site-image"
           />
           <div className="post-content">{children}</div>
+          <div id="post-page-refrence">
+            <p>{`برای بازدید از پروژه`}</p>
+            <a target="_blank" href={domain}>
+              {title}
+            </a>
+            <p>{`روی نام آن کلیک کنید.`}</p>
+          </div>
         </div>
         <div id="discus-alert">
           سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد که

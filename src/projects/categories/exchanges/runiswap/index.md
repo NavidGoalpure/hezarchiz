@@ -1,6 +1,6 @@
 ---
 title: "رونی سواپ"
-domain: "hezarchiz.com"
+domain: "https://runiswap.com"
 img: "cover.jpg"
 logo: "logo.png"
 description: "یک صرافی غیرمتمرکز برای مبادله توکن های اتریوم"

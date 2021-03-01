@@ -37,6 +37,7 @@ const BlogPost = props => {
         url={`${siteUrl}${path}`}
         identifier={`${siteUrl}${path}`}
         imageFluid={imgFluid}
+        domain={domain}
       >
         <div
           dangerouslySetInnerHTML={{ __html: html }}

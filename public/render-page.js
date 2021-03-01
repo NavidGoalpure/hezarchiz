@@ -142,7 +142,7 @@ var plugins = [{
   options: {
     "plugins": [],
     "name": "gatsby-starter-default",
-    "short_name": "starter",
+    "short_name": "hezarchiz",
     "start_url": "/",
     "background_color": "#663399",
     "theme_color": "#663399",
