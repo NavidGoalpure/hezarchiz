@@ -40,17 +40,7 @@ const SideBar = () => {
         {/* <Link to="/" className="logo "> */}
         <Link to="/" className="logo ">
           <LogoIcon width="200" height="150" />
-          <p
-            style={{
-              margin: "0",
-              fontSize: "130%",
-              fontWeight: "bold",
-              textAlign: "center",
-              marginTop: "-2rem",
-            }}
-          >
-            نسخه آزمایشی
-          </p>
+          <p id="sidebar-logo-text">نسخه آزمایشی</p>
         </Link>
       </div>
 

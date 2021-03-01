@@ -50,7 +50,13 @@
     width: 100%;
   }
 }
-
+#sidebar-logo-text {
+  margin: 0;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -2rem;
+}
 .sidebar-social {
   text-align: center;
   position: relative;
@@ -100,7 +106,12 @@
     width: 26%;
     padding-top: 5rem;
   }
-
+  .sidebar-logo {
+    width: 40%;
+  }
+  #sidebar-logo-text {
+    font-size: 100%;
+  }
   .sidebar-social {
     font-size: 90%;
   }
@@ -122,6 +133,10 @@
   .sidebar {
     padding-top: 3rem;
   }
+  #sidebar-logo-text {
+    font-size: 90%;
+    margin-top: -3rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -129,6 +144,10 @@
     width: 100%;
     text-align: center;
     padding: 0.75rem 0;
+  }
+  #sidebar-logo-text {
+    font-size: 150%;
+    margin-top: -2rem;
   }
   .sidebar-social {
     width: fit-content;
@@ -150,5 +169,18 @@
 @media screen and (max-width: 425px) {
   .sidebar {
     background-color: black;
+  }
+  .sidebar-logo {
+    width: 20%;
+  }
+  #sidebar-logo-text {
+    font-size: 80%;
+    margin-top: -3.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  #sidebar-logo-text {
+    font-size: 70%;
+    margin-top: -4rem;
   }
 }
