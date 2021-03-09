@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PostCard from "./PostCard"
 
@@ -65,10 +65,19 @@ const BlogList: React.FC<Props> = props => {
   const { allMarkdownRemark } = data
   // const { siteUrl } = useSiteMetadata()
 
+  const elementRef = useRef()
+  useEffect(() => {
+    const xScrollPosition = sessionStorage.getItem("listPageScroll") || 0
+    if (typeof elementRef !== undefined && window.innerWidth > 800)
+      elementRef.current.scrollTop = xScrollPosition
+
+    return sessionStorage.removeItem("listPageScroll")
+  }, [elementRef])
+
   return (
     <>
       <main role="main" style={{ width: "100%" }}>
-        <div className="content">
+        <div className="content" ref={elementRef}>
           {allMarkdownRemark.edges.map(({ node }) => {
             if (
               props.includePhrase === "all" ||
@@ -76,12 +85,14 @@ const BlogList: React.FC<Props> = props => {
             )
               return (
                 <PostCard
+                  key={node?.frontmatter?.domain}
                   slug={node.fields.slug}
                   title={node.frontmatter.title}
                   description={node.frontmatter.description}
                   domain={node?.frontmatter?.domain || ""}
                   imageFluid={node?.frontmatter?.img?.children[0].fluid}
                   logoFluid={node?.frontmatter?.logo?.children[0].fluid}
+                  refCurrent={elementRef.current}
                 />
               )
           })}

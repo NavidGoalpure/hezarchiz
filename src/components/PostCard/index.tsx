@@ -10,6 +10,7 @@ interface Props {
   domain: string
   imageFluid: FluidObject[]
   logoFluid: FluidObject[]
+  refCurrent: any
 }
 const PostCard: React.FC<Props> = ({
   slug,
@@ -18,6 +19,7 @@ const PostCard: React.FC<Props> = ({
   domain,
   imageFluid,
   logoFluid,
+  refCurrent,
 }) => {
   function getdomainTitle(domain: string): string {
     return domain
@@ -47,7 +49,13 @@ const PostCard: React.FC<Props> = ({
         </div>
         <div className="bottom green-glass">
           <p>{description}</p>
-          <Link to={slug} className="button">
+          <Link
+            to={slug}
+            className="button"
+            onClick={() => {
+              sessionStorage.setItem("listPageScroll", refCurrent.scrollTop)
+            }}
+          >
             مشاهده بیشتر
           </Link>
         </div>

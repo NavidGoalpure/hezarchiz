@@ -12,7 +12,7 @@ const Post = ({ title, children, identifier, url, imageFluid, domain }) => {
   }
   console.log("navid domain=", domain)
   return (
-    <main className="post-page-content ">
+    <main className="post-page-content">
       <article className="post-page-article green-glass">
         <div className="wrap-content">
           <header className="page-header">

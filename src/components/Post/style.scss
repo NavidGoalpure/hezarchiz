@@ -16,6 +16,9 @@
   width: fit-content;
   overflow: auto;
   padding-bottom: 2rem;
+  @media screen and (max-width: 800px) {
+    overflow: unset;
+  }
 }
 .post-content {
   padding: 0 1rem 2rem;
