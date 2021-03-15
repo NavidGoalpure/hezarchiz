@@ -5,7 +5,7 @@ domainName: "carchainnet.ir"
 img: "cover.jpg"
 logo: "logo.png"
 description: " سامانه خدمات حمل‌ونقل مبتنی بر تکنولوژی بلاک‌چین"
-keywords: service,blockchain
+keywords: services,blockchain
 blog: true
 confirm: false
 ---

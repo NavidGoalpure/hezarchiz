@@ -24,6 +24,7 @@ const BlogList: React.FC<Props> = props => {
                 title
                 description
                 domain
+                domainName
                 keywords
                 img {
                   children {
@@ -90,6 +91,7 @@ const BlogList: React.FC<Props> = props => {
                   title={node.frontmatter.title}
                   description={node.frontmatter.description}
                   domain={node?.frontmatter?.domain || ""}
+                  domainName={node?.frontmatter?.domainName || ""}
                   imageFluid={node?.frontmatter?.img?.children[0].fluid}
                   logoFluid={node?.frontmatter?.logo?.children[0].fluid}
                   refCurrent={elementRef.current}

@@ -1,7 +1,7 @@
 ---
 title: "دوره بلاکچین جادی"
 domain: "https://bit.ly/37WCzRX"
-domainName: "https://bit.ly/37WCzRX"
+domainName: "Jadi's youtube"
 img: "cover.jpg"
 logo: "logo.png"
 description: "دوره آموزش ویدیویی بلاکچین در پلتفرم یوتیوب توسط «جادی»"

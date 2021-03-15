@@ -5,7 +5,7 @@ domainName: "lendup.ir"
 img: "cover.jpg"
 logo: "logo.png"
 description: "خرید اقساطی کالا با وثیقه رمزارز"
-keywords: service,payment
+keywords: services,payment
 blog: true
 confirm: false
 ---

@@ -8,6 +8,7 @@ interface Props {
   title: string
   description: string
   domain: string
+  domainName: string
   imageFluid: FluidObject[]
   logoFluid: FluidObject[]
   refCurrent: any
@@ -17,17 +18,11 @@ const PostCard: React.FC<Props> = ({
   title,
   description,
   domain,
+  domainName,
   imageFluid,
   logoFluid,
   refCurrent,
 }) => {
-  function getdomainTitle(domain: string): string {
-    return domain
-      .replace("https://wwww.", "")
-      .replace("https://", "")
-      .replace("http://wwww.", "")
-      .replace("http://", "")
-  }
   return (
     <div className="h-card">
       <div className="container">
@@ -39,7 +34,7 @@ const PostCard: React.FC<Props> = ({
             <div className="details">
               <h2>{title}</h2>
             </div>
-            <h3>{getdomainTitle(domain)}</h3>
+            <h3>{domainName}</h3>
           </div>
         </div>
         <div className="top">

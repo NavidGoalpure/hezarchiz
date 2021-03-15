@@ -1,7 +1,7 @@
 ---
 title: "بیتکوین‌دی"
 domain: "bitcoind.me"
-domainName: "bitseen.me"
+domainName: "bitcoind.me"
 img: "cover.jpg"
 logo: "logo.png"
 description: "سایتی برای به اشتراک گذاری محتواهای آموزشی مربوط به بیتکوین در قالب فایل های pdf"

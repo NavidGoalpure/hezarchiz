@@ -1,11 +1,11 @@
 ---
 title: "جیب"
-domain: "https://jeeb.io/"
+domain: "https://jeeb.io"
 domainName: "jeeb.io"
 img: "cover.jpg"
 logo: "logo.png"
 description: "درگاه پرداخت ارزهای دیجیتال"
-keywords: service,payment
+keywords: services,payment
 blog: true
 confirm: false
 ---

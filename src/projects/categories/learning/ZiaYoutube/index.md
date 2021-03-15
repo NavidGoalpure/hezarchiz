@@ -1,7 +1,7 @@
 ---
 title: "کانال یوتیوب ضیا صدر"
 domain: "youtube.com/c/ZiyaSadr"
-domainName: "youtube.com/c/ZiyaSadr"
+domainName: "Zia's youtube"
 img: "cover.jpg"
 logo: "logo.png"
 description: "آموزش نرم‌افزارهای بیتکوینی، امنیت کیف‌پول‌ها، حریم خصوصی و..."
