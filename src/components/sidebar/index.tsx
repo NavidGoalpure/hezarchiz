@@ -67,8 +67,8 @@ const SideBar = () => {
           </Link>
         </li>
         <li className="menu-items">
-          <Link to="/tools" className="menu-links" activeClassName="active">
-            ابزار
+          <Link to="/services" className="menu-links" activeClassName="active">
+            خدمات
           </Link>
         </li>
       </menu>
@@ -94,8 +94,12 @@ const SideBar = () => {
         <Link to="/news" className="mob-menu-items" activeClassName="active">
           <button className="navbtn">خبری</button>
         </Link>
-        <Link to="/tools" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">ابزار</button>
+        <Link
+          to="/services"
+          className="mob-menu-items"
+          activeClassName="active"
+        >
+          <button className="navbtn">خدمات</button>
         </Link>
       </div>
 

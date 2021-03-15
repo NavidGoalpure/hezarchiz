@@ -5,8 +5,9 @@ domainName: "irexlist.com"
 img: "cover.jpg"
 logo: "logo.png"
 description: "ارائه دهنده نرخ خرید و فروش کریپتو کارنسی در صرافی های ایرانی"
-keywords: tools,exchange, aggregator
+keywords: service,exchange, aggregator
 blog: true
+confirm: false
 ---
 
-آیرکس لیست ارائه دهنده نرخ خرید و فروش کریپتو کارنسی در صرافی های ایرانی
+آیرکس لیست ارائه دهنده نرخ خرید و فروش کریپتو کارنسی در صرافی های متفاوت ایرانی است.
