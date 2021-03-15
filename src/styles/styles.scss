@@ -24,6 +24,9 @@ body {
   overflow: auto;
   background: url("../images/background3.jpg");
   background-size: cover;
+  @media screen and (max-width: 800px) {
+    background: #3f9d8d;
+  }
   @media screen and (max-width: 480px) {
     padding: 0.8em;
   }
@@ -748,6 +751,8 @@ img {
   font-size: 26px;
   font-weight: 500;
   position: relative;
+  width: 100%;
+
   @media (max-width: 1440px) {
     font-size: 1rem;
   }

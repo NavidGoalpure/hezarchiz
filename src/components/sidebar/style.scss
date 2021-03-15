@@ -144,6 +144,8 @@
     width: 100%;
     text-align: center;
     padding: 0.75rem 0;
+
+    background-color: black;
   }
   #sidebar-logo-text {
     font-size: 150%;
@@ -167,9 +169,6 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .sidebar {
-    background-color: black;
-  }
   .sidebar-logo {
     width: 20%;
   }
