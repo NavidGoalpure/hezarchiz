@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___title], order: DESC }) {
+      allMarkdownRemark(sort: { fields: [frontmatter___title], order: ASC }) {
         edges {
           node {
             fields {
@@ -80,7 +80,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     // 2.2 listing pages are here
     const markdownPages = result.data.allMarkdownRemark.edges
-
+    console.log("navid markdownPages=", markdownPages)
     const allOfPages = result.data.allDirectory.edges
     const categoriesPage = []
     Object.entries(allOfPages).map(page => {

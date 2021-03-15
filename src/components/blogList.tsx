@@ -10,7 +10,7 @@ const BlogList: React.FC<Props> = props => {
     graphql`
       query BlogList {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___title], order: DESC }
+          sort: { fields: [frontmatter___title], order: ASC }
           filter: {
             frontmatter: { blog: { eq: true }, keywords: { regex: "//" } }
           }
