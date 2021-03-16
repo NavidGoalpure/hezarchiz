@@ -1,10 +1,10 @@
 ---
 title: "لنداپ"
 domain: "https://lendup.ir"
-domainName: "lendup.ir"
+domainName: "Lendup.ir"
 img: "cover.jpg"
 logo: "logo.png"
-description: "خرید اقساطی کالا با وثیقه رمزارز"
+description: "پلتفرم وام با وثیقه رمزارز"
 keywords: services,payment
 blog: true
 confirm: false

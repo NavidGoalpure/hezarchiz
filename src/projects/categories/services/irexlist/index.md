@@ -1,6 +1,6 @@
 ---
 title: "آیرکس لیست"
-domain: "irexlist.com"
+domain: "https://irexlist.com/"
 domainName: "irexlist.com"
 img: "cover.jpg"
 logo: "logo.png"

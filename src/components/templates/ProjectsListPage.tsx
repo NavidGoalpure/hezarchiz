@@ -9,7 +9,7 @@ interface Props {
 // const IndexPage: React.FC<Props> = ({ pageContext: { slug } }) => {
 const IndexPage: React.FC<Props> = ({ pageContext }) => {
   const smartSlug = pageContext.slug?.replace("/", "") || "all"
-  console.log("navid smartSlug= ", smartSlug)
+
   return (
     <section className="page-container">
       <SEO title="هزارچیز" />

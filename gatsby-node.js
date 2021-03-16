@@ -80,7 +80,6 @@ exports.createPages = ({ graphql, actions }) => {
 
     // 2.2 listing pages are here
     const markdownPages = result.data.allMarkdownRemark.edges
-    console.log("navid markdownPages=", markdownPages)
     const allOfPages = result.data.allDirectory.edges
     const categoriesPage = []
     Object.entries(allOfPages).map(page => {

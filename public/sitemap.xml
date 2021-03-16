@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://hezarchiz.com/exchanges</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/learning</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hezarchiz.com/news</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/tools</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/learning/ZiaYoutube</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/exchanges/runiswap</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/learning/jadiYoutube</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/learning</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/services</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/services/irexlist</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hezarchiz.com/learning/bitcoind</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/exchanges/bitseen</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hezarchiz.com/tools/irexlist</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/services/jeeb</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/learning/jadiYoutube</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/news/way2pay</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/exchanges/runiswap</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/learning/jan3podcast</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/learning/shiryakhat</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/services/lendap</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/news/mihanblockchain</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/services/carchain</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hezarchiz.com/learning/ZiaYoutube</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hezarchiz.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
