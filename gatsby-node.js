@@ -86,6 +86,7 @@ exports.createPages = ({ graphql, actions }) => {
       if (page[1].node.relativePath !== "")
         categoriesPage.push(`/${page[1].node.relativePath}`)
     })
+    // کتگوریزپیج، مربوط به پیج هایی میشه که حالت لیست دارند
     categoriesPage.forEach((listingPage, index) => {
       createPage({
         path: listingPage,
@@ -97,7 +98,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    // create project pages
+    // مربوط به پیج هایی که معرفی یک پروژه بخصوص هستند
     markdownPages.map(page => {
       createPage({
         path: page.node.fields.slug,
