@@ -6,6 +6,7 @@ import SEO from "../../seo"
 import "./style.scss"
 import useSiteMetadata from "../../../utils/site-metadata"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+
 deckDeckGoHighlightElement()
 
 interface Props {
@@ -13,6 +14,7 @@ interface Props {
   description: string
   keywords: string
   domain: string
+  socialNetworks: any
   html: string
 }
 const BlogPost = props => {
@@ -30,14 +32,14 @@ const BlogPost = props => {
   return (
     <section className="page-container">
       <SEO title={title} description={description} keywords={keywords} />
-      <Default></Default>
-
+      <Default />
       <Post
         title={title}
         url={`${siteUrl}${path}`}
         identifier={`${siteUrl}${path}`}
         imageFluid={imgFluid}
         domain={domain}
+        keywords={keywords}
       >
         <div
           dangerouslySetInnerHTML={{ __html: html }}

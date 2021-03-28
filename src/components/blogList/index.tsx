@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import PostCard from "./PostCard"
-
+import PostCard from "../PostCard"
+import { ListDeclimer } from "./ListDeclimer"
 interface Props {
   includePhrase: string
 }
@@ -79,6 +79,7 @@ const BlogList: React.FC<Props> = props => {
     <>
       <main role="main" style={{ width: "100%" }}>
         <div className="content" ref={elementRef}>
+          <ListDeclimer category={props.includePhrase} />
           {allMarkdownRemark.edges.map(({ node }) => {
             if (
               props.includePhrase === "all" ||

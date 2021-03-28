@@ -3,8 +3,17 @@ import PropTypes from "prop-types"
 import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import Img from "gatsby-image"
 import "./style.scss"
+import { Reference } from "./Rreference"
 
-const Post = ({ title, children, identifier, url, imageFluid, domain }) => {
+const Post = ({
+  title,
+  children,
+  identifier,
+  url,
+  imageFluid,
+  domain,
+  keywords,
+}) => {
   let disqusConfig = {
     url: url,
     identifier: identifier,
@@ -26,13 +35,7 @@ const Post = ({ title, children, identifier, url, imageFluid, domain }) => {
             className="site-image"
           />
           <div className="post-content">{children}</div>
-          <div id="post-page-refrence">
-            <p>{`برای بازدید از پروژه`}</p>
-            <a target="_blank" href={domain}>
-              {title}
-            </a>
-            <p>{`روی نام آن کلیک کنید.`}</p>
-          </div>
+          <Reference title={title} domain={domain} keywords={keywords} />
         </div>
         <div id="discus-alert">
           سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد که
