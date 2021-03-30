@@ -1,13 +1,13 @@
 import React from "react"
 import SEO from "../components/seo"
-import Default from "../components/default"
 import BlogList from "../components/blogList"
+import SideBar from "../components/sidebar"
 
 const IndexPage: React.FC = props => {
   return (
     <section className="page-container">
-      <SEO title="هزارچیز" />
-      <Default></Default>
+      <SEO />
+      <SideBar />
       <BlogList includePhrase="all"></BlogList>
     </section>
   )

@@ -10,7 +10,6 @@ module.exports = {
       linkedin: ``,
       formspree: "",
     },
-    image: "/src/images/logo.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,22 +53,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "G-FZMD9RC89X",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: false,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

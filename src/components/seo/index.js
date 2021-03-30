@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title, keywords, image }) {
     `
   )
 
-  const smartTitle = title || site.siteMetadata.description
+  const smartTitle = title || site.siteMetadata.title
   const smartDescription = description || site.siteMetadata.description
   const smartKeywords = keywords || site.siteMetadata.keywords
   const smartImage = image || Logo

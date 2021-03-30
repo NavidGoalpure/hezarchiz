@@ -1,11 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Default from "../../default"
 import Post from "../../Post"
 import SEO from "../../seo"
 import "./style.scss"
 import useSiteMetadata from "../../../utils/site-metadata"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+import SideBar from "../../sidebar"
 
 deckDeckGoHighlightElement()
 
@@ -37,7 +36,7 @@ const BlogPost = props => {
         keywords={keywords}
         image={imgFluid.src}
       />
-      <Default />
+      <SideBar />
       <Post
         title={title}
         url={`${siteUrl}${path}`}

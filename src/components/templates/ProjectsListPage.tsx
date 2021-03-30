@@ -1,8 +1,9 @@
 import React from "react"
 import SEO from "../seo"
-import Default from "../default"
+
 import BlogList from "../blogList"
 import { getMetaForListingPages } from "../seo/utils"
+import SideBar from "../sidebar"
 
 interface Props {
   pageContext: {
@@ -19,7 +20,7 @@ const IndexPage: React.FC<Props> = ({ pageContext }) => {
         description={getMetaForListingPages(smartSlug)?.desc}
         keywords={getMetaForListingPages(smartSlug)?.keywords}
       />
-      <Default></Default>
+      <SideBar />
       <BlogList includePhrase={smartSlug}></BlogList>
     </section>
   )
