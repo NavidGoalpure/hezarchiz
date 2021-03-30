@@ -4,7 +4,7 @@ interface metaProps {
   keywords: string[] | undefined
 }
 
-export function getSmartMeta(smartSlug: string): metaProps {
+export function getMetaForListingPages(smartSlug: string): metaProps {
   let res: metaProps = {
     title: undefined,
     desc: undefined,

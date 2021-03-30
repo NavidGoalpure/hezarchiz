@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../seo"
 import Default from "../default"
 import BlogList from "../blogList"
-import { getSmartMeta } from "../seo/utils"
+import { getMetaForListingPages } from "../seo/utils"
 
 interface Props {
   pageContext: {
@@ -16,9 +16,9 @@ const IndexPage: React.FC<Props> = ({ pageContext }) => {
     <section className="page-container">
       <SEO
         title="هزارچیز"
-        customTitle={getSmartMeta(smartSlug)?.title}
-        customDescription={getSmartMeta(smartSlug)?.desc}
-        customKeywords={getSmartMeta(smartSlug)?.keywords}
+        customTitle={getMetaForListingPages(smartSlug)?.title}
+        customDescription={getMetaForListingPages(smartSlug)?.desc}
+        customKeywords={getMetaForListingPages(smartSlug)?.keywords}
       />
       <Default></Default>
       <BlogList includePhrase={smartSlug}></BlogList>
