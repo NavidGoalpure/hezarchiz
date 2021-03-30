@@ -36,10 +36,9 @@ function SEO({
     `
   )
 
-  const smartTitle = customTitle || description || site.siteMetadata.description
-  const smartDescription =
-    customDescription || description || site.siteMetadata.description
-  const smartKeywords = customKeywords || keywords || site.siteMetadata.keywords
+  const smartTitle = title || site.siteMetadata.description
+  const smartDescription = description || site.siteMetadata.description
+  const smartKeywords = keywords || site.siteMetadata.keywords
   const image = site.siteMetadata.image
 
   return (

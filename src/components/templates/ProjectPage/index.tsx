@@ -28,7 +28,7 @@ const BlogPost = props => {
   } = props.pageContext
   const { path } = props
   const { siteUrl } = useSiteMetadata()
-
+  console.log("navid props=", props)
   return (
     <section className="page-container">
       <SEO title={title} description={description} keywords={keywords} />

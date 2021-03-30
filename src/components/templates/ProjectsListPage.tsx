@@ -15,10 +15,9 @@ const IndexPage: React.FC<Props> = ({ pageContext }) => {
   return (
     <section className="page-container">
       <SEO
-        title="هزارچیز"
-        customTitle={getMetaForListingPages(smartSlug)?.title}
-        customDescription={getMetaForListingPages(smartSlug)?.desc}
-        customKeywords={getMetaForListingPages(smartSlug)?.keywords}
+        title={getMetaForListingPages(smartSlug)?.title}
+        description={getMetaForListingPages(smartSlug)?.desc}
+        keywords={getMetaForListingPages(smartSlug)?.keywords}
       />
       <Default></Default>
       <BlogList includePhrase={smartSlug}></BlogList>
