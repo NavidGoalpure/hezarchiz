@@ -10,7 +10,17 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, keywords }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  keywords,
+  customTitle,
+  customDescription,
+
+  customKeywords,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,8 +36,10 @@ function SEO({ description, lang, meta, title, keywords }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaKeywords = keywords || site.siteMetadata.keywords
+  const smartTitle = customTitle || description || site.siteMetadata.description
+  const smartDescription =
+    customDescription || description || site.siteMetadata.description
+  const smartKeywords = customKeywords || keywords || site.siteMetadata.keywords
   const image = site.siteMetadata.image
 
   return (
@@ -35,11 +47,12 @@ function SEO({ description, lang, meta, title, keywords }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={smartTitle}
+      description={smartDescription}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: smartDescription,
         },
         {
           property: `og:title`,
@@ -51,11 +64,11 @@ function SEO({ description, lang, meta, title, keywords }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: smartDescription,
         },
         {
           property: `og:keywords`,
-          content: metaKeywords,
+          content: smartKeywords,
         },
         {
           property: `og:type`,
@@ -78,6 +91,9 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   keywords: PropTypes.arrayOf(PropTypes.string),
+  customTitle: PropTypes.string,
+  customDescription: PropTypes.string,
+  customKeywords: PropTypes.arrayOf(PropTypes.string),
 }
 
 export default SEO

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `هزارچیز`,
-    description: `یک سایت برای گردآوری پروژه های مربوط به بلاکچین در ایران`,
+    description: `گردآوردنده پروژه های بلاکچین ایران`,
     siteUrl: `https://hezarchiz.com`,
     keywords: ["هزارچیز", "لیست پروژه های بلاکچین", "بلاکچین"],
     social: {
