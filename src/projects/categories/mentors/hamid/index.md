@@ -7,7 +7,7 @@ logo: "logo.png"
 description: "مربی ویژه اتریوم و سولیدیتی"
 keywords: mentors, solidity, ethereum
 blog: true
-confirm: false
+confirm: true
 ---
 
 سلام، من حمید هستم!
