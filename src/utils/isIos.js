@@ -1,4 +1,5 @@
 export function isIos() {
+  if (typeof window === "undefined") return false
   return (
     [
       "iPad Simulator",
