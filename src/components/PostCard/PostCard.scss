@@ -84,7 +84,7 @@
           width: 100%;
           h2 {
             color: white;
-            font-size: 18px;
+            font-size: 14px;
             margin: 0;
             margin-bottom: 0.3rem;
             text-align: end;
@@ -180,8 +180,10 @@
         -webkit-line-clamp: 3; /* number of lines to show */
         -webkit-box-orient: vertical;
         @media screen and (max-width: 1920px) {
-          font-size: 1.2rem;
-          line-height: 1.9rem;
+          font-size: 0.8rem;
+          line-height: 1.6rem;
+          margin-top: auto;
+          margin-bottom: auto;
         }
         @media screen and (max-width: 1440px) {
           font-size: 16px;
@@ -218,7 +220,7 @@
         height: 2.7rem;
         border-radius: 11px;
         color: white;
-        font-size: 100%;
+        font-size: 70%;
         font-weight: bold;
         border: 1px solid rgba(255, 255, 255, 0.4);
         -webkit-backdrop-filter: blur(2px);
