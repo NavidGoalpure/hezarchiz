@@ -1,6 +1,6 @@
 ---
 title: "بهم بیت کوین یاد بده"
-domain: "https://bit.ly/3eKeFf5"
+domain: "http://alturl.com/83gqf"
 domainName: "learn me bitcoin"
 img: "cover.jpg"
 logo: "logo.png"

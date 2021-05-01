@@ -1,6 +1,6 @@
 ---
 title: "آموزش اپلیکیشن های دیفای"
-domain: "https://bit.ly/3u8ALyq"
+domain: "http://alturl.com/haai2"
 domainName: "learning defi apps"
 img: "cover.jpg"
 logo: "logo.png"

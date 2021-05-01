@@ -1,6 +1,6 @@
 ---
 title: "دوره بلاکچین جادی"
-domain: "https://bit.ly/37WCzRX"
+domain: "http://alturl.com/nf2bg"
 domainName: "Jadi's youtube"
 img: "cover.jpg"
 logo: "logo.png"
