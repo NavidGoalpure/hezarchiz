@@ -1,6 +1,6 @@
 ---
 title: "آموزش اپلیکیشن های دیفای"
-domain: "http://alturl.com/haai2"
+domain: "https://www.youtube.com/watch?v=hw2iier1eXc&list=PLidk9MRE4w3xfF2dFFzm84EzKI3bNmXAg"
 domainName: "learning defi apps"
 img: "cover.jpg"
 logo: "logo.png"
