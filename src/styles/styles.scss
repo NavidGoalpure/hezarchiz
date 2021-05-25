@@ -24,9 +24,11 @@ body {
   background-size: cover;
   @media screen and (max-width: 800px) {
     background: #3f9d8d;
+    height: auto;
   }
   @media screen and (max-width: 480px) {
     padding: 0.8em;
+    padding-top: 0;
   }
 }
 
@@ -763,6 +765,7 @@ img {
   @media (max-width: 800px) {
     flex-direction: column;
     position: relative;
+    height: auto;
   }
 }
 
