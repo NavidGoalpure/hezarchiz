@@ -37,7 +37,6 @@ const SideBar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        {/* <Link to="/" className="logo "> */}
         <Link to="/" className="logo ">
           <LogoIcon width="200" height="150" />
           <p id="sidebar-logo-text">نسخه آزمایشی</p>
