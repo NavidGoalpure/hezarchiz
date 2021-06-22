@@ -109,15 +109,16 @@ module.exports = {
         },
       },
     },
-    
+
     { resolve: `gatsby-plugin-sitemap` },
-    
-     {
-      resolve: 'gatsby-plugin-robots-txt',
+
+    {
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://hezarchiz.com',
-        sitemap: 'https://hezarchiz.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        host: "https://hezarchiz.com",
+        sitemap: "https://hezarchiz.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
   ],
 }
