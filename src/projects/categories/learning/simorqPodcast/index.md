@@ -1,7 +1,7 @@
 ---
 title: "پادکست سیمرغ بلاکچین"
 domain: "https://castbox.fm/channel/id4178092"
-domainName: "پادکست"
+domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
 description: "گپ و گفت فعالان کریپتوی ایران که ضبط شده و منتشر می‌شود"
