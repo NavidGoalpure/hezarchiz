@@ -38,8 +38,11 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.67rem;
 }
 
 /* Grouping content
@@ -784,11 +787,11 @@ template {
 }
 
 blockquote {
-  border-left: 5px solid #15f3a8;
-  padding-left: 1.1rem;
-  margin-left: 1.2rem;
-  font-style: italic;
   color: #ada8a8;
+  background-color: #343e3a;
+  padding: 0 1rem;
+  border-radius: 12px;
+  margin: 0;
 }
 
 .highlight {

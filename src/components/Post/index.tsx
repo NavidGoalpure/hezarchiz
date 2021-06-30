@@ -26,7 +26,7 @@ const Post = ({
         <div className="wrap-content">
           <header className="page-header">
             <a target="_blank" className="page-title" href={domain}>
-              {title}
+              <h1>{title}</h1>
             </a>
           </header>
           <Img

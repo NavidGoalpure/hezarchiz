@@ -76,6 +76,11 @@ const SideBar = () => {
             خدمات
           </Link>
         </li>
+        <li className="menu-items">
+          <Link to="/articles" className="menu-links" activeClassName="active">
+            مقالات
+          </Link>
+        </li>
       </menu>
 
       <div className="btn-group">
@@ -108,6 +113,13 @@ const SideBar = () => {
           activeClassName="active"
         >
           <button className="navbtn">خدمات</button>
+        </Link>
+        <Link
+          to="/articles"
+          className="mob-menu-items"
+          activeClassName="active"
+        >
+          <button className="navbtn">مقالات</button>
         </Link>
       </div>
 

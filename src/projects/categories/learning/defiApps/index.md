@@ -37,8 +37,8 @@ confirm: false
     <a target="_blank"  href="https://twitter.com/defimancer">
     <img loading="lazy" alt="twitter icon" width="32" height="32" class="project-socialnetwork-icon" src="https://cdn.exclaimer.com/Handbook%20Images/twitter-icon_32x32.png"/>
     </a>
-    <a target="_blank"  href="https://t.me/defi_farsi​">
-    <img loading="lazy" alt="telegram icon" width="32" height="32" class="project-socialnetwork-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/telegram-icon.png"/>
+     <a target="_blank"  href="https://www.youtube.com/watch?v=hw2iier1eXc&list=PLidk9MRE4w3xfF2dFFzm84EzKI3bNmXAg">
+    <img loading="lazy" alt="youtube icon" width="32" height="32" class="project-socialnetwork-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/youtube-icon.png"/>
     </a>
     <a target="_blank"  href="https://www.instagram.com/defi_farsi">
     <img loading="lazy" alt="instagram icon" width="32" height="32" class="project-socialnetwork-icon" src="https://icons.iconarchive.com/icons/uiconstock/socialmedia/32/Instagram-icon.png"/>
