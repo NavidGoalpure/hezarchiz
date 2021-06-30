@@ -68,6 +68,8 @@ const BlogList: React.FC<Props> = props => {
 
   const elementRef = useRef()
   useEffect(() => {
+    elementRef.current.focus()
+    //
     const xScrollPosition = sessionStorage.getItem("listPageScroll") || 0
     if (typeof elementRef !== undefined && window.innerWidth > 800)
       elementRef.current.scrollTop = xScrollPosition
@@ -78,7 +80,7 @@ const BlogList: React.FC<Props> = props => {
   return (
     <>
       <main role="main" style={{ width: "100%" }}>
-        <div className="content" ref={elementRef}>
+        <div className="content" ref={elementRef} tabIndex={1}>
           <ListDeclimer category={props.includePhrase} />
           {allMarkdownRemark.edges.map(({ node }) => {
             if (
