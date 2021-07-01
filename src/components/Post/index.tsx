@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import Img from "gatsby-image"
@@ -19,9 +19,14 @@ const Post = ({
     identifier: identifier,
     title: title,
   }
+  const elementRef = useRef()
 
+  useEffect(() => {
+    elementRef.current.focus()
+    return sessionStorage.removeItem("listPageScroll")
+  }, [elementRef])
   return (
-    <main className="post-page-content">
+    <main className="post-page-content" ref={elementRef} tabIndex={1}>
       <article className="post-page-article green-glass">
         <div className="wrap-content">
           <header className="page-header">
