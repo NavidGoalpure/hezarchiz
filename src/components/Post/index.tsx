@@ -22,7 +22,8 @@ const Post = ({
   const elementRef = useRef()
 
   useEffect(() => {
-    elementRef.current.focus()
+    //@ts-ignore
+    elementRef.current?.focus()
     return sessionStorage.removeItem("listPageScroll")
   }, [elementRef])
   return (
@@ -38,6 +39,7 @@ const Post = ({
             fluid={imageFluid}
             imgStyle={{ transition: "all 0.7s" }}
             className="site-image"
+            alt={`Cover for ${title}`}
           />
           <div className="post-content">{children}</div>
           <Reference title={title} domain={domain} keywords={keywords} />

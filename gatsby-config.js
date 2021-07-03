@@ -21,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -69,6 +70,14 @@ module.exports = {
         path: `${__dirname}/src/projects/categories`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/components/GetPerCategorySections/LearningSpecificSection`,
+      },
+    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {

@@ -29,7 +29,7 @@ const PostCard: React.FC<Props> = ({
         <div className="out-div dark-glass">
           <div className="profile">
             <div className="img-box">
-              <Img fluid={logoFluid} />
+              <Img fluid={logoFluid} alt={`Icon for ${title}`} />
             </div>
             <div className="details">
               <h2>{title}</h2>
@@ -39,7 +39,11 @@ const PostCard: React.FC<Props> = ({
         </div>
         <div className="top">
           <div className="img-box green-glass">
-            <Img fluid={imageFluid} imgStyle={{ transition: "all 0.7s" }} />
+            <Img
+              fluid={imageFluid}
+              imgStyle={{ transition: "all 0.7s" }}
+              alt={`Cover for ${title}`}
+            />
           </div>
         </div>
         <div className="bottom green-glass">

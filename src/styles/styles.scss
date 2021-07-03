@@ -759,6 +759,9 @@ code {
   @media (max-width: 1440px) {
     font-size: 1rem;
   }
+  @media (max-width: 425px) {
+    border-radius: 0;
+  }
 }
 .page-container {
   width: 100vw;
