@@ -74,7 +74,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/components/GetPerCategorySections/LearningSpecificSection`,
+        path: `${__dirname}/src/components/TwoSectionPage/LearningSpecificSection`,
       },
     },
 

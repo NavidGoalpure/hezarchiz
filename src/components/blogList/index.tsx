@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PostCard from "../PostCard"
 import { ListDeclimer } from "./ListDeclimer"
-import GetPerCategorySections from "../GetPerCategorySections"
+import TwoSectionPage from "../TwoSectionPage"
 import CardsContainer from "../CardsContainer"
 
 interface Props {
@@ -71,6 +71,7 @@ const BlogList: React.FC<Props> = props => {
   const elementRef = useRef()
   useEffect(() => {
     if (elementRef && elementRef.current) {
+      //@ts-ignore
       elementRef.current.focus()
       //
       const xScrollPosition = sessionStorage.getItem("listPageScroll") || 0
@@ -81,28 +82,32 @@ const BlogList: React.FC<Props> = props => {
 
     return sessionStorage.removeItem("listPageScroll")
   }, [elementRef])
-  if (props.includePhrase == "learning")
-    return (
-      <GetPerCategorySections
-        includePhrase="learning"
-        projects={allMarkdownRemark.edges}
-        ref={elementRef}
-      />
-    )
-  return (
-    <>
-      <main role="main" style={{ width: "100%" }}>
-        <div className="content" ref={elementRef} tabIndex={1}>
-          <ListDeclimer category={props.includePhrase} />
-          <CardsContainer
-            includePhrase={props.includePhrase}
-            projects={allMarkdownRemark.edges}
-            ref={elementRef}
-          />
-        </div>
-      </main>
-    </>
-  )
+  switch (props.includePhrase) {
+    case "learning":
+      return (
+        <TwoSectionPage
+          includePhrase="learning"
+          projects={allMarkdownRemark.edges}
+          ref={elementRef}
+          pageTitile="آموزش بلاکچین"
+          title2="پروژه های آموزشی"
+        />
+      )
+
+    default:
+      return (
+        <main role="main" style={{ width: "100%" }}>
+          <div className="content" ref={elementRef} tabIndex={1}>
+            <ListDeclimer category={props.includePhrase} />
+            <CardsContainer
+              includePhrase={props.includePhrase}
+              projects={allMarkdownRemark.edges}
+              ref={elementRef}
+            />
+          </div>
+        </main>
+      )
+  }
 }
 
 export default BlogList

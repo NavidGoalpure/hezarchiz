@@ -6,19 +6,24 @@ interface Props {
   includePhrase: string
   projects: Record<any, any>[]
   ref: any
+  title2: string
+  pageTitile: string
 }
-const GetPerCategorySections: React.FC<Props> = ({
+const TwoSectionPage: React.FC<Props> = ({
   includePhrase,
   projects,
   ref,
+  title2,
+  pageTitile,
 }) => {
   return (
     <main role="main" style={{ width: "100%" }} id="main">
       <div className="content" ref={ref} tabIndex={1}>
-        <ListDeclimer category={includePhrase} />
-        <div style={{ width: "100%", position: "absolute", top: "8rem" }}>
-          <details className="dark-glass">
-            <summary style={{ fontSize: "170%" }}>پروژه های آموزشی</summary>
+        <ListDeclimer category="learning" title={pageTitile} titleTag="H1" />
+        <div style={{ position: "absolute", top: "8rem", width: "100%" }}>
+          <LearningSpecificSection />
+          <details className="dark-glass" open>
+            <summary style={{ fontSize: "170%" }}>{title2}</summary>
             <div
               style={{
                 width: "100%",
@@ -26,6 +31,7 @@ const GetPerCategorySections: React.FC<Props> = ({
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
+                marginTop: "2rem",
               }}
             >
               <CardsContainer
@@ -35,10 +41,9 @@ const GetPerCategorySections: React.FC<Props> = ({
               />
             </div>
           </details>
-          <LearningSpecificSection />
         </div>
       </div>
     </main>
   )
 }
-export default GetPerCategorySections
+export default TwoSectionPage

@@ -3,15 +3,24 @@ import "./ListDeclimer.scss"
 
 interface Props {
   category: string
+  titleTag?: "H1"
+  title?: string
 }
 
-export const ListDeclimer: React.FC<Props> = ({ category }) => {
+export const ListDeclimer: React.FC<Props> = ({
+  category,
+  title,
+  titleTag,
+}) => {
   function getSmartSubtitle() {
     switch (category) {
       case "mentors":
         return `بهترین متخصصان هر حوزه در این صفحه خواهید یافت، به آن‌ها توجه کنید، اما به خاطر داشته باشید که قابل اعتماد ترین مشاور شما، فکر شماست. پس با «مسئولیت شخصی خودتان» از گفته های ایشان استفاده کنید `
       case "articles":
         return `مقالات این صفحه با هدف آشنایی تازه واردان به دنیای بلاکچین با مفاهیم پایه ای نوشته شده است.`
+      case "learning":
+        return `اگر به دنبال آموزش مختصر بلاکچین هستید، به بخش «توضیح مختصر» و اگر به دنبال آموزش های کامل هستید، به بخش «پروژه های آموزشی» مراجعه کنید.`
+
       default:
         return `«هزارچیز» تنها واسطه آشنایی شما با این پروژه هاست و هیچ مسئولیت قانونی
         در قبال صحت عملکرد آنان ندارد.`
@@ -19,7 +28,11 @@ export const ListDeclimer: React.FC<Props> = ({ category }) => {
   }
   return (
     <div className="green-glass bloglist-hint">
-      <h6 className="bloglist-hint-title">توضیحات</h6>
+      {titleTag === "H1" ? (
+        <h1 className="bloglist-hint-title">{title || "توضیحات"}</h1>
+      ) : (
+        <h6 className="bloglist-hint-title">{title || "توضیحات"}</h6>
+      )}
       <h6 className="bloglist-hint-subtitle">{getSmartSubtitle()}</h6>
     </div>
   )

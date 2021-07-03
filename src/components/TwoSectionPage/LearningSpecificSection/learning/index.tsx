@@ -1,13 +1,15 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import RowCentered from "../../../RowCentered"
+//@ts-ignore
 import media from "./what-is-blockchain.webm"
+//@ts-ignore
 import digitalPokemonCard from "./digitalPokemonCard.jpg"
 
 const LearningSpecificSection: React.FC = () => {
   return (
     <details className="dark-glass">
-      <summary style={{ fontSize: "170%" }}>بلاکچین چیست</summary>
+      <summary style={{ fontSize: "170%" }}>توضیح مختصر</summary>
       <div style={{ padding: "0 0.5rem" }}>
         <p>
           تصور کنید که ما دو تا بچه مدرسه ای هستیم که در مدرسه روبروی هم نشستیم
