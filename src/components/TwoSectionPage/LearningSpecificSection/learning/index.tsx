@@ -31,7 +31,7 @@ const LearningSpecificSection: React.FC = () => {
           <RowCentered>
             <StaticImage
               src="./digitalPokemonCard.jpg"
-              alt="بلاکچین چیست؟ کارت پوکمون"
+              alt="آموزش بلاکچین؟ کارت پوکمون"
               style={{ margin: "1rem" }}
             />
           </RowCentered>
@@ -182,7 +182,7 @@ const LearningSpecificSection: React.FC = () => {
           <RowCentered>
             <StaticImage
               src="./newBlock.png"
-              alt="بلاکچین چیست. بلاک جدید"
+              alt="آموزش بلاکچین. بلاک جدید"
               style={{ margin: "1rem" }}
             />
           </RowCentered>
@@ -207,7 +207,7 @@ const LearningSpecificSection: React.FC = () => {
           <RowCentered>
             <StaticImage
               src="./changeFail.png"
-              alt="بلاکچین چیست. بلاکچین ها غیرقابل تغییر هستند"
+              alt="آموزش بلاکچین. بلاکچین ها غیرقابل تغییر هستند"
               style={{ margin: "1rem" }}
             />
           </RowCentered>
@@ -226,10 +226,7 @@ const LearningSpecificSection: React.FC = () => {
           ای که سازنده‌ رمزارزهای متنوعی مثل بیت کوینه و می‌تونه بدون دخالت و
           نظارت واسطه ها و آقابالاسرها دارایی‌های مارو مدیریت کنه!
         </p>
-        <p>
-          ترجمه نسبتا آزاد از این مقاله که نشون میده &nbsp;
-          <a href="#main">بلاکچین چطور کار می‌کنه</a>
-        </p>
+
         <video width="100%" poster={digitalPokemonCard} controls src={media}>
           متاسفانه مرورگر شما این کلیپ رو پشتیبانی نمی‌کنه!
         </video>
