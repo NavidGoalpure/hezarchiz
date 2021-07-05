@@ -23,21 +23,9 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
           "سوال و جواب ارز دیجیتال",
         ],
       }
-    case "mentors":
-      return {
-        title: `متخصصان ارزهای دیجیتال`,
-        desc: `معرفی متخصصان کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
-        keywords: [
-          "آموزش ارز دیجیتال",
-          "مربی ارز دیجیتال",
-          "آموزش بیتکوین",
-          "آموزش اتریوم",
-          "سوال و جواب ارز دیجیتال",
-        ],
-      }
     case "learning":
       return {
-        title: `آموزش ارزهای دیجیتال`,
+        title: `آموزش بلاکچین`,
         desc: `معرفی پروژه های آموزشی کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
         keywords: [
           "آموزش ارز دیجیتال",
@@ -49,7 +37,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       }
     case "exchanges":
       return {
-        title: `متخصصان ارزهای دیجیتال`,
+        title: `صرافی ارز دیجیتال`,
         desc: `معرفی صرافی‌های معتبر کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
         keywords: [
           "آموزش ارز دیجیتال",

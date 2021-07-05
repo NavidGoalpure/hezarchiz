@@ -89,7 +89,7 @@ const BlogList: React.FC<Props> = props => {
           includePhrase="learning"
           projects={allMarkdownRemark.edges}
           ref={elementRef}
-          pageTitile="آموزش بلاکچین"
+          pageTitle="آموزش بلاکچین"
           title2="پروژه های آموزشی"
         />
       )

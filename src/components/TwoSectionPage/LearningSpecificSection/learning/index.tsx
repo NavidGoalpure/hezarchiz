@@ -10,7 +10,7 @@ const LearningSpecificSection: React.FC = () => {
   return (
     <details className="dark-glass">
       <summary style={{ fontSize: "170%" }}>توضیح مختصر</summary>
-      <div style={{ padding: "0 0.5rem" }}>
+      <div>
         <p>
           تصور کنید که ما دو تا بچه مدرسه ای هستیم که در مدرسه روبروی هم نشستیم
           و داریم کارت های پوکمونمون رو باهم معامله می‌کنیم و تصمیم می‌گیریم
