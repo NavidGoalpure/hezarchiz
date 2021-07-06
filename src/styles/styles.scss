@@ -20,7 +20,8 @@ body {
   width: 100%;
   height: 100vh;
   overflow: auto;
-  background: url("../images/background3.jpg");
+  background: url("../assets/images/background3.jpg");
+
   background-size: cover;
   @media screen and (max-width: 800px) {
     background: #3f9d8d;
