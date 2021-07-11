@@ -1,5 +1,5 @@
 /* این فایل از تمپلیت اولیه اومده و فرصت نشده با تغییرات جدید مرج بشه */
-.btn-group {
+.btn-group1 {
   padding-bottom: 0.7em;
 }
 
@@ -55,13 +55,13 @@ a.active {
     display: none;
   }
 
-  .btn-group {
+  .btn-group1 {
     display: block !important;
   }
 }
 
 @media only screen and (max-width: 3700px) {
-  .btn-group {
+  .btn-group1 {
     display: none;
   }
 }

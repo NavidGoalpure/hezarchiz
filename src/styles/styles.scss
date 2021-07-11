@@ -24,7 +24,7 @@ body {
 
   background-size: cover;
   @media screen and (max-width: 800px) {
-    background: #3f9d8d;
+    background: var(--secondari-color-dark);
     height: auto;
     padding-top: 0;
   }

@@ -83,7 +83,7 @@ const SideBar = () => {
         </li>
       </menu>
 
-      <div className="btn-group">
+      <div className="btn-group1">
         <Link to="/" className="mob-menu-items" activeClassName="active">
           <button className="navbtn">همه</button>
         </Link>

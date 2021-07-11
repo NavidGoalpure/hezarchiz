@@ -60,7 +60,7 @@ module.exports = {
         background_color: `#2d2a2a`,
         theme_color: `#2d2a2a`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     {

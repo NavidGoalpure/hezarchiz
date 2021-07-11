@@ -1,0 +1,196 @@
+audio,
+video {
+  display: inline-block;
+}
+video {
+  object-fit: contain;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+
+  font-weight: 700;
+  line-height: 1.1;
+  color: #f7f9e5;
+}
+.img-fluid,
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+///////////
+
+.main {
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 60px;
+  background-color: #232323;
+  color: #f7f7f7;
+  font-family: "Vazir";
+  width: fit-content;
+  &-subhead {
+    img {
+      width: 65px;
+    }
+    .special {
+      color: #fff100;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.centered {
+  text-align: center;
+}
+.home-content {
+  max-width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 425px) {
+    max-width: 100%;
+  }
+}
+.title-page {
+  min-height: calc(100vh - 58px);
+  padding: 0 1rem;
+}
+
+.video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.topper-video {
+  width: 100%;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+.master-video {
+  display: block;
+  height: 70%;
+  margin: 0 auto;
+}
+.scroll-video-holder {
+  display: flex;
+}
+.kicker {
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+.credit {
+  font-weight: 200;
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-top: 0.75rem;
+}
+
+.srepgfx {
+  &-dek {
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-transform: none;
+    &-large {
+      font-weight: 200;
+      margin-top: 0.25rem;
+      margin-bottom: 2rem;
+      font-size: 1.65rem;
+      line-height: 3.2rem;
+      .special {
+        color: #fff100;
+      }
+    }
+  }
+  &-title {
+    text-align: right;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 0.03rem;
+  }
+  &-chapter {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    &-intro {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      color: #fff100;
+    }
+  }
+  &-label {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  &-sublabel {
+    font-weight: 200;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+.break {
+  margin-top: 4.5rem;
+}
+.chapter-img {
+  max-width: 40px;
+  height: auto;
+}
+.d-none {
+  display: none !important;
+}
+///////////////////////
+//media queries
+///////////////////////
+@media (max-width: 991px) {
+  .master-video {
+    width: 100%;
+  }
+}
+//بالای تبلت
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+}
+//زیر تبلت
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}

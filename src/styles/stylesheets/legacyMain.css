@@ -884,6 +884,25 @@ pre code {
   overflow: auto;
   padding-bottom: 2rem;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+summary {
+  margin-bottom: 0.5rem;
+  font-family: "Vazir";
+  font-weight: 700;
+  line-height: 1.1;
+  color: #f7f9e5;
+}
 
 .header-article,
 .page-header,
