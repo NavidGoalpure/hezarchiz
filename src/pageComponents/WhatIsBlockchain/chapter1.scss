@@ -5,9 +5,9 @@
     align-items: center;
   }
   &-row {
-    width: max-content;
+    width: 100%;
     @media screen and (max-width: 1024px) {
-      width: auto;
+      width: 100%;
     }
     @media screen and (max-width: 425px) {
       flex-direction: column;

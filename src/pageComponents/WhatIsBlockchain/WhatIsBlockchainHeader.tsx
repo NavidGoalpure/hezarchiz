@@ -3,9 +3,9 @@ import Chapter1 from "./images/CHAPTER-01.jpg"
 import Chapter2 from "./images/CHAPTER-02.jpg"
 import Chapter3 from "./images/CHAPTER-03.jpg"
 import Chapter4 from "./images/CHAPTER-04.jpg"
-import "./homePage.scss"
+import "./what-is-blockchain.scss"
 
-const HomeHeader: React.FC = props => {
+const WhatIsBlockchainHeader: React.FC = props => {
   return (
     <>
       <div className="pseudo-container">
@@ -41,7 +41,7 @@ const HomeHeader: React.FC = props => {
                 مطمئن باشد‌، همه نسخه های دیتابیس که بر روی کامپیوترهای متفاوت
                 است، اختلافی ندارند، همیشه آن‌ها را چک می‌کند. از بلاکچین برای
                 ساختن ارز دیجیتال بیتکوین استفاده شده است، اما
-                <span className="special"> &nbsp;کاربرهای&nbsp;</span>
+                <span className="special"> &nbsp;کاربردهای&nbsp;</span>
                 <img loading="lazy" className="subhead-img" src={Chapter4} />
                 دیگر آن نیز درحال ظهور است.
               </div>
@@ -53,4 +53,4 @@ const HomeHeader: React.FC = props => {
   )
 }
 
-export default HomeHeader
+export default WhatIsBlockchainHeader

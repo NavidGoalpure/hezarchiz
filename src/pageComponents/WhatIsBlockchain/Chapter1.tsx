@@ -14,7 +14,6 @@ import SmVideo3 from "./videos/sm-video-3.mp4"
 import posterVideo4 from "./images/poster-video-4.png"
 import Video4 from "./videos/video-4.mp4"
 import SmVideo4 from "./videos/sm-video-4.mp4"
-
 import "./chapter1.scss"
 
 const Chapter1: React.FC = props => {
@@ -128,7 +127,7 @@ const Chapter1: React.FC = props => {
 
       {/* chapter 1 - scn01 - the record */}
 
-      <div className="row justify-content-center">
+      <div className="row justify-content-center full-height">
         <div className="col-lg-9">
           <p className="srepgfx-chapter-intro break">
             برای ثبت یک معامله در بلاکچین، مراحل زیر طی می‌شود:
@@ -143,7 +142,10 @@ const Chapter1: React.FC = props => {
           </p>
         </div>
         <div className="scroll-item" id="scroll-video-0">
-          <div className="row justify-content-center">
+          <div
+            className="row justify-content-center"
+            style={{ height: "23rem" }}
+          >
             <div className="col-xl-10 scroll-video-holder">
               <video
                 className="video master-video hidden-sm-down mtz-vlc-pboid"
@@ -183,7 +185,10 @@ const Chapter1: React.FC = props => {
           </p>
         </div>
         <div className="scroll-item" id="scroll-video-1">
-          <div className="row justify-content-center">
+          <div
+            className="row justify-content-center"
+            style={{ height: "23rem" }}
+          >
             <div className="col-xl-10 scroll-video-holder">
               <video
                 className="video master-video hidden-sm-down mtz-vlc-pboid"
@@ -224,7 +229,10 @@ const Chapter1: React.FC = props => {
           </div>
         </div>
         <div className="scroll-item" id="scroll-video-2">
-          <div className="row justify-content-center">
+          <div
+            className="row justify-content-center"
+            style={{ height: "23rem" }}
+          >
             <div className="col-xl-10 scroll-video-holder">
               <video
                 className="video master-video hidden-sm-down mtz-vlc-pboid"
@@ -267,7 +275,10 @@ const Chapter1: React.FC = props => {
           </div>
         </div>
         <div className="scroll-item" id="scroll-video-3">
-          <div className="row justify-content-center">
+          <div
+            className="row justify-content-center"
+            style={{ height: "23rem" }}
+          >
             <div className="col-xl-10 scroll-video-holder">
               <video
                 className="video master-video hidden-sm-down mtz-vlc-pboid"
