@@ -41,13 +41,13 @@ const Chapter2: React.FC = props => {
       <div className="break break-after"></div> */}
       {/* <!-- chapter 2 CONTENT START --> */}
       <div className="row justify-content-center break">
-        <div className="fullwidth row justify-content-center">
+        <div className="full-width row justify-content-center">
           <img
             className="chapter-img img-responsive mx-auto d-block break"
             src={BLOCKSpacer}
           />
         </div>
-        <p className="srepgfx-chapter fullwidth">
+        <p className="srepgfx-chapter full-width">
           تغییر آن بسیار دشوار خواهد بود
         </p>
         <p className="srepgfx-chapter-intro">
@@ -127,11 +127,11 @@ const Chapter2: React.FC = props => {
           </p>
           <p className="srepgfx-dek break-after">
             بلاک بعدی در بلاکچین، هنوز هش قبلی را در خود ذخیره کرده است،
-            بنابراین هکر مجبور است بلاک قبلی را با هش جدید از نو بسازد اما با
-            این کار، بلاک قبل تر از آن به مشکل می‌خورد و این مشکل تا بلاک
-            ابتدایی ادامه خواهد داشت! محاسبه هش همه بلاک های بلاکچین از ابتدا تا
-            انتها مقدار به مقدار عظیمی از قدرت محاسباتی احتیاج خواهد داشت و این
-            کار از توان هر هکری خارج است.
+            بنابراین هکر مجبور است بلاک قبلی را با هش جدید از نو بسازد، اما با
+            این کار بلاک قبل تر از آن به مشکل می‌خورد و این مشکل تا بلاک ابتدایی
+            ادامه خواهد داشت! محاسبه هش همه بلاک های بلاکچین از ابتدا تا انتها
+            مقدار به مقدار عظیمی از قدرت محاسباتی احتیاج خواهد داشت و این کار از
+            توان هر هکری خارج است.
           </p>
         </div>
       </div>

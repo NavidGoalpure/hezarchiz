@@ -1,11 +1,16 @@
-import React, { useRef } from "react"
+import React from "react"
 import "./chapter2.scss"
+//@ts-ignore
 import BLOCKSpacer from "./images/BLOCK-spacer.png"
+//@ts-ignore
 import Network from "./images/network.jpg"
+//@ts-ignore
 import NetworkCentralSmall from "./images/network-central-small.jpg"
-
+//@ts-ignore
 import NetworkDecentralSmall from "./images/network-decentral-small.jpg"
+//@ts-ignore
 import Work from "./images/work.jpg"
+//@ts-ignore
 import Stake from "./images/stake.jpg"
 
 const Chapter3: React.FC = props => {
@@ -15,10 +20,10 @@ const Chapter3: React.FC = props => {
       <div className="pseudo-container">
         <div className="row justify-content-center">
           <img
-            className="chapter-img img-responsive mx-auto d-block break fullwidth"
+            className="chapter-img img-responsive mx-auto d-block break full-width"
             src={BLOCKSpacer}
           />
-          <p className="srepgfx-chapter fullwidth">کامپیوترها در شبکه</p>
+          <p className="srepgfx-chapter full-width">کامپیوترها در شبکه</p>
 
           <div className="col-md-5">
             <p className="srepgfx-chapter-intro">

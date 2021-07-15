@@ -295,7 +295,7 @@ const Chapter1: React.FC = props => {
       <div className="scroll-item-container">
         <div className="scroll-item-content">
           <div className="row justify-content-center">
-            <p className="srepgfx-label centered">مرحله چهارم</p>
+            <p className="srepgfx-label centered full-width">مرحله چهارم</p>
             <p className="srepgfx-dek centered">
               برای اضافه شدن بلاک جدید به بلاک چین، این بلاک از طریق تکنولوژی هش
               به بلاک قبلی متصل می‌شود <br /> (به خاطر دارید که گفتیم هش بلاک
