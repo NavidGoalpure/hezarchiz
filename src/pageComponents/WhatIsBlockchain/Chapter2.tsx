@@ -1,25 +1,36 @@
 import React, { useRef } from "react"
 import "./chapter2.scss"
+//@ts-ignore
 import BLOCKSpacer from "./images/BLOCK-spacer.png"
+//@ts-ignore
 import TheTweet from "./images/thetweet.jpg"
+//@ts-ignore
 import BookClosed from "./images/book_closed.jpg"
+//@ts-ignore
 import BookOpen from "./images/book_open.jpg"
+//@ts-ignore
 import posterVideo5 from "./images/poster-video-5.png"
+//@ts-ignore
 import Video5 from "./videos/video-5.mp4"
+//@ts-ignore
 import SmVideo5 from "./videos/sm-video-5.mp4"
 
 const Chapter2: React.FC = props => {
   /////////////////
   const video5El = useRef(null)
   const onVideo5Click = () => {
+    //@ts-ignore
     if (video5El.current.currentTime == video5El.current.duration) {
+      //@ts-ignore
       video5El.current.play()
     }
   }
   //
   const smVideo5El = useRef(null)
   const onSmVideo5Click = () => {
+    //@ts-ignore
     if (smVideo5El.current.currentTime == smVideo5El.current.duration) {
+      //@ts-ignore
       smVideo5El.current.play()
     }
   }

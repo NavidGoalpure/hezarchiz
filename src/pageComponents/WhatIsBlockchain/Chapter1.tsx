@@ -1,74 +1,105 @@
 import React, { useRef } from "react"
+//@ts-ignore
 import BLOCKSpacer from "./images/BLOCK-spacer.png"
+//@ts-ignore
 import componentsWide from "./images/components-wide.jpg"
+//@ts-ignore
 import componentsSmall from "./images/components-small.jpg"
+//@ts-ignore
 import posterVideo1 from "./images/poster-video-1.png"
+//@ts-ignore
 import Video1 from "./videos/video-1.mp4"
+//@ts-ignore
 import SmVideo1 from "./videos/sm-video-1.mp4"
+//@ts-ignore
 import posterVideo2 from "./images/poster-video-2.png"
+//@ts-ignore
 import Video2 from "./videos/video-2.mp4"
+//@ts-ignore
 import SmVideo2 from "./videos/sm-video-2.mp4"
+//@ts-ignore
 import posterVideo3 from "./images/poster-video-3.png"
+//@ts-ignore
 import Video3 from "./videos/video-3.mp4"
+//@ts-ignore
 import SmVideo3 from "./videos/sm-video-3.mp4"
+//@ts-ignore
 import posterVideo4 from "./images/poster-video-4.png"
+//@ts-ignore
 import Video4 from "./videos/video-4.mp4"
+//@ts-ignore
 import SmVideo4 from "./videos/sm-video-4.mp4"
 import "./chapter1.scss"
 
 const Chapter1: React.FC = props => {
   const video1El = useRef(null)
   const onVideo1Click = () => {
+    //@ts-ignore
     if (video1El.current.currentTime == video1El.current.duration) {
+      //@ts-ignore
       video1El.current.play()
     }
   }
   //
   const smVideo1El = useRef(null)
   const onSmVideo1Click = () => {
+    //@ts-ignore
     if (smVideo1El.current.currentTime == smVideo1El.current.duration) {
+      //@ts-ignore
       smVideo1El.current.play()
     }
   }
   /////////////////
   const video2El = useRef(null)
   const onVideo2Click = () => {
+    //@ts-ignore
     if (video2El.current.currentTime == video2El.current.duration) {
+      //@ts-ignore
       video2El.current.play()
     }
   }
 
   const smVideo2El = useRef(null)
   const onSmVideo2Click = () => {
+    //@ts-ignore
     if (smVideo2El.current.currentTime == smVideo2El.current.duration) {
+      //@ts-ignore
       smVideo2El.current.play()
     }
   }
   //////////////////////
   const video3El = useRef(null)
   const onVideo3Click = () => {
+    //@ts-ignore
     if (video3El.current.currentTime == video3El.current.duration) {
+      //@ts-ignore
       video3El.current.play()
     }
   }
   //
   const smVideo3El = useRef(null)
   const onSmVideo3Click = () => {
+    //@ts-ignore
     if (smVideo3El.current.currentTime == smVideo3El.current.duration) {
+      //@ts-ignore
       smVideo3El.current.play()
     }
   }
   /////////////////
   const video4El = useRef(null)
   const onVideo4Click = () => {
+    //@ts-ignore
     if (video4El.current.currentTime == video4El.current.duration) {
+      //@ts-ignore
       video4El.current.play()
     }
   }
   //
   const smVideo4El = useRef(null)
   const onSmVideo4Click = () => {
+    //@ts-ignore
     if (smVideo4El.current.currentTime == smVideo4El.current.duration) {
+      //@ts-ignore
       smVideo4El.current.play()
     }
   }

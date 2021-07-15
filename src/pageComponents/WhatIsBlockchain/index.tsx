@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import SideBar from "../../components/sidebar"
 import "./what-is-blockchain.scss"
+//@ts-ignore
 import BLOCKSpacer from "./images/BLOCK-spacer.png"
 import WhatIsBlockchainHeader from "./WhatIsBlockchainHeader"
 import Chapter1 from "./Chapter1"
@@ -28,28 +29,7 @@ const WhatIsBlockchain: React.FC = props => {
       <section className="page-container">
         <SideBar />
         <div className="main " ref={elementRef} tabIndex={1}>
-          <div
-            id="test"
-            // style={{ width: "100%" }}
-          >
-            {/* <video
-            className="video topper-video hidden-sm-down mtz-vlc-pboid"
-            playsInline
-            autoPlay
-            muted
-            loop
-          >
-            <source src={Topper} type="video/mp4" />
-          </video>
-          <video
-            className="video topper-video hidden-md-up mtz-vlc-pboid"
-            playsInline
-            autoPlay
-            muted
-            loop
-          >
-            <source src={SmTopper} type="video/mp4" />
-          </video> */}
+          <div id="test">
             <div className="home-content">
               <div className="title-page">
                 <WhatIsBlockchainHeader />
