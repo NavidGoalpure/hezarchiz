@@ -12,9 +12,15 @@ const WhatIsBlockchainHeader: React.FC = props => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div>
-              <p className="srepgfx-dek kicker">منبع: رویترز گرافیک</p>
               <h1 className="srepgfx-title">بلاکچین چیست</h1>
-              <p className="credit">ترجمه توسط نوید گل پور</p>
+              <p className="srepgfx-dek kicker">
+                منبع:
+                <a href="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/index.html">
+                  {" "}
+                  رویترز گرافیک
+                </a>
+              </p>
+              <br />
             </div>
             <div className="srepgfx-dek-large main-subhead">
               <div>
