@@ -63,6 +63,8 @@ const WhatIsBlockchain: React.FC = props => {
                       className="chapter-img img-responsive mx-auto d-block"
                       src={BLOCKSpacer}
                     />
+                    {/* // navid  */}
+                    {/* لینک به صفحات دیگه رو اضفاه کن */}
 
                     <p className="credit text-center  break-after">
                       گرافیک: Maryanne Murray
@@ -70,6 +72,12 @@ const WhatIsBlockchain: React.FC = props => {
                       ویرایش بصری: Sarah Slobin
                       <br />
                       ترجمه و اجرای فارسی: Navid Goalpure
+                    </p>
+                    <p className="text-center break-after">
+                      اگر به دنبال پروژه های تخصصی آموزش بلاکچین هستید، از
+                      صفحه&nbsp;
+                      <a href={"/learning"}>آموزش بلاکچین</a>
+                      &nbsp;دیدن کنید
                     </p>
                   </div>
                 </div>
