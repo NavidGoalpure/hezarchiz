@@ -1,7 +1,11 @@
 import React from "react"
+//@ts-ignore
 import Chapter1 from "./images/CHAPTER-01.jpg"
+//@ts-ignore
 import Chapter2 from "./images/CHAPTER-02.jpg"
+//@ts-ignore
 import Chapter3 from "./images/CHAPTER-03.jpg"
+//@ts-ignore
 import Chapter4 from "./images/CHAPTER-04.jpg"
 import "./what-is-blockchain.scss"
 
