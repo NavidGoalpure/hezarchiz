@@ -209,7 +209,7 @@ const Chapter1: React.FC = props => {
         <div className="row justify-content-center">
           <p className="srepgfx-label centered">مرحله دوم</p>
           <p className="srepgfx-dek centered">
-            رکورد (اطلاعات معامله) به وسیله نتورک بررسی می‌شود. کامپیوترهایی که
+            رکورد (اطلاعات معامله) به وسیله شبکه بررسی می‌شود. کامپیوترهایی که
             به شبکه متصل هستند را «نود» می‌نامیم. این نود ها جزییات تراکنش را
             بررسی می‌کنند تا چیزی اشتباه نباشد.
             <div className=""></div>

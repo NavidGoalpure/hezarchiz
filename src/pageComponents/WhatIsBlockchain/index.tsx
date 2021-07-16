@@ -9,6 +9,10 @@ import Chapter2 from "./Chapter2"
 import Chapter3 from "./Chapter3"
 import Chapter4 from "./Chapter4"
 import SEO from "../../components/seo"
+//@ts-ignore
+import Topper from "./videos/topper.mp4"
+//@ts-ignore
+import SmTopper from "./videos//sm-topper.mp4"
 
 const WhatIsBlockchain: React.FC = props => {
   const elementRef = useRef()
@@ -26,40 +30,53 @@ const WhatIsBlockchain: React.FC = props => {
         description={"بلاکچین چیست؟ یک آموزش جذاب"}
         keywords={["بلاکچین", "بلاکچین چیست"]}
       />
-      <section className="page-container">
+      <section className="page-container" ref={elementRef} tabIndex={1}>
         <SideBar />
-        <div className="main " ref={elementRef} tabIndex={1}>
-          <div id="test">
-            <div className="home-content">
-              <div className="title-page">
-                <WhatIsBlockchainHeader />
-                <Chapter1 />
-                <Chapter2 />
-                <Chapter3 />
-                <Chapter4 />
-                <div className="row">
-                  <div className="col-12 mt-1 break">
-                    <img
-                      className="chapter-img img-responsive mx-auto d-block"
-                      src={BLOCKSpacer}
-                    />
-                    {/* // navid  */}
-                    {/* لینک به صفحات دیگه رو اضفاه کن */}
-
-                    <p className="credit text-center  break-after">
-                      گرافیک: Maryanne Murray
-                      <br />
-                      ویرایش بصری: Sarah Slobin
-                      <br />
-                      ترجمه و اجرای فارسی: Navid Goalpure
-                    </p>
-                    <p className="text-center break-after">
-                      اگر به دنبال پروژه های تخصصی آموزش بلاکچین هستید، از
-                      صفحه&nbsp;
-                      <a href={"/learning"}>آموزش بلاکچین</a>
-                      &nbsp;دیدن کنید
-                    </p>
-                  </div>
+        <div className="main ">
+          <video
+            className="video topper-video hidden-sm-down mtz-vlc-pboid"
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src={Topper} type="video/mp4" />
+          </video>
+          <video
+            className="video topper-video hidden-md-up mtz-vlc-pboid"
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src={SmTopper} type="video/mp4" />
+          </video>
+          <div className="home-content">
+            <div className="title-page">
+              <WhatIsBlockchainHeader />
+              <Chapter1 />
+              <Chapter2 />
+              <Chapter3 />
+              <Chapter4 />
+              <div className="row">
+                <div className="col-12 mt-1 break">
+                  <img
+                    className="chapter-img img-responsive mx-auto d-block"
+                    src={BLOCKSpacer}
+                  />
+                  <p className="credit text-center  break-after">
+                    گرافیک: Maryanne Murray
+                    <br />
+                    ویرایش بصری: Sarah Slobin
+                    <br />
+                    ترجمه و اجرای فارسی: Navid Goalpure
+                  </p>
+                  <p className="text-center break-after">
+                    اگر به دنبال پروژه های تخصصی آموزش بلاکچین هستید، از
+                    صفحه&nbsp;
+                    <a href={"/learning"}>آموزش بلاکچین</a>
+                    &nbsp;دیدن کنید
+                  </p>
                 </div>
               </div>
             </div>
