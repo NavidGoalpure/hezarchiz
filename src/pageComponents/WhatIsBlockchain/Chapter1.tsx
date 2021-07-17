@@ -8,27 +8,12 @@ import componentsSmall from "./images/components-small.jpg"
 //@ts-ignore
 import posterVideo1 from "./images/poster-video-1.png"
 //@ts-ignore
-import Video1 from "./videos/video-1.mp4"
-//@ts-ignore
-import SmVideo1 from "./videos/sm-video-1.mp4"
-//@ts-ignore
 import posterVideo2 from "./images/poster-video-2.png"
-//@ts-ignore
-import Video2 from "./videos/video-2.mp4"
-//@ts-ignore
-import SmVideo2 from "./videos/sm-video-2.mp4"
 //@ts-ignore
 import posterVideo3 from "./images/poster-video-3.png"
 //@ts-ignore
-import Video3 from "./videos/video-3.mp4"
-//@ts-ignore
-import SmVideo3 from "./videos/sm-video-3.mp4"
-//@ts-ignore
 import posterVideo4 from "./images/poster-video-4.png"
 //@ts-ignore
-import Video4 from "./videos/video-4.mp4"
-//@ts-ignore
-import SmVideo4 from "./videos/sm-video-4.mp4"
 import "./chapter1.scss"
 
 const Chapter1: React.FC = props => {
@@ -187,7 +172,10 @@ const Chapter1: React.FC = props => {
                 ref={video1El}
                 onClick={onVideo1Click}
               >
-                <source src={Video1} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/video-1.mp4"
+                  type="video/mp4"
+                />
               </video>
               <video
                 className="video master-video hidden-md-up mtz-vlc-pboid"
@@ -198,7 +186,10 @@ const Chapter1: React.FC = props => {
                 ref={smVideo1El}
                 onClick={onSmVideo1Click}
               >
-                <source src={SmVideo1} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/sm-video-1.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -230,7 +221,10 @@ const Chapter1: React.FC = props => {
                 ref={video2El}
                 onClick={onVideo2Click}
               >
-                <source src={Video2} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/video-2.mp4"
+                  type="video/mp4"
+                />
               </video>
               <video
                 className="video master-video hidden-md-up mtz-vlc-pboid"
@@ -241,7 +235,10 @@ const Chapter1: React.FC = props => {
                 ref={smVideo2El}
                 onClick={onSmVideo2Click}
               >
-                <source src={SmVideo2} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/sm-video-3.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -274,7 +271,10 @@ const Chapter1: React.FC = props => {
                 ref={video3El}
                 onClick={onVideo3Click}
               >
-                <source src={Video3} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/video-3.mp4"
+                  type="video/mp4"
+                />
               </video>
               <video
                 className="video master-video hidden-md-up mtz-vlc-pboid"
@@ -285,7 +285,10 @@ const Chapter1: React.FC = props => {
                 ref={smVideo3El}
                 onClick={onSmVideo3Click}
               >
-                <source src={SmVideo3} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/sm-video-3.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -320,7 +323,10 @@ const Chapter1: React.FC = props => {
                 ref={video4El}
                 onClick={onVideo4Click}
               >
-                <source src={Video4} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/video-4.mp4"
+                  type="video/mp4"
+                />
               </video>
               <video
                 className="video master-video hidden-md-up mtz-vlc-pboid"
@@ -331,7 +337,10 @@ const Chapter1: React.FC = props => {
                 ref={smVideo4El}
                 onClick={onSmVideo4Click}
               >
-                <source src={SmVideo4} type="video/mp4" />
+                <source
+                  src="https://storageapi.fleek.co/navidgoalpure-team-bucket/sm-video-4.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>

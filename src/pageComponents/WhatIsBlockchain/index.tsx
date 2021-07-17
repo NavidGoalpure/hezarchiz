@@ -9,10 +9,6 @@ import Chapter2 from "./Chapter2"
 import Chapter3 from "./Chapter3"
 import Chapter4 from "./Chapter4"
 import SEO from "../../components/seo"
-// //@ts-ignore
-// import Topper from "./videos/topper.mp4"
-// //@ts-ignore
-// import SmTopper from "./videos//sm-topper.mp4"
 
 const WhatIsBlockchain: React.FC = props => {
   const elementRef = useRef()

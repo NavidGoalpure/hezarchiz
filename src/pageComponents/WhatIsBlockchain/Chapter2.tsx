@@ -10,10 +10,6 @@ import BookClosed from "./images/book_closed.jpg"
 import BookOpen from "./images/book_open.jpg"
 //@ts-ignore
 import posterVideo5 from "./images/poster-video-5.png"
-//@ts-ignore
-import Video5 from "./videos/video-5.mp4"
-//@ts-ignore
-import SmVideo5 from "./videos/sm-video-5.mp4"
 
 const Chapter2: React.FC = props => {
   /////////////////
@@ -149,7 +145,10 @@ const Chapter2: React.FC = props => {
               ref={video5El}
               onClick={onVideo5Click}
             >
-              <source src={Video5} type="video/mp4" />
+              <source
+                src="https://storageapi.fleek.co/navidgoalpure-team-bucket/video-5.mp4"
+                type="video/mp4"
+              />
             </video>
             <video
               className="video master-video hidden-md-up mtz-vlc-pboid"
@@ -160,7 +159,10 @@ const Chapter2: React.FC = props => {
               ref={smVideo5El}
               onClick={onSmVideo5Click}
             >
-              <source src={SmVideo5} type="video/mp4" />
+              <source
+                src="https://storageapi.fleek.co/navidgoalpure-team-bucket/sm-video-5.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
