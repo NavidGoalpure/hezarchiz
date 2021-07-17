@@ -5,10 +5,12 @@ domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
 description: " یگ گروه تلگرامی با هدف تعامل بیشتر برنامه نویسان بلاکچینی"
-keywords: mentors, ethereum, solidity
+keywords: social-networks, ethereum, solidity
 blog: true
 confirm: true
 ---
+
+import test from "../../../../components/text.tsx"
 
 یک گروه تلگرامی بسیار فعال در رابطه با سالیدیتی و برنامه نویسی بلاکچین.
 
@@ -27,4 +29,11 @@ confirm: true
     <img loading="lazy" alt="simorgh telegram icon" width="32" height="32" class="project-socialnetwork-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/telegram-icon.png"/>
     </a>
 </p>
+
 </sectiton>
+<div class="blockquote">برای یادگیری بهتر بلاکچین از این صفحات دیدن کنید:
+<ul>
+	<li><a href="/what-is-blockchain">بلاکچین چیست</a></li>
+	<li><a href="/learning">آموزش بلاکچین</a></li>
+</ul>
+</div>

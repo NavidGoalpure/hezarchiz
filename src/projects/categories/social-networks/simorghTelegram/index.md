@@ -5,7 +5,7 @@ domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
 description: " محلی برای تبادل نظر درباره‌ عدم تمرکز"
-keywords: mentors, bitcoin, ethereum,
+keywords: social-networks, bitcoin, ethereum,
 blog: true
 confirm: true
 ---

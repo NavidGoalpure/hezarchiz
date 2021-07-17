@@ -83,24 +83,6 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-
-  /* 1 */
-  font-size: 1em;
-
-  /* 2 */
-  padding: 1rem 2rem;
-  overflow-x: auto;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
@@ -173,14 +155,6 @@ samp {
  */
 dfn {
   font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-  background-color: #ff0;
-  color: #000;
 }
 
 /**
@@ -784,14 +758,6 @@ template {
   html {
     font-size: 20px;
   }
-}
-
-blockquote {
-  color: #ada8a8;
-  background-color: #343e3a;
-  padding: 0 1rem;
-  border-radius: 12px;
-  margin: 0;
 }
 
 .highlight {

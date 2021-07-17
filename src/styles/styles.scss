@@ -40,6 +40,20 @@ img {
 code {
   color: khaki;
 }
+.blockquote {
+  color: floralwhite;
+  background-color: #548c8e;
+  padding: 1em;
+  border-radius: 12px;
+  font-size: 70%;
+  p {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+  }
+}
+
 .dark-light {
   position: fixed;
   bottom: 50px;

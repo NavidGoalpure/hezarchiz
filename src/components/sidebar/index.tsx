@@ -26,7 +26,7 @@ const SideBar = () => {
           }
         }
       }
-    `
+    `,
   )
 
   const github = "https://github.com/" + site.siteMetadata.social.github
@@ -62,8 +62,12 @@ const SideBar = () => {
           </Link>
         </li>
         <li className="menu-items">
-          <Link to="/exchanges" className="menu-links" activeClassName="active">
-            صرافی
+          <Link
+            to="/social-networks"
+            className="menu-links"
+            activeClassName="active"
+          >
+            شبکه های اجتماعی
           </Link>
         </li>
         <li className="menu-items">
@@ -98,11 +102,11 @@ const SideBar = () => {
           <button className="navbtn">مربیان</button>
         </Link>
         <Link
-          to="/exchanges"
+          to="/social-networks"
           className="mob-menu-items"
           activeClassName="active"
         >
-          <button className="navbtn">صرافی</button>
+          <button className="navbtn">شبکه های اجتماعی</button>
         </Link>
         <Link to="/news" className="mob-menu-items" activeClassName="active">
           <button className="navbtn">خبری</button>

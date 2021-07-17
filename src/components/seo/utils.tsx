@@ -35,10 +35,10 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
           "سوال و جواب ارز دیجیتال",
         ],
       }
-    case "exchanges":
+    case "social-networks":
       return {
-        title: `صرافی ارز دیجیتال`,
-        desc: `معرفی صرافی‌های معتبر کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
+        title: `چنل و گروه ارز دیجیتال`,
+        desc: `معرفی کانال ها و گروه های مربوط به ارز دیجیتال `,
         keywords: [
           "آموزش ارز دیجیتال",
           "مربی ارز دیجیتال",
