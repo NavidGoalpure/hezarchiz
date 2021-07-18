@@ -146,7 +146,7 @@ const Chapter2: React.FC = props => {
               onClick={onVideo5Click}
             >
               <source
-                src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-5.mp4"
+                src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-5.mp4"
                 type="video/mp4"
               />
             </video>
@@ -160,7 +160,7 @@ const Chapter2: React.FC = props => {
               onClick={onSmVideo5Click}
             >
               <source
-                src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-5.mp4"
+                src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-5.mp4"
                 type="video/mp4"
               />
             </video>

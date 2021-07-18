@@ -37,7 +37,7 @@ const WhatIsBlockchain: React.FC = props => {
             loop
           >
             <source
-              src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/topper.mp4"
+              src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/topper.mp4"
               type="video/mp4"
             />
           </video>
@@ -49,7 +49,7 @@ const WhatIsBlockchain: React.FC = props => {
             loop
           >
             <source
-              src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-topper.mp4"
+              src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-topper.mp4"
               type="video/mp4"
             />
           </video>

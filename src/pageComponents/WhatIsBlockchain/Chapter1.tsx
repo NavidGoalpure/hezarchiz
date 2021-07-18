@@ -173,7 +173,7 @@ const Chapter1: React.FC = props => {
                 onClick={onVideo1Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-1.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-1.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -187,7 +187,7 @@ const Chapter1: React.FC = props => {
                 onClick={onSmVideo1Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-1.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-1.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -222,7 +222,7 @@ const Chapter1: React.FC = props => {
                 onClick={onVideo2Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-2.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-2.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -236,7 +236,7 @@ const Chapter1: React.FC = props => {
                 onClick={onSmVideo2Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-2.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-2.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -272,7 +272,7 @@ const Chapter1: React.FC = props => {
                 onClick={onVideo3Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-2.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-2.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -286,7 +286,7 @@ const Chapter1: React.FC = props => {
                 onClick={onSmVideo3Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-3.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-3.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -324,7 +324,7 @@ const Chapter1: React.FC = props => {
                 onClick={onVideo4Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-4.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-4.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -338,7 +338,7 @@ const Chapter1: React.FC = props => {
                 onClick={onSmVideo4Click}
               >
                 <source
-                  src="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-4.mp4"
+                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-4.mp4"
                   type="video/mp4"
                 />
               </video>

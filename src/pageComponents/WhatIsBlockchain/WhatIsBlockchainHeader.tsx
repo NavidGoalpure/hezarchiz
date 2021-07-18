@@ -20,7 +20,7 @@ const WhatIsBlockchainHeader: React.FC = props => {
               <h1 className="srepgfx-title break">بلاکچین چیست</h1>
               <p className="srepgfx-dek kicker">
                 منبع:
-                <a href="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/index.html">
+                <a href="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/index.html">
                   {" "}
                   رویترز گرافیک
                 </a>
