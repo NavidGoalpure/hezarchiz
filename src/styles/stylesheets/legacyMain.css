@@ -846,9 +846,10 @@ pre code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   overflow: auto;
-  padding-bottom: 2rem;
+  padding: 4rem 0 2rem;
+  height: 100%;
 }
 .h1,
 .h2,
