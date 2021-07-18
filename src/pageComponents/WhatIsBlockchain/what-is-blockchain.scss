@@ -42,7 +42,7 @@ h6 {
   background-color: #232323;
   color: #f7f7f7;
   font-family: "Vazir";
-  width: fit-content;
+  width: -webkit-fill-available;
   &-subhead {
     img {
       width: 65px;
