@@ -1,11 +1,11 @@
 ---
 title: "اکسی ایران"
-domain: "axie.ir/"
-domainName: ""
+domain: "https://axie.ir/"
+domainName: "axie.ir"
 img: "cover.jpg"
 logo: "logo.png"
 description: "مرجع خبری و آموزشی بازی اینفینیتی اکسی"
-keywords: ethereum, game
+keywords: ethereum, game,learning
 blog: true
 confirm: false
 ---
