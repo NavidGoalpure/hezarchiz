@@ -63,7 +63,7 @@ const BlogList: React.FC<Props> = props => {
           }
         }
       }
-    `
+    `,
   )
   const { allMarkdownRemark } = data
   // const { siteUrl } = useSiteMetadata()
