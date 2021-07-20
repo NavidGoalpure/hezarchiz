@@ -18,3 +18,10 @@ https://lendup.ir/articles/15
 https://lendup.ir/articles/24
 
 در حال حاضر سه رمزارز بیتکوین، اتریوم و تتر به عنوان وثیقه در لنداپ پذیرفته می‌شود.
+
+<div class="blockquote">برای یادگیری بهتر بلاکچین از این صفحات دیدن کنید:
+<ul>
+	<li><a href="/what-is-blockchain">بلاکچین چیست</a></li>
+	<li><a href="/learning">آموزش بلاکچین</a></li>
+</ul>
+</div>
