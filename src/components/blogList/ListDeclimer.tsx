@@ -2,18 +2,14 @@ import React from "react"
 import "./ListDeclimer.scss"
 
 interface Props {
-  category: string
+  tag: string
   titleTag?: "H1"
   title?: string
 }
 
-export const ListDeclimer: React.FC<Props> = ({
-  category,
-  title,
-  titleTag,
-}) => {
+export const ListDeclimer: React.FC<Props> = ({ tag, title, titleTag }) => {
   function getSmartSubtitle() {
-    switch (category) {
+    switch (tag) {
       case "mentors":
         return `بهترین متخصصان هر حوزه در این صفحه خواهید یافت، به آن‌ها توجه کنید، اما به خاطر داشته باشید که قابل اعتماد ترین مشاور شما، فکر شماست. پس با «مسئولیت شخصی خودتان» از گفته های ایشان استفاده کنید `
       case "articles":

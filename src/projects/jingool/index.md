@@ -5,7 +5,7 @@ domainName: "jingool.janbal.io/"
 img: "cover.jpg"
 logo: "logo.png"
 description: "خرید اکسسوری بیتکوینی"
-keywords: services
+keywords: shop
 blog: true
 confirm: false
 ---

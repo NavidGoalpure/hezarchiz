@@ -9,18 +9,17 @@ interface Props {
 const CardsContainer: React.FC<Props> = ({ includePhrase, projects, ref }) => {
   return (
     <>
-      {projects.map(({ node }) => {
+      {projects.map(({ node, i }) => {
         if (
           includePhrase === "all" ||
           node.frontmatter.keywords.includes(includePhrase)
         )
           return (
             <PostCard
-              key={node?.frontmatter?.domain}
+              key={i}
               slug={node.fields.slug}
               title={node.frontmatter.title}
               description={node.frontmatter.description}
-              domain={node?.frontmatter?.domain || ""}
               domainName={node?.frontmatter?.domainName || ""}
               imageFluid={node?.frontmatter?.img?.children[0].fluid}
               logoFluid={node?.frontmatter?.logo?.children[0].fluid}

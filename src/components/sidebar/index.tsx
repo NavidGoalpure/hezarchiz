@@ -10,9 +10,10 @@ import {
 } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
 import LogoIcon from "../LogoIcon"
+import { createTagPages, convertTagToPersian } from "./utils"
 
 const SideBar = () => {
-  const { site } = useStaticQuery(
+  const { site, allMarkdownRemark } = useStaticQuery(
     graphql`
       query {
         site {
@@ -25,15 +26,49 @@ const SideBar = () => {
             }
           }
         }
+        allMarkdownRemark(sort: { fields: [frontmatter___title], order: ASC }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                description
+                keywords
+                domain
+                img {
+                  children {
+                    ... on ImageSharp {
+                      fluid(maxWidth: 1920) {
+                        base64
+                        aspectRatio
+                        src
+                        srcSet
+                        srcWebp
+                        srcSetWebp
+                        sizes
+                      }
+                    }
+                  }
+                }
+              }
+              html
+            }
+          }
+        }
       }
     `,
   )
+
+  const allTags = createTagPages(allMarkdownRemark.edges)
 
   const github = "https://github.com/" + site.siteMetadata.social.github
   const email = "mailto:" + site.siteMetadata.social.email
   const linkedin =
     "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
   const telegram = "https://t.me/" + site.siteMetadata.social.telegram
+  const pathName = window?.location?.pathname || ""
 
   return (
     <aside className="sidebar">
@@ -44,87 +79,35 @@ const SideBar = () => {
         </Link>
       </div>
 
-      <menu className="sidebar-menu">
-        <li className="menu-items">
-          <Link to="/" className="menu-links" activeClassName="active">
-            همه
-          </Link>
-        </li>
-
-        <li className="menu-items">
-          <Link to="/learning" className="menu-links" activeClassName="active">
-            آموزشی
-          </Link>
-        </li>
-        <li className="menu-items">
-          <Link to="/mentors" className="menu-links" activeClassName="active">
-            مربیان
-          </Link>
-        </li>
-        <li className="menu-items">
-          <Link
-            to="/social-networks"
-            className="menu-links"
-            activeClassName="active"
-          >
-            شبکه های اجتماعی
-          </Link>
-        </li>
-        <li className="menu-items">
-          <Link to="/news" className="menu-links" activeClassName="active">
-            خبری
-          </Link>
-        </li>
-        <li className="menu-items">
-          <Link to="/services" className="menu-links" activeClassName="active">
-            خدمات
-          </Link>
-        </li>
-        <li className="menu-items">
-          <Link to="/articles" className="menu-links" activeClassName="active">
-            مقالات
-          </Link>
-        </li>
-      </menu>
-
       <div className="btn-group1">
-        <Link to="/" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">همه</button>
+        <Link to="/">
+          <button
+            className="navbtn mob-menu-items"
+            style={
+              pathName === `/`
+                ? { background: "var( --secondari-color-normal)" }
+                : {}
+            }
+          >
+            همه
+          </button>
         </Link>
-        <Link
-          to="/learning"
-          className="mob-menu-items"
-          activeClassName="active"
-        >
-          <button className="navbtn">آموزشی</button>
-        </Link>
-        <Link to="/mentors" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">مربیان</button>
-        </Link>
-        <Link
-          to="/social-networks"
-          className="mob-menu-items"
-          activeClassName="active"
-        >
-          <button className="navbtn">شبکه های اجتماعی</button>
-        </Link>
-        <Link to="/news" className="mob-menu-items" activeClassName="active">
-          <button className="navbtn">خبری</button>
-        </Link>
-        <Link
-          to="/services"
-          className="mob-menu-items"
-          activeClassName="active"
-        >
-          <button className="navbtn">خدمات</button>
-        </Link>
-        <Link
-          to="/articles"
-          className="mob-menu-items"
-          activeClassName="active"
-        >
-          <button className="navbtn">مقالات</button>
-        </Link>
+        {allTags.map(tag => {
+          return (
+            <Link to={`/${tag}`}>
+              <button
+                className="navbtn mob-menu-items"
+                style={
+                  pathName === `/${tag}`
+                    ? { background: "var( --secondari-color-normal)" }
+                    : {}
+                }
+              >
+                {convertTagToPersian[tag]}
+              </button>
+            </Link>
+          )
+        })}
       </div>
 
       <div className="sidebar-social">

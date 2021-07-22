@@ -5,7 +5,7 @@ domainName: "Lendup.ir"
 img: "cover.jpg"
 logo: "logo.png"
 description: "پلتفرم وام با وثیقه رمزارز"
-keywords: services,payment
+keywords: payment,startup
 blog: true
 confirm: false
 ---

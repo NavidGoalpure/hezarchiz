@@ -5,7 +5,7 @@ domainName: "jeeb.io"
 img: "cover.jpg"
 logo: "logo.png"
 description: "درگاه پرداخت ارزهای دیجیتال"
-keywords: services,payment
+keywords: payment,shop,startup
 blog: true
 confirm: false
 ---

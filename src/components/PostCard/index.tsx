@@ -7,7 +7,7 @@ interface Props {
   slug: string
   title: string
   description: string
-  domain: string
+
   domainName: string
   imageFluid: FluidObject[]
   logoFluid: FluidObject[]
@@ -17,7 +17,6 @@ const PostCard: React.FC<Props> = ({
   slug,
   title,
   description,
-  domain,
   domainName,
   imageFluid,
   logoFluid,

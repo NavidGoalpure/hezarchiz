@@ -5,8 +5,19 @@
  */
 
 // You can delete this file if you're not using it
-const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const { createFilePath } = require(`gatsby-source-filesystem`)
+function createTagPages(_projectsMetadata) {
+  let allTags = []
+
+  _projectsMetadata.map(project => {
+    project?.node?.frontmatter?.keywords.split(",").map(keyword => {
+      if (!allTags.includes(keyword.trim()) && keyword !== "")
+        allTags.push(keyword.trim())
+    })
+  })
+  return allTags
+}
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
@@ -26,19 +37,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   return graphql(`
     query allPages {
-      allDirectory {
-        edges {
-          node {
-            base
-            relativePath
-            dir
-          }
-        }
-      }
       allMarkdownRemark(sort: { fields: [frontmatter___title], order: ASC }) {
         edges {
           node {
@@ -80,18 +82,18 @@ exports.createPages = ({ graphql, actions }) => {
 
     // 2.2 listing pages are here
     const markdownPages = result.data.allMarkdownRemark.edges
-    const allOfPages = result.data.allDirectory.edges
-    const categoriesPage = []
-    Object.entries(allOfPages).map(page => {
-      if (page[1].node.relativePath !== "")
-        categoriesPage.push(`/${page[1].node.relativePath}`)
-    })
+    const allTags = createTagPages(result.data.allMarkdownRemark.edges)
+
     // کتگوریزپیج، مربوط به پیج هایی میشه که حالت لیست دارند
-    categoriesPage.forEach((listingPage, index) => {
+    allTags.forEach((listingPage, index) => {
+      createRedirect({
+        fromPath: `/game`,
+        toPath: `/`,
+      })
       createPage({
-        path: listingPage,
+        path: `/${listingPage}`,
         component: path.resolve(
-          `./src/components/templates/ProjectsListPage.tsx`
+          `./src/components/templates/ProjectsListPage.tsx`,
         ),
         context: {
           slug: listingPage,
@@ -103,7 +105,7 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: page.node.fields.slug,
         component: path.resolve(
-          `./src/components/templates/ProjectPage/index.tsx`
+          `./src/components/templates/ProjectPage/index.tsx`,
         ),
         context: {
           title: page.node.frontmatter.title,

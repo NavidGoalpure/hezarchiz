@@ -19,7 +19,7 @@ const TwoSectionPage: React.FC<Props> = ({
   return (
     <main role="main" style={{ width: "100%" }} id="main">
       <div className="content" ref={ref} tabIndex={1}>
-        <ListDeclimer category="learning" title={pageTitle} titleTag="H1" />
+        <ListDeclimer tag="learning" title={pageTitle} titleTag="H1" />
         <div style={{ position: "absolute", top: "8rem", width: "100%" }}>
           <LearningSpecificSection />
           <details className="dark-glass" open>

@@ -5,7 +5,7 @@ domainName: "کتاب صوتی"
 img: "cover.jpg"
 logo: "logo.png"
 description: "این کتاب صوتی سعی می‌کند مشکلات پول های رایج و امکانات بیتکوین برای غلبه بر آن مشکلات را شرح دهد"
-keywords: learning,podcast
+keywords: learning,podcast,bitcoin
 blog: true
 confirm: false
 ---

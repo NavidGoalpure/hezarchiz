@@ -5,7 +5,7 @@ domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
 description: "ابزار دریافت نوتیفیکیشن قیمت کریپتوکارنسی"
-keywords: services,price,ltc,bnb,bch,xrp,btc,eth
+keywords: exchange,ltc,bnb,xrp,bitcoin,ethereum
 blog: true
 confirm: true
 ---

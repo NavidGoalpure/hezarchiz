@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import PostCard from "../PostCard"
 import { ListDeclimer } from "./ListDeclimer"
 import TwoSectionPage from "../TwoSectionPage"
 import CardsContainer from "../CardsContainer"
@@ -98,7 +97,7 @@ const BlogList: React.FC<Props> = props => {
       return (
         <main role="main" style={{ width: "100%" }}>
           <div className="content" ref={elementRef} tabIndex={1}>
-            <ListDeclimer category={props.includePhrase} />
+            <ListDeclimer tag={props.includePhrase} />
             <CardsContainer
               includePhrase={props.includePhrase}
               projects={allMarkdownRemark.edges}

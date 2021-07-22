@@ -5,7 +5,7 @@ domainName: "dorj.io"
 img: "cover.jpg"
 logo: "logo.png"
 description: "کیف پول سخت افزاری درج"
-keywords: services,blockchain,wallet
+keywords: shop
 blog: true
 confirm: false
 ---
