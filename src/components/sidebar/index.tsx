@@ -68,7 +68,8 @@ const SideBar = () => {
   const linkedin =
     "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
   const telegram = "https://t.me/" + site.siteMetadata.social.telegram
-  const pathName = typeof window !== "undefined" ? window.location.href : ""
+  const pathName = typeof window !== "undefined" ? window.location.pathname : ""
+  console.log("navid pathName=", pathName)
 
   return (
     <aside className="sidebar">
@@ -80,9 +81,9 @@ const SideBar = () => {
       </div>
 
       <div className="btn-group1">
-        <Link to="/">
+        <Link to="/" className="glass-reflex ">
           <button
-            className="navbtn mob-menu-items"
+            className="navbtn mob-menu-items dark-glass"
             style={
               pathName === `/`
                 ? { background: "var( --secondari-color-normal)" }
@@ -94,11 +95,11 @@ const SideBar = () => {
         </Link>
         {allTags.map(tag => {
           return (
-            <Link to={`/${tag}`}>
+            <Link to={`/${tag}`} className="glass-reflex ">
               <button
-                className="navbtn mob-menu-items"
+                className="navbtn mob-menu-items dark-glass"
                 style={
-                  pathName === `/${tag}`
+                  pathName === `/${tag}` || pathName === `/${tag}/`
                     ? { background: "var( --secondari-color-normal)" }
                     : {}
                 }
