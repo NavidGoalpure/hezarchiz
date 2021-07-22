@@ -68,7 +68,7 @@ const SideBar = () => {
   const linkedin =
     "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
   const telegram = "https://t.me/" + site.siteMetadata.social.telegram
-  const pathName = window?.location?.pathname || ""
+  const pathName = typeof window !== "undefined" ? window.location.href : ""
 
   return (
     <aside className="sidebar">
