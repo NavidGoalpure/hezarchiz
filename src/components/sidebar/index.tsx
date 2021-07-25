@@ -69,7 +69,6 @@ const SideBar = () => {
     "https://linkedin.com/in/" + site.siteMetadata.social.linkedin
   const telegram = "https://t.me/" + site.siteMetadata.social.telegram
   const pathName = typeof window !== "undefined" ? window.location.pathname : ""
-  console.log("navid pathName=", pathName)
 
   return (
     <aside className="sidebar">
@@ -81,9 +80,9 @@ const SideBar = () => {
       </div>
 
       <div className="btn-group1">
-        <Link to="/" className="glass-reflex ">
+        <Link to="/">
           <button
-            className="navbtn mob-menu-items dark-glass"
+            className="navbtn mob-menu-items dark-glass glass-reflex"
             style={
               pathName === `/`
                 ? { background: "var( --secondari-color-normal)" }

@@ -1,7 +1,7 @@
 ---
 title: "جینگول"
-domain: "https://jingool.janbal.io/"
-domainName: "jingool.janbal.io/"
+domain: "https://jingool.janbal.io"
+domainName: "jingool.janbal.io"
 img: "cover.jpg"
 logo: "logo.png"
 description: "خرید اکسسوری بیتکوینی"
