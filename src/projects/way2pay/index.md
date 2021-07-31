@@ -8,6 +8,8 @@ description: "رسانه فناوری‌های مالی ایران"
 keywords: news
 blog: true
 confirm: false
+redirect_from:
+  - /news/way2pay/
 ---
 
 ## پایگاه تحلیلی خبری راه پرداخت

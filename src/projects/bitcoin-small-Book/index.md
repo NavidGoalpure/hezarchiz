@@ -8,6 +8,8 @@ description: "این کتاب صوتی سعی می‌کند مشکلات پول 
 keywords: learning,podcast,bitcoin
 blog: true
 confirm: false
+redirect_from:
+  - /learning/bitcoinSmallBook/
 ---
 
 ## کتاب کوچک بیت‌کوین

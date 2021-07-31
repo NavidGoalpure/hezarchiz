@@ -8,6 +8,8 @@ description: "تبادل اطلاعات بازی اکسی اینفینیتی"
 keywords: social-networks, ethereum, game
 blog: true
 confirm: true
+redirect_from:
+  - /social-networks/axiecap/
 ---
 
 یک گروه تلگرامی پویا در ارتباط با بازی Axie infinity

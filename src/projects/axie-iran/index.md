@@ -8,6 +8,8 @@ description: "مرجع خبری و آموزشی بازی اینفینیتی اک
 keywords: ethereum, game,learning
 blog: true
 confirm: false
+redirect_from:
+  - /learning/axieIran/
 ---
 
 اکسی اینفینیتی (Axie infiniti) یک بازی مبتنی بر بلاکچین اتریوم است که در سال ۲۰۱۸ شروع به فعالیت نموده و از آن زمان تا به امروز رشد بسیار زیادی را تجربه کرده است.

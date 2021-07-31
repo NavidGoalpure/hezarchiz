@@ -8,6 +8,8 @@ description: "گپ و گفت فعالان کریپتوی ایران که ضبط 
 keywords: learning,podcast
 blog: true
 confirm: false
+redirect_from:
+  - /learning/simorqPodcast/
 ---
 
 این پادکست شامل وویس چت های صوتی ای است که در حوزه های متنوع مرتبط با بلاکچین و در گروه تلگرامی «سیمرغ بلاکچین» برگزار میشه.

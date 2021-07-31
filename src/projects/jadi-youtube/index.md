@@ -7,7 +7,9 @@ logo: "logo.png"
 description: "دوره آموزش ویدیویی بلاکچین در پلتفرم یوتیوب توسط «جادی»"
 keywords: learning,video
 blog: true
-confirm: false
+confirm: true
+redirect_from:
+  - /learning/jadiYoutube/
 ---
 
 یک دوره آموزشی ویدیویی بلاکچین با تمرکز بر بیتکوین است که توسط جادی تهیه شده و در یوتیوب ارائه شده است.
