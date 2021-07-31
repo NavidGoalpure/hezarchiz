@@ -17,6 +17,7 @@ const convertTagToPersian = {
   learning: "آموزش",
   defi: "دیفای",
   exchange: "صرافی",
+  lightning: "لایتنینگ",
   bitcoin: "بیتکوین",
   payment: "ابزار پرداخت",
   shop: "فروشگاه",
