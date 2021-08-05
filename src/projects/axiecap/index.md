@@ -1,6 +1,6 @@
 ---
 title: " بازی Axie infinity "
-domain: "t.me/axiecap"
+domain: "https://www.t.me/axiecap"
 domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
