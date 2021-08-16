@@ -4,10 +4,10 @@ domain: "https://anchor.fm/scriptcast"
 domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
-description: "₿ اسکریپت، رمز و راز دنیای بیتکوین رو باز می‌کنه"
-keywords: learning,podcast
+description: "اینحا ضیا و سارا اخبار غیرزرد بیتکوین رو روایت میکنن "
+keywords: learning,podcast,bitcoin
 blog: true
-confirm: false
+confirm: yes
 ---
 
 لانه خرگوش پادکستیه که توش ضیا و سارا سعی میکنن محیطی بسازن که از فضای شلوغ و پرتلاطم اخبار و اتفاقات زرد بیتکوین دور باشه و به جاش روی رخدادهای مهم بیتکوین تمرکز کنه.
