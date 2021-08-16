@@ -4,7 +4,7 @@ domain: "https://anchor.fm/scriptcast"
 domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
-description: "اینحا ضیا و سارا اخبار غیرزرد بیتکوین رو روایت میکنن "
+description: "اینجا ضیا و سارا اخبار غیر زرد بیتکوین رو روایت میکنن "
 keywords: learning,podcast,bitcoin
 blog: true
 confirm: yes
