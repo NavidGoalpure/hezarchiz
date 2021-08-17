@@ -1,6 +1,6 @@
 ---
 title: "گروه تلگرام سالیدیتی "
-domain: "t.me/joinchat/Lqvls3iXPZc3MzI0"
+domain: "https://www.t.me/joinchat/Lqvls3iXPZc3MzI0"
 domainName: ""
 img: "cover.jpg"
 logo: "logo.png"

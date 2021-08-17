@@ -1,6 +1,6 @@
 ---
 title: "گروه تلگرام سیمرغ"
-domain: "t.me/joinchat/QwSj1llKEA6sf9ER"
+domain: "https://www.t.me/joinchat/QwSj1llKEA6sf9ER"
 domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
