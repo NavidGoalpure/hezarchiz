@@ -1,6 +1,6 @@
 ---
 title: "پادکست لانه خرگوش"
-domain: "https://anchor.fm/scriptcast"
+domain: "https://anchor.fm/RHJ"
 domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
