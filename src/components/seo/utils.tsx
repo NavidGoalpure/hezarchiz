@@ -1,3 +1,4 @@
+import { allTags } from "../../consts"
 interface metaProps {
   title: string | undefined
   desc: string | undefined
@@ -38,13 +39,13 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
     case "social-networks":
       return {
         title: `چنل و گروه ارز دیجیتال`,
-        desc: `معرفی کانال ها و گروه های مربوط به ارز دیجیتال `,
+        desc: ` معرفی کانال ها و گروه های مربوط به ارز دیجیتال| شبکه های اجتماعی ارز دیجیتال`,
         keywords: [
+          "شبکه های اجتماعی ارز دیجیتال",
           "آموزش ارز دیجیتال",
-          "مربی ارز دیجیتال",
-          "آموزش بیتکوین",
-          "آموزش اتریوم",
-          "سوال و جواب ارز دیجیتال",
+          "کانال ارز دیجیتال",
+          "چنل ارز دیجیتال",
+          "گروه ارز دیجیتال",
         ],
       }
     case "news":
@@ -59,17 +60,39 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
           "سوال و جواب ارز دیجیتال",
         ],
       }
-    case "startup":
+    case "ethereum":
       return {
-        title: `سرویس‌ها و استارتاپ های ارزهای دیجیتال`,
-        desc: `معرفی استارتاپ های مرتبط با کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
+        title: allTags["ethereum"],
+        desc: `پروژه های مربوط به ارز دیجیتال اتریوم`,
         keywords: [
-          "آموزش ارز دیجیتال",
-          "مربی ارز دیجیتال",
-          "آموزش بیتکوین",
           "آموزش اتریوم",
-          "سوال و جواب ارز دیجیتال",
+          "پروژه اتریوم",
+          "سولیدیتی",
+          
         ],
+      }
+    case "game":
+      return {
+        title: allTags["game"],
+        desc: `پروژه های مربوط به بازی بلاکچین  `,
+        keywords: [
+          "بازی بلاکچین",
+          "بازی های بلاکچینی",
+          "کسب درآمد از بازی های بلاکچینی",
+        ],
+      }
+    case "articles":
+      return {
+        title: allTags["articles"],
+        desc: `مقالات مربوط به بلاکچین و ارز دیجیتال `,
+        keywords: ["مقالات بلاکچین", "مقاله بلاکچین", "بلاکچین چیست"],
+      }
+    case "defi":
+      return {
+        title: allTags["defi"],
+        desc: `پروژه های مربوط به دیفای و آموزش دیفای `,
+        keywords: ["دیفای",
+          "آموزش دیفای",
       }
   }
   return res

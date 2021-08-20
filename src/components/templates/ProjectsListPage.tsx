@@ -12,7 +12,6 @@ interface Props {
 }
 const IndexPage: React.FC<Props> = ({ pageContext }) => {
   const smartSlug = pageContext.slug?.replace("/", "") || "all"
-
   return (
     <section className="page-container">
       <SEO

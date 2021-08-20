@@ -1,3 +1,5 @@
+import { allTags } from "../../consts"
+
 function createTagPages(_projectsMetadata) {
   let allTags = []
 
@@ -9,28 +11,5 @@ function createTagPages(_projectsMetadata) {
   })
   return allTags
 }
-const convertTagToPersian = {
-  "social-networks": "شبکه‌های اجتماعی",
-  ethereum: "اتریوم",
-  game: "بازی",
-  articles: "مقالات",
-  learning: "آموزش",
-  defi: "دیفای",
-  exchange: "صرافی",
-  lightning: "لایتنینگ",
-  bitcoin: "بیتکوین",
-  payment: "ابزار پرداخت",
-  shop: "فروشگاه",
-  mentors: "مربیان",
-  solidity: "سالیدیتی",
-  video: "ویدئو",
-  news: "اخبار",
-  ltc: "لایت کوین",
-  bnb: "بی ان بی",
-  xrp: "ریپل",
-  podcast: "پادکست",
-  investment: "سرمایه گذاری",
-  bsv: "بی اس وی",
-  startup: "استارتاپ‌",
-}
+const convertTagToPersian = allTags
 export { createTagPages, convertTagToPersian }

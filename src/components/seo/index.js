@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, title, keywords, image }) {
           }
         }
       }
-    `
+    `,
   )
 
   const smartTitle = title || site.siteMetadata.title
