@@ -64,12 +64,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       return {
         title: allTags["ethereum"],
         desc: `پروژه های مربوط به ارز دیجیتال اتریوم`,
-        keywords: [
-          "آموزش اتریوم",
-          "پروژه اتریوم",
-          "سولیدیتی",
-          
-        ],
+        keywords: ["آموزش اتریوم", "پروژه اتریوم", "سولیدیتی"],
       }
     case "game":
       return {
@@ -91,8 +86,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       return {
         title: allTags["defi"],
         desc: `پروژه های مربوط به دیفای و آموزش دیفای `,
-        keywords: ["دیفای",
-          "آموزش دیفای",
+        keywords: ["دیفای", "آموزش دیفای"],
       }
   }
   return res
