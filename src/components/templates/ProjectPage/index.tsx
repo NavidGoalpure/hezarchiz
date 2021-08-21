@@ -8,7 +8,20 @@ import SideBar from "../../sidebar"
 import { graphql, useStaticQuery } from "gatsby"
 
 deckDeckGoHighlightElement()
-
+function findSubProject(
+  allMarkdownRemark,
+  path,
+): Record<string, any>[] | undefined {
+  const subProjects = []
+  for (let key in allMarkdownRemark.edges) {
+    if (
+      allMarkdownRemark.edges[key]?.node.fields?.slug?.includes(path) && // زیرمجموعه اون پروژه باشه
+      allMarkdownRemark.edges[key]?.node.fields?.slug !== path // خود پروژه نباشه
+    )
+      subProjects.push(allMarkdownRemark.edges[key])
+  }
+  return subProjects
+}
 interface Props {
   title: string
   description: string
@@ -22,7 +35,7 @@ const BlogPost = props => {
     props.pageContext
   const { path } = props
   const { siteUrl } = useSiteMetadata()
-  const { site, allMarkdownRemark } = useStaticQuery(
+  const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query {
         allMarkdownRemark(sort: { fields: [frontmatter___title], order: ASC }) {
@@ -41,6 +54,20 @@ const BlogPost = props => {
                     ... on ImageSharp {
                       fluid(maxWidth: 1920) {
                         base64
+                        aspectRatio
+                        src
+                        srcSet
+                        srcWebp
+                        srcSetWebp
+                        sizes
+                      }
+                    }
+                  }
+                }
+                logo {
+                  children {
+                    ... on ImageSharp {
+                      fluid(maxWidth: 48) {
                         aspectRatio
                         src
                         srcSet
@@ -76,6 +103,11 @@ const BlogPost = props => {
         imageFluid={imgFluid}
         domain={domain}
         keywords={keywords}
+        subProjects={
+          findSubProject(allMarkdownRemark, path).length > 0
+            ? findSubProject(allMarkdownRemark, path)
+            : undefined
+        }
       >
         <div
           dangerouslySetInnerHTML={{ __html: html }}

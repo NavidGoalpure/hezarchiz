@@ -4,6 +4,7 @@ import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import Img from "gatsby-image"
 import "./style.scss"
 import { Reference } from "./Rreference"
+import CardsContainer from "../CardsContainer"
 
 const Post = ({
   title,
@@ -13,6 +14,7 @@ const Post = ({
   imageFluid,
   domain,
   keywords,
+  subProjects,
 }) => {
   let disqusConfig = {
     url: url,
@@ -20,7 +22,6 @@ const Post = ({
     title: title,
   }
   const elementRef = useRef()
-
   useEffect(() => {
     //@ts-ignore
     elementRef.current?.focus()
@@ -43,6 +44,24 @@ const Post = ({
           />
           <div className="post-content">{children}</div>
           <Reference title={title} domain={domain} keywords={keywords} />
+          {subProjects && (
+            <div
+              style={{
+                width: "100%",
+                marginLeft: "1.5rem",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                marginTop: "2rem",
+              }}
+            >
+              <CardsContainer
+                includePhrase={"all"}
+                projects={subProjects}
+                ref={elementRef}
+              />
+            </div>
+          )}
         </div>
         <div id="discus-alert">
           سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد که
