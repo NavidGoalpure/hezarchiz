@@ -88,6 +88,12 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
         desc: `پروژه های مربوط به دیفای و آموزش دیفای `,
         keywords: ["دیفای", "آموزش دیفای"],
       }
+    case "exchange":
+      return {
+        title: allTags["exchange"],
+        desc: `صرافی های ارز دیجیتال `,
+        keywords: ["صرافی بیتکوین", "صرافی لایتنینگ", "صرافی دیسنترالایز"],
+      }
   }
   return res
 }
