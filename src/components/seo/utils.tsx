@@ -94,6 +94,12 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
         desc: `صرافی های ارز دیجیتال `,
         keywords: ["صرافی بیتکوین", "صرافی لایتنینگ", "صرافی دیسنترالایز"],
       }
+    case "lightning":
+      return {
+        title: allTags["lightning"],
+        desc: `پروژه های مربوط به لایتنینگ بیتکوین`,
+        keywords: ["صرافی لایتنینگ بیتکوین", "صرافی لایتنینگ", "لایتنینگ"],
+      }
   }
   return res
 }
