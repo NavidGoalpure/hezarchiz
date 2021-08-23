@@ -4,10 +4,9 @@ import "../WhatIsBlockchain/what-is-blockchain.scss"
 //@ts-ignore
 import BLOCKSpacer from "../WhatIsBlockchain/images/BLOCK-spacer.png"
 import WhatIsBitcoinHeader from "./WhatIsBitcoinHeader"
-import Chapter1 from "../WhatIsBlockchain/Chapter1"
-import Chapter2 from "../WhatIsBlockchain/Chapter2"
+import Chapter1 from "./Chapter1"
+import Chapter2 from "./Chapter2"
 import Chapter3 from "./Chapter3"
-import Chapter4 from "../WhatIsBlockchain/Chapter4"
 import SEO from "../../components/seo"
 
 const WhatIsBlockchain: React.FC = props => {
@@ -35,6 +34,7 @@ const WhatIsBlockchain: React.FC = props => {
             autoPlay
             muted
             loop
+            height="154px"
           >
             <source
               src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/topper.mp4"
@@ -59,7 +59,6 @@ const WhatIsBlockchain: React.FC = props => {
               <Chapter1 />
               <Chapter2 />
               <Chapter3 />
-              <Chapter4 />
               <div className="row">
                 <div className="col-12 mt-1 break">
                   <img

@@ -31,7 +31,7 @@ const WhatIsBlockchainHeader: React.FC = props => {
               <div>
                 بلاکچین&nbsp;
                 <span className="special selected">
-                  یک دیتابیس (مجموعه‌ای از داده ها)
+                  یک دیتابیس (بانک اطلاعاتی)
                 </span>
                 <img loading="lazy" className="subhead-img" src={Chapter1} />
                 &nbsp;است که توسط شبکه ای از کامپیوترها به اشتراک گذاشته شده

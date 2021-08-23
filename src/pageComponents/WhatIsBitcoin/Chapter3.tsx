@@ -23,13 +23,13 @@ const Chapter3: React.FC = props => {
             className="chapter-img img-responsive mx-auto d-block break full-width"
             src={BLOCKSpacer}
           />
-          <p className="srepgfx-chapter full-width">کامپیوترها در شبکه</p>
+          <h2 className="srepgfx-chapter full-width">نودها در شبکه</h2>
 
           <div className="col-md-5">
-            <p className="srepgfx-chapter-intro">
+            <h3 className="srepgfx-chapter-intro">
               بلاکچین یک بانک اطلاعاتی غیرمتمرکز است که در آن همه نودها باهم
               برابرند.
-            </p>
+            </h3>
           </div>
         </div>
 
@@ -40,51 +40,50 @@ const Chapter3: React.FC = props => {
             <div className="col-sm-6 col-md-6 text-center text-sm-left">
               <img
                 className="img-fluid break hidden-sm-up smaller-image"
-                src={NetworkCentralSmall}
-              />
-
-              <p className="srepgfx-label">شبکه متمرکز</p>
-              <p className="srepgfx-sublabel">
-                اختیار همه امور بر عهده یک نود مرکزی است.
-              </p>
-            </div>
-            <div className="col-sm-6 col-md-6 text-center text-sm-left">
-              <img
-                className="img-fluid break hidden-sm-up smaller-image"
                 src={NetworkDecentralSmall}
               />
-              <p className="srepgfx-label">شبکه غیرمتمرکز</p>
+              <h4 className="srepgfx-label">شبکه غیرمتمرکز</h4>
               <p className="srepgfx-sublabel">
                 دسترسی داشته باشند و در رقابت برای اضافه کردن اطلاعات به دیتابیس
                 مشارکت کنند
               </p>
             </div>
+            <div className="col-sm-6 col-md-6 text-center text-sm-left">
+              <img
+                className="img-fluid break hidden-sm-up smaller-image"
+                src={NetworkCentralSmall}
+              />
+
+              <h4 className="srepgfx-label">شبکه متمرکز</h4>
+              <p className="srepgfx-sublabel">
+                اختیار همه امور بر عهده یک نود مرکزی است.
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="row justify-content-center">
           <div className="col-md-7">
-            <p className="srepgfx-chapter-intro break">اجازه عضویت</p>
+            <h3 className="srepgfx-chapter-intro break">اجازه عضویت</h3>
             <p className="srepgfx-dek">
-              بدون کنترل نهاد مرکزی،‌ اعتماد مشکل می‌شود. از کجا بدانیم اطلاعات
-              ثبت شده در دیتابیس درست است؟ یک پاسخ این است که فقط به عده محدودی
-              اجازه دسترسی به اطلاعات طبقه بندی شده را بدهیم. مثل روشی که شرکت
-              ها برای حفظ اطلاعات خود استفاده می‌کند. اما بلاکچین‌هایی مثل
-              بیتکوین عمومی هستند و همه باید بتوانند به آن دسترسی داشته باشند.
-              از طرفی اعضا ناشناس هستند. در نتیجه نمی‌توانیم افراد «قابل اعتماد»
-              را از «افراد مخرب» تفکیک کنیم
+              بدون دخالت یک نهاد مرکزی، چگونه به صحت اعتماد ذخیره شده اعتماد
+              کنیم؟ یک راه حل این است که فقط به گروه محدودی اجازه دسترسی به
+              اطلاعات را بدهیم و فقط همان‌ها اجازه ثبت اطلاعات را داشته باشند.
+              مثل متدی که شرکت ها برای حفظ اطلاعات خود انتخاب می‌کنند. اما
+              بیتکوین حاوی اطلاعات عمومی است و نمیخواهیم فقط عده مخصوصی قدرت
+              کنترل اطلاعات عمومی را داشته باشند
             </p>
             <p className="srepgfx-dek">
-              برای حل این مشکل بلاکچین ها شروطی را برای کامپیوترهایی که
-              می‌خواهند به شبکه بپیوندند و رکورد هایی را به زنجیره اضافه کنند،
-              قرار می‌دهند. این شروط را «مکانیزم اجماع» می‌نامیم.
+              برای حل این مشکل بلاکچین بیتکوین شروطی را برای نودهایی که میخواهند
+              به شبکه بپیوندند و در آن ثبت اطلاعات انجام دهند گذاشته است. به این
+              شروط «مکانیزم اجماع» می‌گوییم
             </p>
           </div>
         </div>
 
         <div className="row justify-content-center">
           <div className="col-md-7">
-            <p className="srepgfx-chapter-intro break">رسیدن به اجماع</p>
+            <h3 className="srepgfx-chapter-intro break">رسیدن به اجماع</h3>
             <p className="srepgfx-dek">
               این شروط از اعضای شبکه می‌خواهند که خود را «اثبات» نمایند.
             </p>
@@ -96,16 +95,24 @@ const Chapter3: React.FC = props => {
         </div>
 
         <div className="row justify-content-around">
-          <div className="col-sm-4 col-md-4 text-center text-sm-left">
-            <img className="img-fluid smaller-image" src={Work} />
-            <p className="srepgfx-label">اثبات کار</p>
-            <p className="srepgfx-sublabel">
-              هر نود برای اینکه بتواند یک بلاک به شبکه اضافه کند، باید نشان دهد
-              که میزانی «کار» انجام داده است. این کار با حل پازل هایی با محاسبات
-              سخت انجام می‌شود. این فرایند که «ماینینگ» نام دارد، نیازمند قدرت
-              محاسباتی زیادی است. هر عضو در ازای «کار»ی که انجام می‌دهد، مقداری
-              پاداش - مثلا بیتکوین یا یک توکن خاص- دریافت می‌کند.
-            </p>
+          <div className=" row text-sm-left">
+            <img
+              className="img-fluid smaller-image"
+              style={{ height: "15rem", margin: "0 auto" }}
+              src={Work}
+            />
+            <div>
+              <h4 className="srepgfx-label">اثبات کار</h4>
+              <p className="srepgfx-sublabel">
+                هر نود برای اینکه بتواند یک بلاک به شبکه اضافه کند، باید نشان
+                دهد که میزانی «کار» انجام داده است. این کار با حل پازل هایی با
+                محاسبات سخت انجام می‌شود. این فرایند که «ماینینگ» نام دارد،
+                نیازمند قدرت محاسباتی زیادی است. هر عضو در ازای «کار»ی که انجام
+                می‌دهد، مقداری بیتکوین به عنوان پاداش دریافت می‌کند.. این پاداش
+                است که ماینر ها را به سرمایه گذاری و مشارکت در حفظ و گسترش
+                زنجیره بیتکوین تشویق می‌کند.
+              </p>
+            </div>
           </div>
         </div>
       </div>

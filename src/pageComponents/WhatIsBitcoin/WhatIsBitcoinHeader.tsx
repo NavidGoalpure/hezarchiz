@@ -32,9 +32,7 @@ const WhatIsBlockchainHeader: React.FC = props => {
                 برای فهم
                 <span className="special selected">&nbsp;بیتکوین&nbsp;</span>
                 اول باید بلاکچین را بشناسیم. بلاکچین&nbsp;
-                <span className="special selected">
-                  یک دیتابیس (مجموعه‌ای از داده ها)
-                </span>
+                <span className="special selected">یک دیتابیس</span>
                 <img loading="lazy" className="subhead-img" src={Chapter1} />
                 &nbsp;است که توسط شبکه ای از کامپیوترها به اشتراک گذاشته شده
                 است. هرگاه رکوردی به این زنجیره اضافه شود،
@@ -52,11 +50,9 @@ const WhatIsBlockchainHeader: React.FC = props => {
                   src={Chapter3}
                 />{" "}
                 مطمئن باشد‌، همه نسخه های دیتابیس که بر روی کامپیوترهای متفاوت
-                قرار دارند، اختلافی ندارند، دائما آن‌ها را چک می‌کند. از بلاکچین
-                برای ساختن ارز دیجیتال بیتکوین استفاده شده است، اما
-                <span className="special"> &nbsp;کاربردهای&nbsp;</span>
-                <img loading="lazy" className="subhead-img" src={Chapter4} />
-                دیگر آن نیز درحال ظهور است.
+                قرار دارند، اختلافی ندارند، دائما آن‌ها را چک می‌کند. در یک
+                کلام، بلاکچین، دیتابیسی است که صحت کارکرد و اطلاعاتش با مشارکت
+                همه اعضایش تامین می‌شود.
               </div>
             </div>
           </div>

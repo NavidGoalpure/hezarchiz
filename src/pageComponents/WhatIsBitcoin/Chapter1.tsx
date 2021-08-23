@@ -1,20 +1,20 @@
 import React, { useRef } from "react"
 //@ts-ignore
-import BLOCKSpacer from "./images/BLOCK-spacer.png"
+import BLOCKSpacer from "../WhatIsBlockchain/images/BLOCK-spacer.png"
 //@ts-ignore
-import componentsWide from "./images/components-wide.jpg"
+import componentsWide from "../WhatIsBlockchain/images/components-wide.jpg"
 //@ts-ignore
-import componentsSmall from "./images/components-small.jpg"
+import componentsSmall from "../WhatIsBlockchain/images/components-small.jpg"
 //@ts-ignore
-import posterVideo1 from "./images/poster-video-1.png"
+import posterVideo1 from "../WhatIsBlockchain/images/poster-video-1.png"
 //@ts-ignore
-import posterVideo2 from "./images/poster-video-2.png"
+import posterVideo2 from "../WhatIsBlockchain/images/poster-video-2.png"
 //@ts-ignore
-import posterVideo3 from "./images/poster-video-3.png"
+import posterVideo3 from "../WhatIsBlockchain/images/poster-video-3.png"
 //@ts-ignore
-import posterVideo4 from "./images/poster-video-4.png"
+import posterVideo4 from "../WhatIsBlockchain/images/poster-video-4.png"
 //@ts-ignore
-import "./chapter1.scss"
+import "../WhatIsBlockchain/chapter1.scss"
 
 const Chapter1: React.FC = props => {
   const video1El = useRef(null)
@@ -99,9 +99,9 @@ const Chapter1: React.FC = props => {
         />
         <h2 className="srepgfx-chapter">یک دیتابیس</h2>
         <p className="srepgfx-chapter-intro">
-          در این دیتابیس، رکورد‌ها در داخل «بلاک ها» ذخیره می‌شوند و این بلاک ها
-          نیز به نوبه خود یکی پس از دیگری در زنجیره قرار می‌گیرند. این‌ها
-          بخش‌های اساسی یک بلاکچین هستند:
+          بلاکچین، دیتابیسی است که اطلاعات را داخل «بلاک» هایی ثبت می‌کند که
+          زنجیروار پشت سر هم قرار می‌گیرند. بلاکچین از بخش های زیر تشکیل شده
+          است:
         </p>
 
         <div className="chapter1-section-container">
@@ -123,7 +123,7 @@ const Chapter1: React.FC = props => {
               <div className="chapter1-row-item item3 ">
                 <p className="srepgfx-label">زنجیره</p>
                 <p className="srepgfx-sublabel">
-                  همه بلاک‌ها به همدیگر متصل می‌شوند
+                  مجموعه ای از بلاک های متصل به هم می‌باشد
                 </p>
               </div>
               <div className="chapter1-row-item item2">
@@ -134,7 +134,8 @@ const Chapter1: React.FC = props => {
               <div className="chapter1-row-item item1">
                 <p className="srepgfx-label">رکورد</p>
                 <p className="srepgfx-sublabel">
-                  می‌تواند هرگونه اطلاعاتی باشد. مثلا اطلاعات یک معامله
+                  هر نوع اطلاعاتی که بخواهیم روی بلاکچین ثبت کنیم. مثل انتقال
+                  بیتکوین بین دو حساب{" "}
                 </p>
               </div>
             </div>
@@ -143,55 +144,56 @@ const Chapter1: React.FC = props => {
       </div>
 
       {/* chapter 1 - scn01 - the record */}
-
-      <div className="row justify-content-center full-height">
-        <div className="col-lg-9">
-          <p className="srepgfx-chapter-intro break">
-            برای ثبت یک معامله در بلاکچین، مراحل زیر طی می‌شود:
-          </p>
-          <h3 className="srepgfx-label centered ">مرحله اول</h3>
-        </div>
-        <div className="col-md-7">
-          <p className="srepgfx-dek centered">
-            معامله ثبت می شود. به عنوان مثال ، بگذارید بگوییم آقای «صورتی» دو
-            سکه خود را به قیمت 100 دلار به آقای «سبز» می فروشد. در این رکورد،
-            جزییات تراکنش ، از جمله یک امضای دیجیتالی از هر طرف ثبت می‌گردد.
-          </p>
-        </div>
-        <div className="scroll-item" id="scroll-video-0">
-          <div
-            className="row justify-content-center"
-            style={{ height: "23rem" }}
-          >
-            <div className="col-xl-10 scroll-video-holder">
-              <video
-                className="video master-video hidden-sm-down mtz-vlc-pboid"
-                playsInline
-                autoPlay
-                muted
-                poster={posterVideo1}
-                ref={video1El}
-                onClick={onVideo1Click}
-              >
-                <source
-                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-1.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <video
-                className="video master-video hidden-md-up mtz-vlc-pboid"
-                playsInline
-                autoPlay
-                muted
-                poster={posterVideo1}
-                ref={smVideo1El}
-                onClick={onSmVideo1Click}
-              >
-                <source
-                  src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-1.mp4"
-                  type="video/mp4"
-                />
-              </video>
+      <div className="scroll-item-container">
+        <div className="row justify-content-center">
+          <div className="col-lg-9">
+            <p className="srepgfx-chapter-intro break">
+              برای ذخیره یک تراکنش در بلاکچین، مراحل زیر انجام می‌شود:
+            </p>
+            <h3 className="srepgfx-label centered ">مرحله ۱</h3>
+          </div>
+          <div className="col-md-7">
+            <p className="srepgfx-dek centered">
+              ثبت تراکنش. مثلا آقای «سگ سبیل» کالای خود را در ازای ۲۰۰ دلار به
+              آقای «شیش تیغه» میفروشد. در این رکورد، جزییات تراکنش، شامل یک
+              امضای دیجیتالی طرفین ذخیره می‌شود.
+            </p>
+          </div>
+          <div className="scroll-item" id="scroll-video-0">
+            <div
+              className="row justify-content-center"
+              style={{ height: "23rem" }}
+            >
+              <div className="col-xl-10 scroll-video-holder">
+                <video
+                  className="video master-video hidden-sm-down mtz-vlc-pboid"
+                  playsInline
+                  autoPlay
+                  muted
+                  poster={posterVideo1}
+                  ref={video1El}
+                  onClick={onVideo1Click}
+                >
+                  <source
+                    src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/video-1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <video
+                  className="video master-video hidden-md-up mtz-vlc-pboid"
+                  playsInline
+                  autoPlay
+                  muted
+                  poster={posterVideo1}
+                  ref={smVideo1El}
+                  onClick={onSmVideo1Click}
+                >
+                  <source
+                    src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-sm/sm-video-1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -199,11 +201,10 @@ const Chapter1: React.FC = props => {
       {/* chapter 1 - scn01 - the record */}
       <div className="scroll-item-container">
         <div className="row justify-content-center">
-          <h3 className="srepgfx-label centered">مرحله دوم</h3>
+          <h3 className="srepgfx-label centered">مرحله ۲</h3>
           <p className="srepgfx-dek centered">
-            رکورد (اطلاعات معامله) به وسیله شبکه بررسی می‌شود. کامپیوترهایی که
-            به شبکه متصل هستند را «نود» می‌نامیم. این نود ها جزییات تراکنش را
-            بررسی می‌کنند تا چیزی اشتباه نباشد.
+            شبکه، اطلاعات تراکنش را توسط نودهایش بررسی می‌کند تا از صحت آن مطمئن
+            شود. . این نودها همان کامپیوترهایی هستند که به شبکه متصل شده اند.
             <div className=""></div>
           </p>
         </div>
@@ -249,11 +250,11 @@ const Chapter1: React.FC = props => {
       <div className="scroll-item-container">
         <div className="scroll-item-content">
           <div className="row justify-content-center">
-            <h3 className="srepgfx-label centered">مرحله سوم</h3>
+            <h3 className="srepgfx-label centered">مرحله ۳</h3>
             <p className="srepgfx-dek centered">
-              رکوردی که توسط شبکه تایید شده، به یک بلاک اضافه می‌شود. هر بلاک
-              شامل یک کد منحصر به فرد می‌باشد که «هش» (HASH) نامیده می‌شود. هر
-              بلاک علاوه بر «هش خود»، «هش بلاک قبلی» را نیز در خود ذخیره می‌کند
+              اطلاعات هر بلاک، رمزنگاری شده و یک خروجی منحصر به فرد که (هش) نام
+              دارد از آن به دست می‌آید. البته توجه کنید که هر بلاک، به جز هش
+              خود، هش بلاک قبلی را هم در خود نگهداری می‌کند.
             </p>
           </div>
         </div>
@@ -299,13 +300,16 @@ const Chapter1: React.FC = props => {
       <div className="scroll-item-container">
         <div className="scroll-item-content">
           <div className="row justify-content-center">
-            <h3 className="srepgfx-label centered full-width">مرحله چهارم</h3>
+            <h3 className="srepgfx-label centered full-width">مرحله ۴</h3>
             <p className="srepgfx-dek centered">
-              برای اضافه شدن بلاک جدید به بلاک چین، این بلاک از طریق تکنولوژی هش
-              به بلاک قبلی متصل می‌شود <br /> (به خاطر دارید که گفتیم هش بلاک
-              قبلی در بلاک جدید ذخیره می‌شود؟)
-              <br /> در یک نمای کلی تمام بلاک های بلاک چین از طریق هش ها به
-              یکدیگر متصل هستند.
+              بلاک جدید به انتهاب بلاکچین اضافه می‌شود و از طریق تکنولوژی هش، به
+              بلاک قبلی پیوند می‌خورد.
+              <br />
+              (اگر حواستان باشد، قبلا گفتیم هش بلاک قبلی در بلاک جدید ذخیره
+              می‌شود)
+              <br />
+              در نهایت تمام بلاک های زنجیره، از طریق هش ها به یکدیگر زنجیر
+              می‌شوند.
             </p>
           </div>
         </div>

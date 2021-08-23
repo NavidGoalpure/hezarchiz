@@ -1,19 +1,19 @@
 import React, { useRef } from "react"
-import "./chapter2.scss"
+import "../WhatIsBlockchain/chapter2.scss"
 // @ts-ignore
-import BLOCKSpacer from "./images/BLOCK-spacer.png"
+import BLOCKSpacer from "../WhatIsBlockchain/images/BLOCK-spacer.png"
 // @ts-ignore
-import Bitcoin from "./images/bitcoin.jpg"
+import Bitcoin from "../WhatIsBlockchain/images/bitcoin.jpg"
 // @ts-ignore
-import SupplyChain from "./images/supply_chain.jpg"
+import SupplyChain from "../WhatIsBlockchain/images/supply_chain.jpg"
 // @ts-ignore
-import Banks from "./images/banks.jpg"
+import Banks from "../WhatIsBlockchain/images/banks.jpg"
 // @ts-ignore
-import Health from "./images/health.png"
+import Health from "../WhatIsBlockchain/images/health.png"
 // @ts-ignore
-import Vote from "./images/vote.png"
+import Vote from "../WhatIsBlockchain/images/vote.png"
 // @ts-ignore
-import Land from "./images/land.png"
+import Land from "../WhatIsBlockchain/images/land.png"
 
 const Chapter4: React.FC = props => {
   return (
@@ -31,13 +31,6 @@ const Chapter4: React.FC = props => {
         <div className="row justify-content-center">
           <div className="col-md-9">
             <h2 className="srepgfx-chapter">موارد استفاده</h2>
-          </div>
-          <div className="col-md-5">
-            <h3 className="srepgfx-chapter-intro break-after">
-              بلاکچین موارد استفاده متنوعی دارد اما باید آگاه باشید که بعضی از
-              آنها فعلا در حد تبلیغات است و هنوز مشخص نیست راه حل هایی که عنوان
-              می‌شود تا چه حد عملی خواهد بود.
-            </h3>
           </div>
         </div>
         <div className="row justify-content-around">

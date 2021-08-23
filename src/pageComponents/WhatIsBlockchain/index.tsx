@@ -35,6 +35,7 @@ const WhatIsBlockchain: React.FC = props => {
             autoPlay
             muted
             loop
+            height="154px"
           >
             <source
               src="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/images/videos-lg/topper.mp4"
