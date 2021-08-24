@@ -17,7 +17,7 @@ const WhatIsBlockchainHeader: React.FC = props => {
         <div className="row justify-content-center break">
           <div className="col-lg-10">
             <div>
-              <h1 className="srepgfx-title break">بیتکوین چیست</h1>
+              <h1 className="srepgfx-title break">بیتکوین چگونه کار می‌کند</h1>
               <p className="srepgfx-dek kicker">
                 با الهام و استفاده از:
                 <a href="https://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/index.html">
@@ -29,7 +29,7 @@ const WhatIsBlockchainHeader: React.FC = props => {
             </div>
             <div className="srepgfx-dek-large main-subhead">
               <div>
-                برای فهم
+                برای فهم روش کار
                 <span className="special selected">&nbsp;بیتکوین&nbsp;</span>
                 اول باید بلاکچین را بشناسیم. بلاکچین&nbsp;
                 <span className="special selected">یک دیتابیس</span>

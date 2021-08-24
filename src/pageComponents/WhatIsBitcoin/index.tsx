@@ -21,9 +21,14 @@ const WhatIsBlockchain: React.FC = props => {
   return (
     <>
       <SEO
-        title={"بیتکوین چیست"}
-        description={"بیتکوین چیست؟ یک آموزش جذاب"}
-        keywords={["بیتکوین", "بیتکوین چیست"]}
+        title={"بیتکوین چگونه کار می‌کند"}
+        description={"بیتکوین چیست و چگونه کار می‌کند"}
+        keywords={[
+          "بیتکوین",
+          "بیتکوین چگونه کار می‌کند",
+          "پروف آف ورک",
+          "اثبات کار چیست",
+        ]}
       />
       <section className="page-container" ref={elementRef} tabIndex={1}>
         <SideBar />
