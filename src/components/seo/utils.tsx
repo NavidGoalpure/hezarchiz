@@ -100,6 +100,12 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
         desc: `پروژه های مربوط به لایتنینگ بیتکوین`,
         keywords: ["صرافی لایتنینگ بیتکوین", "صرافی لایتنینگ", "لایتنینگ"],
       }
+    case "bitcoin":
+      return {
+        title: allTags["bitcoin"],
+        desc: `پروژه های مربوط به بیتکوین`,
+        keywords: ["بیتکوین", "آموزش بیتکوی"],
+      }
   }
   return res
 }

@@ -22,4 +22,6 @@ const allTags = {
   bsv: "بی اس وی",
   startup: "استارتاپ‌",
 }
+// هر تگی که اینجا اضافه میشه باید توی آدرس زیر هم تگ های سئوش اضافه بشه
+// components/seo/utils
 export { allTags }
