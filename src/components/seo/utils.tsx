@@ -104,7 +104,13 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       return {
         title: allTags["bitcoin"],
         desc: `پروژه های مربوط به بیتکوین`,
-        keywords: ["بیتکوین", "آموزش بیتکوی"],
+        keywords: ["بیتکوین", "آموزش بیتکوین"],
+      }
+    case "payment":
+      return {
+        title: allTags["payment"],
+        desc: `ابزارهای پرداخت کریپتوکارنسی`,
+        keywords: ["پرداخت بیتکوینی", "پرداخت کریپتوکارنسی"],
       }
   }
   return res
