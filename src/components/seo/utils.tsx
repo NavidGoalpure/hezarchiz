@@ -123,6 +123,12 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
           "ماگ بیتکوین",
         ],
       }
+    case "mentors":
+      return {
+        title: allTags["mentors"],
+        desc: `مربیان ارز دیجیتال`,
+        keywords: ["حمید مرادی", "شایان شریف الحسینی", "میثم رضایی"],
+      }
   }
   return res
 }
