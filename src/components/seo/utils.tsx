@@ -15,7 +15,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
     case "mentors":
       return {
         title: `متخصصان ارزهای دیجیتال`,
-        desc: `معرفی متخصصان کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
+        desc: `معرفی متخصصان ارز دیجیتال و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
         keywords: [
           "آموزش ارز دیجیتال",
           "مربی ارز دیجیتال",
@@ -27,7 +27,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
     case "learning":
       return {
         title: `آموزش بلاکچین`,
-        desc: `معرفی پروژه های آموزشی کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
+        desc: `معرفی پروژه های آموزشی ارز دیجیتال و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
         keywords: [
           "آموزش ارز دیجیتال",
           "مربی ارز دیجیتال",
@@ -51,7 +51,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
     case "news":
       return {
         title: `اخبار ارزهای دیجیتال`,
-        desc: `معرفی سایت‌های خبری کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
+        desc: `معرفی سایت‌های خبری ارز دیجیتال و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
         keywords: [
           "آموزش ارز دیجیتال",
           "مربی ارز دیجیتال",
@@ -109,8 +109,19 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
     case "payment":
       return {
         title: allTags["payment"],
-        desc: `ابزارهای پرداخت کریپتوکارنسی`,
-        keywords: ["پرداخت بیتکوینی", "پرداخت کریپتوکارنسی"],
+        desc: `ابزارهای پرداخت ارز دیجیتال`,
+        keywords: ["پرداخت بیتکوینی", "پرداخت ارز دیجیتال"],
+      }
+    case "shop":
+      return {
+        title: allTags["shop"],
+        desc: `فروشگاه لوازم ارز دیجیتال`,
+        keywords: [
+          "اکسسوری بیتکوین ",
+          "استیکر بیتکوین",
+          "تیشرت بیتکوین",
+          "ماگ بیتکوین",
+        ],
       }
   }
   return res
