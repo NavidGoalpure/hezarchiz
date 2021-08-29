@@ -226,10 +226,31 @@ const LearningSpecificSection: React.FC = () => {
           ای که سازنده‌ رمزارزهای متنوعی مثل بیت کوینه و می‌تونه بدون دخالت و
           نظارت واسطه ها و آقابالاسرها دارایی‌های مارو مدیریت کنه!
         </p>
+        <p>
+          بلاکچین امروز کاربردهای خیلی زیادی پیدا کرده که زمینه ساز یک دنیای
+          کاملا متفاوت هستن. مفاهیمی مثل دیفای و گیم های دیسنرالایز و چت های
+          همتا به همتا، تنها برخی از این آینده رو به ما نشون دادن
+        </p>
 
-        <video width="100%" poster={digitalPokemonCard} controls src={media}>
+        <video
+          width="100%"
+          poster={digitalPokemonCard}
+          controls
+          src={
+            "https://bloock.ir/static/blockchain-43519d273289f8e9757f6b78e0537422.webm"
+          }
+        >
           متاسفانه مرورگر شما این کلیپ رو پشتیبانی نمی‌کنه!
         </video>
+        {/* <iframe
+          width="1410"
+          height="487"
+          src="https://www.youtube.com/embed/T2rUcmI5y0E"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe> */}
       </div>
     </details>
   )
