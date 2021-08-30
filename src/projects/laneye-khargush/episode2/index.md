@@ -1,5 +1,5 @@
 ---
-title: "پادکست لانه‌ی خرگوش-اپیزود دو"
+title: "اپیزود دو"
 domain: "https://youtu.be/K3KKim4W2n4"
 domainName: "اپیزود 2 لانه خرگوش"
 img: "cover.jpg"

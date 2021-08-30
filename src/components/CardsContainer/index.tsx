@@ -1,4 +1,5 @@
 import React from "react"
+import { sortArrayWithNestedObj } from "../../utils"
 import PostCard from "../PostCard"
 import "./style.scss"
 interface Props {
@@ -7,6 +8,12 @@ interface Props {
   ref: any
 }
 const CardsContainer: React.FC<Props> = ({ includePhrase, projects, ref }) => {
+  // مشخص میکنیم که آرایه را بر اساس کدوم آبجکت داخلی آن میخواهیم سورت کنیم
+  var propertyRetriever = function (project: Record<string, any>) {
+    return project.node.fields.slug
+  }
+  //پروجکتز رو بر اساس آبجکتی که تعریف کردیم سورت میکنه
+  sortArrayWithNestedObj(propertyRetriever, projects)
   return (
     <>
       {projects.map(({ node, i }) => {

@@ -1,5 +1,5 @@
 ---
-title: "پادکست لانه‌ی خرگوش-اپیزود صفر"
+title: "اپیزود صفر"
 domain: "https://www.youtube.com/watch?v=4rtOqiaCDMI"
 domainName: "اپیزود صفر لانه خرگوش"
 img: "cover.jpg"
