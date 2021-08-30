@@ -129,6 +129,17 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
         desc: `مربیان ارز دیجیتال`,
         keywords: ["حمید مرادی", "شایان شریف الحسینی", "میثم رضایی"],
       }
+    case "solidity":
+      return {
+        title: allTags["solidity"],
+        desc: `پروژه های سالیدیتی`,
+        keywords: [
+          "سالیدیتی ",
+          "گروه سالیدیتی",
+          "آموزش سالیدیتی",
+          "گروه سالیدیتی",
+        ],
+      }
   }
   return res
 }
