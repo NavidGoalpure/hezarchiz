@@ -22,8 +22,8 @@ const WhatIsBlockchain: React.FC = props => {
   return (
     <>
       <SEO
-        title={"بلاکچین چیست"}
-        description={"بلاکچین چیست؟ یک آموزش جذاب"}
+        title={"بلاکچین چیست ۱۴۰۰"}
+        description={"آموزش کامل بلاکچین درسال 1400(به زبان ساده)هزارچیز"}
         keywords={["بلاکچین", "بلاکچین چیست"]}
       />
       <section className="page-container" ref={elementRef} tabIndex={1}>
