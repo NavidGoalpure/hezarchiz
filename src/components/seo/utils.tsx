@@ -140,6 +140,12 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
           "گروه سالیدیتی",
         ],
       }
+    case "video":
+      return {
+        title: allTags["video"],
+        desc: `ویدئو ارز دیجیتال`,
+        keywords: ["ویدئوی آموزش بیتکوین", "ویدئو آموزشی ارز دیجیتال"],
+      }
   }
   return res
 }
