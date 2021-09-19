@@ -146,6 +146,12 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
         desc: `ویدئو ارز دیجیتال`,
         keywords: ["ویدئوی آموزش بیتکوین", "ویدئو آموزشی ارز دیجیتال"],
       }
+    case "news":
+      return {
+        title: allTags["news"],
+        desc: `اخبار ارز دیجیتال`,
+        keywords: ["سایت های اخبار بیتکوین", "سایت های اخبار ارز دیجیتال"],
+      }
   }
   return res
 }
