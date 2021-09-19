@@ -1,5 +1,3 @@
-import { allTags } from "../../consts"
-
 function createTagPages(_projectsMetadata) {
   let allTags = []
 
@@ -11,5 +9,4 @@ function createTagPages(_projectsMetadata) {
   })
   return allTags
 }
-const convertTagToPersian = allTags
-export { createTagPages, convertTagToPersian }
+export { createTagPages }

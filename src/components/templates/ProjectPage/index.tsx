@@ -14,11 +14,19 @@ function findSubProject(
 ): Record<string, any>[] | undefined {
   const subProjects = []
   for (let key in allMarkdownRemark.edges) {
+    const splitedPath: string = allMarkdownRemark.edges[
+      key
+    ]?.node.fields?.slug.replace(path, "")
+    const onlyChildSubProject = splitedPath.split("/")[1]
+    const onlyChildSubProjectPath = path + "/" + onlyChildSubProject
     if (
       allMarkdownRemark.edges[key]?.node.fields?.slug?.includes(path) && // زیرمجموعه اون پروژه باشه
+      allMarkdownRemark.edges[key]?.node.fields?.slug ===
+        onlyChildSubProjectPath && // فقط فرزند رو نشون بده و نوه و ... رو نشون نده
       allMarkdownRemark.edges[key]?.node.fields?.slug !== path // خود پروژه نباشه
-    )
+    ) {
       subProjects.push(allMarkdownRemark.edges[key])
+    }
   }
   return subProjects
 }

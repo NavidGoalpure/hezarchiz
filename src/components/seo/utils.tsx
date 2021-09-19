@@ -62,13 +62,13 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       }
     case "ethereum":
       return {
-        title: allTags["ethereum"],
+        title: allTags["ethereum"].persianName,
         desc: `پروژه های مربوط به ارز دیجیتال اتریوم`,
         keywords: ["آموزش اتریوم", "پروژه اتریوم", "سولیدیتی"],
       }
     case "game":
       return {
-        title: allTags["game"],
+        title: allTags["game"].persianName,
         desc: `پروژه های مربوط به بازی بلاکچین  `,
         keywords: [
           "بازی بلاکچین",
@@ -78,43 +78,43 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       }
     case "articles":
       return {
-        title: allTags["articles"],
+        title: allTags["articles"].persianName,
         desc: `مقالات مربوط به بلاکچین و ارز دیجیتال `,
         keywords: ["مقالات بلاکچین", "مقاله بلاکچین", "بلاکچین چیست"],
       }
     case "defi":
       return {
-        title: allTags["defi"],
+        title: allTags["defi"].persianName,
         desc: `پروژه های مربوط به دیفای و آموزش دیفای `,
         keywords: ["دیفای", "آموزش دیفای"],
       }
     case "exchange":
       return {
-        title: allTags["exchange"],
+        title: allTags["exchange"].persianName,
         desc: `صرافی های ارز دیجیتال `,
         keywords: ["صرافی بیتکوین", "صرافی لایتنینگ", "صرافی دیسنترالایز"],
       }
     case "lightning":
       return {
-        title: allTags["lightning"],
+        title: allTags["lightning"].persianName,
         desc: `پروژه های مربوط به لایتنینگ بیتکوین`,
         keywords: ["صرافی لایتنینگ بیتکوین", "صرافی لایتنینگ", "لایتنینگ"],
       }
     case "bitcoin":
       return {
-        title: allTags["bitcoin"],
+        title: allTags["bitcoin"].persianName,
         desc: `پروژه های مربوط به بیتکوین`,
         keywords: ["بیتکوین", "آموزش بیتکوین"],
       }
     case "payment":
       return {
-        title: allTags["payment"],
+        title: allTags["payment"].persianName,
         desc: `ابزارهای پرداخت ارز دیجیتال`,
         keywords: ["پرداخت بیتکوینی", "پرداخت ارز دیجیتال"],
       }
     case "shop":
       return {
-        title: allTags["shop"],
+        title: allTags["shop"].persianName,
         desc: `فروشگاه لوازم ارز دیجیتال`,
         keywords: [
           "اکسسوری بیتکوین ",
@@ -125,13 +125,13 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       }
     case "mentors":
       return {
-        title: allTags["mentors"],
+        title: allTags["mentors"].persianName,
         desc: `مربیان ارز دیجیتال`,
         keywords: ["حمید مرادی", "شایان شریف الحسینی", "میثم رضایی"],
       }
     case "solidity":
       return {
-        title: allTags["solidity"],
+        title: allTags["solidity"].persianName,
         desc: `پروژه های سالیدیتی`,
         keywords: [
           "سالیدیتی ",
@@ -142,13 +142,13 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
       }
     case "video":
       return {
-        title: allTags["video"],
+        title: allTags["video"].persianName,
         desc: `ویدئو ارز دیجیتال`,
         keywords: ["ویدئوی آموزش بیتکوین", "ویدئو آموزشی ارز دیجیتال"],
       }
     case "news":
       return {
-        title: allTags["news"],
+        title: allTags["news"].persianName,
         desc: `اخبار ارز دیجیتال`,
         keywords: ["سایت های اخبار بیتکوین", "سایت های اخبار ارز دیجیتال"],
       }

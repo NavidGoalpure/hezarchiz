@@ -10,7 +10,8 @@ import {
 } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
 import LogoIcon from "../LogoIcon"
-import { createTagPages, convertTagToPersian } from "./utils"
+import { createTagPages } from "./utils"
+import { allTags } from "../../consts"
 
 const SideBar = () => {
   const { site, allMarkdownRemark } = useStaticQuery(
@@ -61,7 +62,7 @@ const SideBar = () => {
     `,
   )
 
-  const allTags = createTagPages(allMarkdownRemark.edges)
+  const tags = createTagPages(allMarkdownRemark.edges)
 
   const github = "https://github.com/" + site.siteMetadata.social.github
   const email = "mailto:" + site.siteMetadata.social.email
@@ -92,21 +93,22 @@ const SideBar = () => {
             همه
           </button>
         </Link>
-        {allTags.map(tag => {
-          return (
-            <Link to={`/${tag}`} className="glass-reflex ">
-              <button
-                className="navbtn mob-menu-items dark-glass"
-                style={
-                  pathName === `/${tag}` || pathName === `/${tag}/`
-                    ? { background: "var( --secondari-color-normal)" }
-                    : {}
-                }
-              >
-                {convertTagToPersian[tag]}
-              </button>
-            </Link>
-          )
+        {tags.map(tag => {
+          if (allTags[tag].isShowInSideBar)
+            return (
+              <Link to={`/${tag}`} className="glass-reflex ">
+                <button
+                  className="navbtn mob-menu-items dark-glass"
+                  style={
+                    pathName === `/${tag}` || pathName === `/${tag}/`
+                      ? { background: "var( --secondari-color-normal)" }
+                      : {}
+                  }
+                >
+                  {allTags[tag].persianName}
+                </button>
+              </Link>
+            )
         })}
       </div>
 

@@ -11,7 +11,7 @@ export const Reference: React.FC<Props> = ({ title, domain, keywords }) => {
     return (
       <div id="post-page-refrence">
         <p>
-          {`برای بازدید از پروژه`}
+          {`برای بازدید از`}
           <span>
             <a target="_blank" href={`${domain}`}>
               {" "}
