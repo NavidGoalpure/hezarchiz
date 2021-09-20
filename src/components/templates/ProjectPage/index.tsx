@@ -94,7 +94,6 @@ const BlogPost = props => {
       }
     `,
   )
-
   return (
     <section className="page-container">
       <SEO

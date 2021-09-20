@@ -10,33 +10,29 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import Logo from "../../assets/images/logo.png"
+import useSiteMetadata from "../../utils/site-metadata"
 
-function SEO({ description, lang, meta, title, keywords, image }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            keywords
-          }
-        }
-      }
-    `,
-  )
+function SEO({
+  description: descriptionProps,
+  lang,
+  meta,
+  title: titleProps,
+  keywords: keywordsProps,
+  image,
+}) {
+  const { siteUrl, title, keywords, description } = useSiteMetadata()
 
-  const smartTitle = title || site.siteMetadata.title
-  const smartDescription = description || site.siteMetadata.description
-  const smartKeywords = keywords || site.siteMetadata.keywords
-  const smartImage = image || Logo
+  const smartTitle = titleProps || title
+  const smartDescription = descriptionProps || description
+  const smartKeywords = keywords || keywordsProps
+  const smartImage = `${siteUrl}${image || Logo}`
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={smartTitle}
-      description={smartDescription}
       meta={[
         {
           name: `description`,

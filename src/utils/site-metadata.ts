@@ -9,10 +9,11 @@ const useSiteMetadata = () => {
             title
             description
             siteUrl
+            keywords
           }
         }
       }
-    `
+    `,
   )
   return site.siteMetadata
 }
