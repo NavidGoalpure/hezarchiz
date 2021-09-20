@@ -6,6 +6,7 @@ import useSiteMetadata from "../../../utils/site-metadata"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 import SideBar from "../../sidebar"
 import { graphql, useStaticQuery } from "gatsby"
+import { FluidObject } from "gatsby-image"
 
 deckDeckGoHighlightElement()
 //
@@ -33,10 +34,10 @@ function findSubProject(
 }
 function findRandomProject(
   allMarkdownRemark,
-  path,
+  count: number,
 ): Record<string, any>[] | undefined {
   const randomProjects = []
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < count; i++) {
     const randNumber =
       Math.floor(Math.random() * allMarkdownRemark.edges.length - 1) + 1
     randomProjects.push(allMarkdownRemark.edges[randNumber])
@@ -53,9 +54,7 @@ interface Props {
     domain: string
     socialNetworks: any
     html: string
-    imgFluid: {
-      src: string
-    }
+    imgFluid: FluidObject
   }
 }
 const BlogPost: React.FC<Props> = ({ path, pageContext }) => {
@@ -129,10 +128,16 @@ const BlogPost: React.FC<Props> = ({ path, pageContext }) => {
         imageFluid={imgFluid}
         domain={domain}
         keywords={keywords}
-        subProjects={
-          findSubProject(allMarkdownRemark, path).length > 0
-            ? findSubProject(allMarkdownRemark, path)
-            : findRandomProject(allMarkdownRemark, keywords)
+        otherProjects={
+          findSubProject(allMarkdownRemark, path).length > 0 // پروژه زیرمجموعه داره
+            ? {
+                projects: findSubProject(allMarkdownRemark, path),
+                projectsType: "SUB_PROJECTS",
+              } // زیرمجموعه ها رو برگردون
+            : {
+                projects: findRandomProject(allMarkdownRemark, 3),
+                projectsType: "RANDOM_PROJECTS",
+              } // چند پروژه رندوم برگردون
         }
       >
         <div

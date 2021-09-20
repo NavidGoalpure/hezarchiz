@@ -1,11 +1,24 @@
-import React, { useEffect, useRef } from "react"
+import React, { ReactNode, useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { Disqus, CommentCount } from "gatsby-plugin-disqus"
-import Img from "gatsby-image"
+import Img, { FluidObject } from "gatsby-image"
 import "./style.scss"
 import { Reference } from "./Rreference"
 import CardsContainer from "../CardsContainer"
 
+interface Props {
+  title: string
+  children: ReactNode
+  identifier: string
+  url: string
+  imageFluid: FluidObject
+  domain: string
+  keywords: string
+  otherProjects: {
+    projects: Record<any, any>[]
+    projectsType: "SUB_PROJECTS" | "RANDOM_PROJECTS"
+  }
+}
 const Post = ({
   title,
   children,
@@ -14,8 +27,8 @@ const Post = ({
   imageFluid,
   domain,
   keywords,
-  subProjects,
-}) => {
+  otherProjects,
+}: Props) => {
   let disqusConfig = {
     url: url,
     identifier: identifier,
@@ -44,7 +57,14 @@ const Post = ({
           />
           <div className="post-content">{children}</div>
           <Reference title={title} domain={domain} keywords={keywords} />
-          {subProjects && (
+          <h2
+            style={{ marginTop: "5rem", marginRight: "1rem", color: "khaki" }}
+          >
+            {otherProjects.projectsType === "RANDOM_PROJECTS"
+              ? "سایر پروژه ها"
+              : "زیرمجموعه ها"}
+          </h2>
+          {otherProjects && (
             <div
               style={{
                 width: "100%",
@@ -57,7 +77,7 @@ const Post = ({
             >
               <CardsContainer
                 includePhrase={"all"}
-                projects={subProjects}
+                projects={otherProjects.projects}
                 ref={elementRef}
               />
             </div>
@@ -73,10 +93,6 @@ const Post = ({
       <Disqus config={disqusConfig} />
     </main>
   )
-}
-
-Post.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Post
