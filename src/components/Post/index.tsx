@@ -1,6 +1,5 @@
 import React, { ReactNode, useEffect, useRef } from "react"
-import PropTypes from "prop-types"
-import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+// import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import Img, { FluidObject } from "gatsby-image"
 import "./style.scss"
 import { Reference } from "./Rreference"
@@ -14,10 +13,7 @@ interface Props {
   imageFluid: FluidObject
   domain: string
   keywords: string
-  otherProjects: {
-    projects: Record<any, any>[]
-    projectsType: "SUB_PROJECTS" | "RANDOM_PROJECTS"
-  }
+  otherProjects: Record<any, any>[]
 }
 const Post = ({
   title,
@@ -57,40 +53,33 @@ const Post = ({
           />
           <div className="post-content">{children}</div>
           <Reference title={title} domain={domain} keywords={keywords} />
-          <h2
-            style={{ marginTop: "5rem", marginRight: "1rem", color: "khaki" }}
-          >
-            {otherProjects.projectsType === "RANDOM_PROJECTS"
-              ? "سایر پروژه ها"
-              : "زیرمجموعه ها"}
-          </h2>
-          {otherProjects && (
-            <div
-              style={{
-                width: "100%",
-                marginLeft: "1.5rem",
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-                marginTop: "2rem",
-              }}
-            >
-              <CardsContainer
-                includePhrase={"all"}
-                projects={otherProjects.projects}
-                ref={elementRef}
-              />
-            </div>
-          )}
-        </div>
-        <div id="discus-alert">
-          سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد که
-          متاسفانه کاربران ایرانی را تحریم کرده است. اگر در این قسمت نمی‌توانید
-          بخش کامنت ها را مشاهده کنید، از سرویس های تغییر آی پی استفاده کنید.
         </div>
       </article>
-
-      <Disqus config={disqusConfig} />
+      {otherProjects && (
+        <div
+          style={{
+            width: "100%",
+            marginLeft: "1.5rem",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <CardsContainer
+            includePhrase={"all"}
+            projects={otherProjects}
+            ref={elementRef}
+          />
+        </div>
+      )}
+      {/* //////////comment disqus/////////////// */}
+      {/* <div id="discus-alert">
+        سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد که
+        متاسفانه کاربران ایرانی را تحریم کرده است. اگر در این قسمت نمی‌توانید
+        بخش کامنت ها را مشاهده کنید، از سرویس های تغییر آی پی استفاده کنید.
+      </div>
+      <Disqus config={disqusConfig} /> */}
     </main>
   )
 }

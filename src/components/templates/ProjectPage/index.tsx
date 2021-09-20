@@ -130,14 +130,8 @@ const BlogPost: React.FC<Props> = ({ path, pageContext }) => {
         keywords={keywords}
         otherProjects={
           findSubProject(allMarkdownRemark, path).length > 0 // پروژه زیرمجموعه داره
-            ? {
-                projects: findSubProject(allMarkdownRemark, path),
-                projectsType: "SUB_PROJECTS",
-              } // زیرمجموعه ها رو برگردون
-            : {
-                projects: findRandomProject(allMarkdownRemark, 3),
-                projectsType: "RANDOM_PROJECTS",
-              } // چند پروژه رندوم برگردون
+            ? findSubProject(allMarkdownRemark, path)
+            : findRandomProject(allMarkdownRemark, 3)
         }
       >
         <div
