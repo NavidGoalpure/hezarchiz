@@ -18,7 +18,7 @@ export const Reference: React.FC<Props> = ({ title, domain, keywords }) => {
               {title}{" "}
             </a>
           </span>
-          {`روی نام آن کلیک کنید.`}
+          {`اینجا کلیک کنید.`}
         </p>
       </div>
     )

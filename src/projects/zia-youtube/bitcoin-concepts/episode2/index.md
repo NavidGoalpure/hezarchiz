@@ -1,11 +1,11 @@
 ---
-title: "مفاهیم بیتکوین ۲"
+title: "آیا آدرس‌های بیتکوین منقضی می‌شوند؟"
 domain: "https://www.youtube.com/watch?v=rnAbQIQT11A&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=2"
-domainName: "Zia's youtube"
+domainName: ""
 img: "cover.jpg"
 logo: ""
-description: "آیا آدرس‌های بیتکوین منقضی می‌شوند؟"
-keywords: learning,bitcoin,bitcoin-concept,zia
+description: "ضیا صدر به سوال بالا پاسخ می‌دهد"
+keywords: learning,bitcoin,bitcoin-concepts,zia
 blog: false
 confirm: true
 ---

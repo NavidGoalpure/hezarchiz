@@ -24,7 +24,7 @@ const allTags: Record<
   investment: { persianName: "سرمایه گذاری", isShowInSideBar: true },
   bsv: { persianName: "بی اس وی", isShowInSideBar: false },
   startup: { persianName: "استارتاپ‌", isShowInSideBar: true },
-  "bitcoin-concept": { persianName: "مفاهیم بیتکوین", isShowInSideBar: false },
+  "bitcoin-concepts": { persianName: "مفاهیم بیتکوین", isShowInSideBar: false },
   zia: { persianName: "ضیا صدر", isShowInSideBar: false },
 }
 // هر تگی که اینجا اضافه میشه باید توی آدرس زیر هم تگ های سئوش اضافه بشه

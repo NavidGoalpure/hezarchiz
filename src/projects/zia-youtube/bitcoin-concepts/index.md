@@ -5,7 +5,7 @@ domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""
 description: "متن آموزشهای «مفاهیم بیتکوین» از کانال ضیا صدر"
-keywords: learning,bitcoin,bitcoin-concept,zia
+keywords: learning,bitcoin,bitcoin-concepts,zia
 blog: false
 confirm: true
 ---

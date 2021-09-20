@@ -31,7 +31,9 @@ const PostCard: React.FC<Props> = ({
               <Img fluid={logoFluid} alt={`Icon for ${title}`} />
             </div>
             <div className="details">
-              <h2>{title}</h2>
+              <h2 style={domainName === "" ? { textAlign: "center" } : {}}>
+                {title}
+              </h2>
             </div>
             <h3>{domainName}</h3>
           </div>
