@@ -8,6 +8,7 @@ import SideBar from "../../sidebar"
 import { graphql, useStaticQuery } from "gatsby"
 
 deckDeckGoHighlightElement()
+//
 function findSubProject(
   allMarkdownRemark,
   path,
@@ -30,18 +31,35 @@ function findSubProject(
   }
   return subProjects
 }
-interface Props {
-  title: string
-  description: string
-  keywords: string
-  domain: string
-  socialNetworks: any
-  html: string
+function findRandomProject(
+  allMarkdownRemark,
+  path,
+): Record<string, any>[] | undefined {
+  const randomProjects = []
+  for (let i = 0; i < 3; i++) {
+    const randNumber =
+      Math.floor(Math.random() * allMarkdownRemark.edges.length - 1) + 1
+    randomProjects.push(allMarkdownRemark.edges[randNumber])
+  }
+  return randomProjects
 }
-const BlogPost = props => {
-  const { title, description, keywords, domain, html, imgFluid } =
-    props.pageContext
-  const { path } = props
+
+interface Props {
+  path: string
+  pageContext: {
+    title: string
+    description: string
+    keywords: string
+    domain: string
+    socialNetworks: any
+    html: string
+    imgFluid: {
+      src: string
+    }
+  }
+}
+const BlogPost: React.FC<Props> = ({ path, pageContext }) => {
+  const { title, description, keywords, domain, html, imgFluid } = pageContext
   const { siteUrl } = useSiteMetadata()
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
@@ -94,6 +112,7 @@ const BlogPost = props => {
       }
     `,
   )
+  console.log("navid allMarkdownRemark=", allMarkdownRemark)
   return (
     <section className="page-container">
       <SEO
@@ -113,7 +132,7 @@ const BlogPost = props => {
         subProjects={
           findSubProject(allMarkdownRemark, path).length > 0
             ? findSubProject(allMarkdownRemark, path)
-            : undefined
+            : findRandomProject(allMarkdownRemark, keywords)
         }
       >
         <div
@@ -126,16 +145,3 @@ const BlogPost = props => {
 }
 
 export default BlogPost
-
-// export const query = graphql`
-//   query BlogPostBySlug($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         title
-//         description
-//         keywords
-//       }
-//     }
-//   }
-// `

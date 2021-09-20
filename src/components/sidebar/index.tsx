@@ -93,10 +93,10 @@ const SideBar = () => {
             همه
           </button>
         </Link>
-        {tags.map(tag => {
+        {tags.map((tag, i) => {
           if (allTags[tag].isShowInSideBar)
             return (
-              <Link to={`/${tag}`} className="glass-reflex ">
+              <Link to={`/${tag}`} className="glass-reflex " key={i}>
                 <button
                   className="navbtn mob-menu-items dark-glass"
                   style={

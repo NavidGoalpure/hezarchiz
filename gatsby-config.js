@@ -3,7 +3,7 @@ module.exports = {
     title: `هزارچیز`,
     description: `مرجع معرفی پروژه های بلاکچین ایران`,
     siteUrl: `https://hezarchiz.com`,
-    keywords: ["هزارچیز", "لیست پروژه های بلاکچین", "بلاکچین"],
+    keywords: "هزارچیز, لیست پروژه های بلاکچین, بلاکچین",
     social: {
       github: ``,
       email: `navid.goalpure@gmail.com`,

@@ -8,20 +8,29 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 import Logo from "../../assets/images/logo.png"
 import useSiteMetadata from "../../utils/site-metadata"
 
+interface Props {
+  description?: string
+  lang?: string
+  meta?: ConcatArray<
+    { name: string; content: any } | { property: string; content: any }
+  >
+  title?: string
+  keywords?: string
+  image?: string
+}
+
 function SEO({
   description: descriptionProps,
-  lang,
-  meta,
+  lang = `en`,
+  meta = [],
   title: titleProps,
   keywords: keywordsProps,
   image,
-}) {
+}: Props) {
   const { siteUrl, title, keywords, description } = useSiteMetadata()
-
   const smartTitle = titleProps || title
   const smartDescription = descriptionProps || description
   const smartKeywords = keywords || keywordsProps
@@ -61,21 +70,6 @@ function SEO({
       ].concat(meta)}
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  image: PropTypes.string,
 }
 
 export default SEO

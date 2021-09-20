@@ -6,11 +6,11 @@ declare module "*.svg" {
 }
 
 declare module "*.jpg" {
-  const content: string
-  export default content
+  //@ts-ignore
+  export default "" as string
 }
 
 declare module "*.png" {
-  const content: string
-  export default content
+  //@ts-ignore
+  export default "" as string
 }
