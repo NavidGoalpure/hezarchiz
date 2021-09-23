@@ -37,10 +37,17 @@ function findRandomProject(
   count: number,
 ): Record<string, any>[] | undefined {
   const randomProjects = []
+  const randomNumbers = []
   for (let i = 0; i < count; i++) {
     const randNumber =
       Math.floor(Math.random() * allMarkdownRemark.edges.length - 1) + 1
-    randomProjects.push(allMarkdownRemark.edges[randNumber])
+
+    //اگه قبلا از این شماره استفاده نکرده بودیم به لیست اضافش میکنیم تا آیتم ها تکراری نشه
+    if (randomNumbers.includes(randNumber)) {
+      i--
+    } else {
+      randomProjects.push(allMarkdownRemark.edges[randNumber])
+    }
   }
   return randomProjects
 }

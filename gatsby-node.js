@@ -103,8 +103,6 @@ exports.createPages = ({ graphql, actions }) => {
 
     // مربوط به پیج هایی که معرفی یک پروژه بخصوص هستند
     markdownPages.map(page => {
-      console.log("navid keywords1=", page.node.frontmatter.keywords)
-
       createPage({
         path: page.node.fields.slug,
         component: path.resolve(
