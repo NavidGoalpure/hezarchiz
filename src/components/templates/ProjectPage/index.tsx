@@ -118,7 +118,6 @@ const BlogPost: React.FC<Props> = ({ path, pageContext }) => {
       }
     `,
   )
-  console.log("navid allMarkdownRemark=", allMarkdownRemark)
   return (
     <section className="page-container">
       <SEO
