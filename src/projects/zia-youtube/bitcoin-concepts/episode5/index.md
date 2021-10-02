@@ -1,5 +1,5 @@
 ---
-title: "اشخاص معروف چه تاثیری روی قیمت بیت‌کوین دارند؟"
+title: "ماینینگ و معادلات ریاضی استخراج بیت‌کوین"
 domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=5"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
