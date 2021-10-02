@@ -1,6 +1,6 @@
 ---
 title: "چند تا کیف پول نیاز داریم؟"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=7"
+domain: "https://www.youtube.com/watch?v=T4S8AZTqR3Y&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=7"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

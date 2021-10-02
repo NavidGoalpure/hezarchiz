@@ -1,6 +1,7 @@
 ---
 title: "توسعه‌ی بیت‌کوین و تصمیمات برنامه‌ نویسان در آن"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=12"
+domain: "https://www.youtube.com/watch?v=X0FZHrJfgak&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=12"
+
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

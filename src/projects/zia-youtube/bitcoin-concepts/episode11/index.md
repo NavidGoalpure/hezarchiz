@@ -1,6 +1,6 @@
 ---
 title: " نصب کیف پول لایتنینگ Blue wallet - wallet of satoshi"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=11"
+domain: "https://www.youtube.com/watch?v=pJAaqZeWHWQ&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=11"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

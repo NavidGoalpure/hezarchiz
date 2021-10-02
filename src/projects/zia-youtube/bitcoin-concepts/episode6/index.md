@@ -1,6 +1,6 @@
 ---
 title: " اشخاص معروف چه تاثیری روی قیمت بیت‌کوین دارند؟"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=6"
+domain: "https://www.youtube.com/watch?v=TSX9BoSyDqM&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=6"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

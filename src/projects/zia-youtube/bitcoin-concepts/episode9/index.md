@@ -1,6 +1,6 @@
 ---
 title: "ممپول، کارمزد و تراکنش‌های کانفرم نشده‌ی بیت‌کوین"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=9"
+domain: "https://www.youtube.com/watch?v=x_GM5jgC7uM&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=9"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

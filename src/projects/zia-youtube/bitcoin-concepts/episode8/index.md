@@ -1,6 +1,6 @@
 ---
 title: "  دلار تتر: خطر استفاده از آن برای ایرانی‌ها"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=8"
+domain: "https://www.youtube.com/watch?v=If8YDIH8xWg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=8"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

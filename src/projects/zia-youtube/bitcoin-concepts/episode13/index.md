@@ -1,6 +1,6 @@
 ---
 title: " بیت‌کوین لکه دار و رصد کردن تراکنش‌های بیت‌کوین"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=13"
+domain: "https://www.youtube.com/watch?v=WXhQKWVVkTU&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=13"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""

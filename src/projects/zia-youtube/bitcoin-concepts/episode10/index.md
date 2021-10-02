@@ -1,6 +1,6 @@
 ---
 title: "لایتنینگ چیست؟"
-domain: "https://www.youtube.com/watch?v=FG1HZOrpaOg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=10"
+domain: "https://www.youtube.com/watch?v=38T9VFXhYRg&list=PLYc8rgTV8DzC29873Qt1kzvgZGHNxce7_&index=10"
 domainName: "مفاهیم بیتکوین"
 img: "cover.jpg"
 logo: ""
