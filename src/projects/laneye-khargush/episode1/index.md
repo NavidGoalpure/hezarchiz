@@ -6,7 +6,7 @@ img: "cover.jpg"
 logo: "logo.png"
 description: "هک ۶۰۰ میلیون دلاری  پالی نتورک و
   لایحه سرمایه گذاری آمریکا "
-keywords: podcast
+keywords: podcast,bitcoin
 blog: false
 confirm: false
 ---

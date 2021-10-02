@@ -5,7 +5,7 @@ domainName: "اپیزود صفر لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"
 description: "پادکستمون چیه"
-keywords: podcast
+keywords: podcast,bitcoin
 blog: false
 confirm: false
 ---

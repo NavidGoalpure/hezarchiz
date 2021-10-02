@@ -5,7 +5,7 @@ domainName: "اپیزود 2 لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"
 description: "مقاله نیک کارتر در رابطه با انتقادات به هزینه‌های استخراج طلا در گذشته "
-keywords: podcast
+keywords: podcast,bitcoin
 blog: false
 confirm: false
 ---

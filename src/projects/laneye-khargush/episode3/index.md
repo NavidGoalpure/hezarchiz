@@ -5,7 +5,7 @@ domainName: "اپیزود ۳ لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"
 description: "بزرگداشت هال فینی"
-keywords: podcast
+keywords: podcast,bitcoin
 blog: false
 confirm: false
 ---
