@@ -29,7 +29,18 @@ export const ListDeclimer: React.FC<Props> = ({ tag, title, titleTag }) => {
       ) : (
         <h6 className="bloglist-hint-title">{title || "توضیحات"}</h6>
       )}
-      <h6 className="bloglist-hint-subtitle">{getSmartSubtitle()}</h6>
+      <div className="bloglist-hint-subtitle">
+        {getSmartSubtitle()}
+        {tag !== "learning" && (
+          <>
+            <h6 className="bloglist-hint-subtitle">
+              برای آموختن و تصمیم گیری بهتر به صفحه
+            </h6>
+            <a href="/learning">&nbsp;آموزش بلاکچین&nbsp; </a>
+            <h6 className="bloglist-hint-subtitle">مراجعه کنید.</h6>
+          </>
+        )}
+      </div>
     </div>
   )
 }
