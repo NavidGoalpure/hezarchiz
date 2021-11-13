@@ -1,14 +1,14 @@
-CODE_CHANGES = getGitChanges()
+// CODE_CHANGES = getGitChanges()
 pipeline {
   agent any
   
   stages {
     stage('Build') {
-        when {
-        // run if boolean condition retuns true
-        expression{
-            CODE_CHANGES == true
-        }
+        // when {
+        // // run if boolean condition retuns true
+        // expression{
+        //     CODE_CHANGES == true
+        // }
       }
       steps {
         nodejs('node') {
