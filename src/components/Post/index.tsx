@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useRef } from "react"
-// import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+import { Disqus, CommentCount } from "gatsby-plugin-disqus"
 import Img, { FluidObject } from "gatsby-image"
 import "./style.scss"
 import { Reference } from "./Rreference"
@@ -74,12 +74,12 @@ const Post = ({
         </div>
       )}
       {/* //////////comment disqus/////////////// */}
-      {/* <div id="discus-alert">
+      <div id="discus-alert">
         سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد که
         متاسفانه کاربران ایرانی را تحریم کرده است. اگر در این قسمت نمی‌توانید
         بخش کامنت ها را مشاهده کنید، از سرویس های تغییر آی پی استفاده کنید.
       </div>
-      <Disqus config={disqusConfig} /> */}
+      <Disqus config={disqusConfig} />
     </main>
   )
 }
