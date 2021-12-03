@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-fresh",
+  "name": "hezarchiz",
   "description": "GatsbyJS starter blog with the Fresh theme.",
   "version": "0.1.0",
   "dependencies": {
@@ -54,13 +54,12 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "deploy-travis": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/mishal23/gatsby-starter-fresh.git"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mishal23/gatsby-starter-fresh"
+    "url": "https://github.com/NavidGoalpure/hezarchiz"
   },
   "bugs": {
-    "url": "https://github.com/mishal23/gatsby-starter-fresh/issues"
+    "url": "https://github.com/NavidGoalpure/hezarchiz/issues"
   }
 }
