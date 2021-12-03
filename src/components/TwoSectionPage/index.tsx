@@ -53,7 +53,7 @@ const TwoSectionPage: React.FC<Props> = ({
               />
             </div>
           </details>
-          {url === "https://hezarchiz.com/learning" && (
+          {url.includes("/learning") && (
             <>
               <div id="discus-alert">
                 سیستم کامنت گذاری وبسایت «هزارچیز» از سرویس «دیسکس» نیرو می‌گیرد
