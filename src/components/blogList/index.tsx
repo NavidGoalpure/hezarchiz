@@ -3,8 +3,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import { ListDeclimer } from "./ListDeclimer"
 import TwoSectionPage from "../TwoSectionPage"
 import CardsContainer from "../CardsContainer"
+import useSiteMetadata from "../../utils/site-metadata"
 
 interface Props {
+  path: string
   includePhrase: string
 }
 const BlogList: React.FC<Props> = props => {
@@ -65,7 +67,7 @@ const BlogList: React.FC<Props> = props => {
     `,
   )
   const { allMarkdownRemark } = data
-  // const { siteUrl } = useSiteMetadata()
+  const { siteUrl } = useSiteMetadata()
 
   const elementRef = useRef()
   useEffect(() => {
@@ -90,6 +92,8 @@ const BlogList: React.FC<Props> = props => {
           ref={elementRef}
           pageTitle="آموزش بلاکچین"
           title2="پروژه های آموزشی"
+          url={`${siteUrl}${props.path}`}
+          identifier={`${siteUrl}${props.path}`}
         />
       )
 

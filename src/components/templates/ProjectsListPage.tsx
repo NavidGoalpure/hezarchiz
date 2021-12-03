@@ -6,11 +6,12 @@ import { getMetaForListingPages } from "../seo/utils"
 import SideBar from "../sidebar"
 
 interface Props {
+  path: string
   pageContext: {
     slug: string
   }
 }
-const IndexPage: React.FC<Props> = ({ pageContext }) => {
+const IndexPage: React.FC<Props> = ({ pageContext, path }) => {
   const smartSlug = pageContext.slug?.replace("/", "") || "all"
   return (
     <section className="page-container">
@@ -20,7 +21,7 @@ const IndexPage: React.FC<Props> = ({ pageContext }) => {
         keywords={getMetaForListingPages(smartSlug)?.keywords}
       />
       <SideBar />
-      <BlogList includePhrase={smartSlug}></BlogList>
+      <BlogList includePhrase={smartSlug} path={path}></BlogList>
     </section>
   )
 }
