@@ -5,7 +5,7 @@ domainName: ""
 img: "cover.jpg"
 logo: "logo.png"
 description: "انتشار صوتی محتوای بلاکچینی در تلگرام"
-keywords: learning, bitcoin,
+keywords: learning, bitcoin, podcast
 blog: true
 confirm: false
 ---
@@ -16,13 +16,7 @@ confirm: false
 
 اگه به بلاکچین علاقمندین و شنیدن رو به خوندن ترجیح میدین، ممکنه این کانال، همون چیزی باشه که دنبالش می‌گردین.
 
-<section id="project-contact-sectiton">
-<p id="project-contacts-title">
-راه های تماس:
-</p>
-<p id="project-socialnetworks">
-    <a target="_blank"  href="https://t.me/AudioBtc">
-    <img loading="lazy" alt="simorgh telegram icon" width="32" height="32" class="project-socialnetwork-icon" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/telegram-icon.png"/>
-    </a>
-</p>
-</sectiton>
+---
+
+**این پادکست متوقف شده و با ساختار جدیدی تحت برند زروان ادامه فعالیت می‌دهد
+برای بازدید از [پادکست زروان](/zorvan "پادکست زروان") به صفحه مربوط به آن در هزارچیز مراجعه کنید**
