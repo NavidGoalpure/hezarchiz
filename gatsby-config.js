@@ -129,6 +129,5 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
-    // "gatsby-redirect-from",
   ],
 }

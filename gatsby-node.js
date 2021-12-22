@@ -37,10 +37,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
-  const {
-    createPage,
-    // createRedirect
-  } = actions
+  const { createPage } = actions
 
   return graphql(`
     query allPages {

@@ -1,0 +1,4 @@
+http://hezarchiz.com/* https://www.hezarchiz.com/:splat 301!
+https://hezarchiz.com/* https://www.hezarchiz/:splat 301!
+
+/game         /              301
