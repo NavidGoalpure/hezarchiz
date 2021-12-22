@@ -37,7 +37,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
+  const {
+    createPage,
+    // createRedirect
+  } = actions
 
   return graphql(`
     query allPages {
@@ -86,10 +89,10 @@ exports.createPages = ({ graphql, actions }) => {
 
     // کتگوریزپیج، مربوط به پیج هایی میشه که حالت لیست دارند
     allTags.forEach((listingPage, index) => {
-      createRedirect({
-        fromPath: `/game`,
-        toPath: `/`,
-      })
+      // createRedirect({
+      //   fromPath: `/game`,
+      //   toPath: `/`,
+      // })
       createPage({
         path: `/${listingPage}`,
         component: path.resolve(
