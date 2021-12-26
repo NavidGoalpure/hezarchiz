@@ -13,7 +13,6 @@ const allTags: Record<
   bitcoin: { persianName: "بیتکوین", isShowInSideBar: true },
   payment: { persianName: "ابزار پرداخت", isShowInSideBar: true },
   shop: { persianName: "فروشگاه", isShowInSideBar: true },
-  mentors: { persianName: "مربیان", isShowInSideBar: false },
   solidity: { persianName: "سالیدیتی", isShowInSideBar: true },
   video: { persianName: "ویدئو", isShowInSideBar: true },
   news: { persianName: "اخبار", isShowInSideBar: true },

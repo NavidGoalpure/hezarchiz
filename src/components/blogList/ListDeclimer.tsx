@@ -10,8 +10,6 @@ interface Props {
 export const ListDeclimer: React.FC<Props> = ({ tag, title, titleTag }) => {
   function getSmartSubtitle() {
     switch (tag) {
-      case "mentors":
-        return `بهترین متخصصان هر حوزه در این صفحه خواهید یافت، به آن‌ها توجه کنید، اما به خاطر داشته باشید که قابل اعتماد ترین مشاور شما، فکر شماست. پس با «مسئولیت شخصی خودتان» از گفته های ایشان استفاده کنید `
       case "articles":
         return `مقالات این صفحه با هدف آشنایی تازه واردان به دنیای بلاکچین با مفاهیم پایه ای نوشته شده است.`
       case "learning":

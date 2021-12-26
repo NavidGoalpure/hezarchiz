@@ -52,7 +52,7 @@ const Post = ({
             alt={`Cover for ${title}`}
           />
           <div className="post-content">{children}</div>
-          <Reference title={title} domain={domain} keywords={keywords} />
+          <Reference title={title} domain={domain} />
         </div>
       </article>
       {otherProjects && (

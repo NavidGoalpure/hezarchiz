@@ -12,18 +12,6 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
     keywords: undefined,
   }
   switch (smartSlug) {
-    case "mentors":
-      return {
-        title: `متخصصان ارزهای دیجیتال`,
-        desc: `معرفی متخصصان کریپتوکارنسی و ارزهای دیجیتال مانند بیتکوین و اتریوم`,
-        keywords: [
-          "آموزش ارز دیجیتال",
-          "مربی ارز دیجیتال",
-          "آموزش بیتکوین",
-          "آموزش اتریوم",
-          "سوال و جواب ارز دیجیتال",
-        ].toString(),
-      }
     case "learning":
       return {
         title: `آموزش بلاکچین + رمز ارز دیجیتال به زبان ساده pdf (سال 1400)`,
@@ -135,12 +123,7 @@ export function getMetaForListingPages(smartSlug: string): metaProps {
           "ماگ بیتکوین",
         ].toString(),
       }
-    case "mentors":
-      return {
-        title: allTags["mentors"].persianName,
-        desc: `مربیان ارز دیجیتال`,
-        keywords: ["حمید مرادی", "شایان شریف الحسینی", "میثم رضایی"].toString(),
-      }
+
     case "solidity":
       return {
         title: allTags["solidity"].persianName,

@@ -8,8 +8,6 @@ description: " محلی برای تبادل نظر درباره‌ عدم تمر
 keywords: social-networks, bitcoin, ethereum,
 blog: true
 confirm: true
-redirect_from:
-  - /mentors/simorghTelegram/
 ---
 
 یک گروه تلگرامی بسیار فعال در رابطه با رمزارزها و عدم تمرکز.
