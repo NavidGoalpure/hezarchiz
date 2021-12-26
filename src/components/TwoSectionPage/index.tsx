@@ -27,7 +27,6 @@ const TwoSectionPage: React.FC<Props> = ({
     identifier: identifier,
     title: pageTitle,
   }
-  console.log("navid url=", url)
   return (
     <main role="main" style={{ width: "100%" }} id="main">
       <div className="content" ref={ref} tabIndex={1}>
