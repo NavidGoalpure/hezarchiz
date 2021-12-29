@@ -1,4 +1,4 @@
-http://hezarchiz.com/* https://hezarchiz.com/:splat 301!
-http://www.hezarchiz.com/* https://hezarchiz.com/:splat 301!
-https://www.hezarchiz.com/* https://hezarchiz.com/:splat 301!
-/test / 301!
+http://hezarchiz.com/* https://www.hezarchiz.com/:splat 301!
+http://www.hezarchiz.com/* https://www.hezarchiz.com/:splat 301!
+https://hezarchiz.com/* https://www.hezarchiz.com/:splat 301!
+/test1 / 301!
