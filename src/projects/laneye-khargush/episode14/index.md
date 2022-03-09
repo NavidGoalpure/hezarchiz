@@ -1,6 +1,6 @@
 ---
 title: "اپیزود چهاردهم"
-domain: "https://www.youtube.com/watch?v=LNv9Skdr6UE&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=15"
+domain: "https://www.youtube.com/watch?v=W_naQMvdJ7E&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=3"
 domainName: "اپیزود 14 لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"
