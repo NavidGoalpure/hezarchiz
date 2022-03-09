@@ -1,6 +1,6 @@
 ---
 title: "اپیزود پانزدهم"
-domain: "https://www.youtube.com/watch?v=OjzprDX6Dgk&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=2"
+domain: "https://www.youtube.com/watch?v=OjzprDX6Dgk"
 domainName: "اپیزود 15 لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

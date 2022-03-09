@@ -1,6 +1,6 @@
 ---
 title: "اپیزود شیش"
-domain: "https://www.youtube.com/watch?v=sLMqJB9JIXE&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=7"
+domain: "https://www.youtube.com/watch?v=sLMqJB9JIXE"
 domainName: "اپیزود ۶ لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

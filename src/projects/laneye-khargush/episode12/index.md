@@ -1,6 +1,6 @@
 ---
 title: "اپیزود دوازدهم"
-domain: "https://www.youtube.com/watch?v=LNv9Skdr6UE&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=13"
+domain: "https://www.youtube.com/watch?v=RkhjElc7W58"
 domainName: "اپیزود ۱۲ لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

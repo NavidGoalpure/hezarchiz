@@ -1,6 +1,6 @@
 ---
 title: "اپیزود هفتم"
-domain: "https://www.youtube.com/watch?v=ZeA1sgoJKBs&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=8"
+domain: "https://www.youtube.com/watch?v=ZeA1sgoJKBs"
 domainName: "اپیزود 7 لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

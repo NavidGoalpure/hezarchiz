@@ -1,6 +1,6 @@
 ---
 title: "اپیزود هشتم"
-domain: "https://www.youtube.com/watch?v=sLMqJB9JIXE&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=9"
+domain: "https://www.youtube.com/watch?v=lqj_NivS5VM"
 domainName: "اپیزود 8 لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

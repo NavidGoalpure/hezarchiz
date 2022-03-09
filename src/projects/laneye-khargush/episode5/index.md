@@ -1,6 +1,6 @@
 ---
 title: "اپیزود پنج"
-domain: "https://www.youtube.com/watch?v=LEhUS2Zah70&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=6"
+domain: "https://www.youtube.com/watch?v=LEhUS2Zah70"
 domainName: "اپیزود ۵ لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

@@ -1,6 +1,6 @@
 ---
 title: "اپیزود سیزدهم"
-domain: "https://www.youtube.com/watch?v=W_naQMvdJ7E&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=4"
+domain: "https://www.youtube.com/watch?v=A7fGT8gNv3E"
 domainName: "اپیزود 13 لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"

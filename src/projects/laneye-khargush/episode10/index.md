@@ -1,6 +1,6 @@
 ---
 title: "اپیزود دهم"
-domain: "https://www.youtube.com/watch?v=LNv9Skdr6UE&list=PLYc8rgTV8DzAIMKmaNz7JUN4341IvoTFa&index=11"
+domain: "https://www.youtube.com/watch?v=LNv9Skdr6UE"
 domainName: "اپیزود ۱۰ لانه خرگوش"
 img: "cover.jpg"
 logo: "logo.png"
